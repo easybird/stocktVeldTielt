@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - '5'
+  - '4'
+  - '6'
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./scripts/deploy.sh
+  'on':
+    branch: develop
+    node: '5'
+env:
+  global:
+    - secure: >-
+        VXyRItXXygMfKPXP3LnTeAN3u9MIRr5ma0h3rEBoLdP/iAoD53uvl4Ej1CF6m7hQtNTg5vfCoZZpNagZ+zTO7TwcgaS4fgE+3Op7vwSJcFW4g/RR9oEtYfB09DFR+PAOQJRQbcXhl/hP6jYR3HvoaCeSLFkIhfEKaQrE66V2H8LVXdlkQPzUjepIGjlAAhaoYNFIy9M0kVSSRQ7xV0CSkrnqXHXY96jyPKzOZ+/MbN5cTFZnaxUHczxAgPLAH0D1w61IoPTfObPbsNpcKCzVG1C4AOJpa9XTkuguqJ24HQ3rrMLfbbHqY81VxPnV41vfCjw9ICNhB4xDqLvFcEZm9wVX2gL1rgLllYOvWR0EOZwgvyYfL9SU+9uGabiU5AmesuChoO6PVY9D+kKbki2QYiU87yfjwE6uSmPLxkCfAYGd8YwTsYMVC3fQDTJ2ibKW153Mk7y6C5ZGpFFKr64GiyAHu3krrwUvyv5HAaDE6PLfjKFJ/aZigMumHHu+nczuK28LbFCFLdcO554JJEHl0LAbqzZtbXiDndXhw2fihhf9nohD2G7i5zzG9odBLJPEqkf6PrmXgdMYAgcZ+62+FJt6I6M/dHN64lDoFK0EB01dEzUitcUk1VM4egeuomEZPJh5USk1vTzRX2vQGwCYFX0kiPK5mXbGRPKH54TL2No=
+    # UPDATE YOU/YOUR_REPO IN THE URL BELOW
+    - GIT_DEPLOY_REPO=https://306125b8d689658b136ab4e873c41faf7524a457@github.com/easybird/stocktveld.git
