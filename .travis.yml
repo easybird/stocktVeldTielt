@@ -3,6 +3,9 @@ node_js:
   - '5'
   - '4'
   - '6'
+branches:
+  except:
+  - master
 deploy:
   skip_cleanup: true
   provider: script

@@ -8,6 +8,9 @@ then
   git config --global user.email "easybird85@gmail.com"
 fi
 
+# Move other necessary files to dist folder
+cp ./.travis.yml dist
+
 cd dist && \
 $(npm bin)/rimraf .git
 git init && \
