@@ -1,6 +1,9 @@
+# Editor
 .idea
 
-# Logs
-logs
+# node / npm
+node_modules
 *.log
-npm-debug.log*
+
+# phenomic build
+dist
