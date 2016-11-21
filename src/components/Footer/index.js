@@ -7,10 +7,19 @@ const Footer = () => (
     { /* If you like Phenomic, this is a way to share the love ;) */ }
     <p>
       <a
+        href={ "http://easybird.be" }
+        className={ styles.phenomicReference }
+      >
+        { "Website created by " }
+        <span className={ styles.phenomicReferenceName }>
+          {  `Easybird.be` }
+        </span>
+      </a>
+      <a
         href={ process.env.PHENOMIC_HOMEPAGE }
         className={ styles.phenomicReference }
       >
-        { "Website generated with " }
+        { " and generated with " }
         <span className={ styles.phenomicReferenceName }>
           {  `<${ process.env.PHENOMIC_NAME} />` }
         </span>
