@@ -2,7 +2,7 @@ import React, { PropTypes } from "react"
 import { Link } from "react-router"
 import Svg from "react-svg-inline"
 
-import facebookSvg from "../icons/iconmonstr-facebook-5.svg"
+import facebookSvg from "../../icons/iconmonstr-facebook-5.svg"
 
 import styles from "./index.css"
 
