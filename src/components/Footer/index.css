@@ -1,6 +1,6 @@
 .footer {
   color: var(--mainColorContrasted);
-  background: var(--mainColor);
+  background: var(--secondaryColor);
   text-align: center;
 }
 

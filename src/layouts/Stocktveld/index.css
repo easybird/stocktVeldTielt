@@ -1,0 +1,19 @@
+.stocktveld {
+  align-self: center;
+  width: 100%;
+  max-width: 60rem;
+  margin: 1rem 0.75rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.side {
+  display: block;
+  text-align: center;
+  height: 20rem;
+  background-color: var(--secondaryColor);
+  margin: 1rem 0;
+}

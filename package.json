@@ -3,6 +3,7 @@
   "name": "stocktveld",
   "homepage": "http://stocktveld.cohousing.io",
   "twitter": "",
+  "facebook": "http://facebook.com/stocktveld",
   "repository": "https://github.com/easybird/stocktveld.git",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
