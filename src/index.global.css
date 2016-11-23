@@ -48,9 +48,9 @@ body {
 
 /*TODO JDI*/
 /*noinspection CssInvalidPseudoSelector*/
-:--headings {
-  position: relative;
-}
+/*:--headings {*/
+  /*position: relative;*/
+/*}*/
 
 :root {
   --phenomic-HeadingAnchor-width: 1.4rem;
