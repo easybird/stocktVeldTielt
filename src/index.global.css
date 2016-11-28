@@ -10,6 +10,12 @@ html { box-sizing: border-box; }
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   box-sizing: inherit;
 }
 

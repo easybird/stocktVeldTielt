@@ -3,7 +3,6 @@
 }
 
 .header {
-  color: var(--mainColorContrasted);
   background: var(--mainColor);
 }
 
@@ -29,6 +28,7 @@
   padding: 0 var(--nav-item-padding);
   color: inherit;
   text-decoration: none;
+  transition: all 0.35s;
 }
 
 .link svg {
