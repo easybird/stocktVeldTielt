@@ -1,0 +1,46 @@
+.banner {
+  height: auto;
+  position: relative;
+}
+
+.flexslider {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: var(--backgroundColor);
+  position: relative;
+  zoom: 1;
+  padding: 0;
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  height: 80vh;
+  background: no-repeat center;
+  background-size: cover;
+  float: left;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.invisible {
+  opacity: 0.01;
+  transition: opacity 1500ms ease-in;
+}
+
+.flexslider .slides::after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}

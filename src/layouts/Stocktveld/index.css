@@ -10,10 +10,6 @@
   flex-direction: column;
 }
 
-.side {
-  display: block;
-  text-align: center;
-  height: 20rem;
-  background-color: var(--secondaryColor);
-  margin: 1rem 0;
+p {
+  color: var(--textColor);
 }
