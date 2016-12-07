@@ -16,6 +16,7 @@ export default (config = {}) => {
       features: {
         customProperties: {
           variables: {
+            containerWidth: "1140px",
             mainColor: "#2ecc71", //emerald https://flatuicolors.com/
             mainColorDarker: "#28b062",
             secondaryColor: "#f7f7f7",

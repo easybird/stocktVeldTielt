@@ -24,7 +24,7 @@ h1 {
 .heroTextBox {
   z-index: 10;
   position: absolute;
-  width: 1140px;
+  width: var(--containerWidth);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
