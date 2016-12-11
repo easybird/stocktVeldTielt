@@ -5,7 +5,7 @@ import facebookSvg from '../../icons/iconmonstr-facebook-5.svg';
 import styles from './index.css';
 
 const NavBar = (props, { metadata: { pkg } }) => (
-  <div>
+  <div className={styles.navBarWrapper}>
     <div className={styles.navBar}>
       <i className={`${styles.icon} material-icons`}>view_headline</i>
       <span className={styles.menuIcon}></span>

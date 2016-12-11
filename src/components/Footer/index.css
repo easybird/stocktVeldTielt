@@ -1,6 +1,6 @@
 .footer {
-  color: var(--mainColorContrasted);
-  background: var(--secondaryColor);
+  color: var(--palleteColor3);
+  background: var(--palleteColor2);
   text-align: center;
 }
 

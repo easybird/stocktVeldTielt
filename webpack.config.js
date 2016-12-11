@@ -17,12 +17,11 @@ export default (config = {}) => {
         customProperties: {
           variables: {
             containerWidth: "1140px",
-            mainColor: "#2ecc71", //emerald https://flatuicolors.com/
-            mainColorDarker: "#28b062",
-            secondaryColor: "#f7f7f7",
-            backgroundColor: "#fdfdfb",
-            mainColorContrasted: "#00b18f",
-            textColor: "#333333"
+            palleteColor1: "#F4F7F7", //emerald https://flatuicolors.com/ //http://www.colorhunt.co/hot
+            palleteColor2: "#79A8A9",
+            palleteColor3: "#4D727E",
+            palleteColor4: "#1F4E5F",
+            textColor: "#537780"
           },
         },
       },

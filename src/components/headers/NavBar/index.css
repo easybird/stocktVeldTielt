@@ -6,6 +6,10 @@
   color: var(--textColor);
 }
 
+.navBarWrapper {
+  background-color: var(--palleteColor1);
+}
+
 .navBar {
   margin: 0 auto;
   display: none;
@@ -54,7 +58,7 @@
 
 .link:hover,
 .link:active {
-  border-bottom: 2px solid var(--mainColor);
+  border-bottom: 2px solid var(--palleteColor1);
 }
 
 .link svg {

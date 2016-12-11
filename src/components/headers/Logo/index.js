@@ -3,7 +3,7 @@ import styles from './index.css';
 
 const Logo = () => (
 <div className={styles.logo}>
-  <img src="/assets/img/logo/logo_stocktveld_mini.png"></img>
+  <img src="/assets/img/logo/stocktveld_new_small.png"></img>
 </div>
 );
 
