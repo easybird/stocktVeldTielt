@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './index.css';
-import Section from '../Section';
+import OneColumnSection from '../OneColumnSection';
+import TwoColumnSection from '../TwoColumnSection';
+import SectionText from '../SectionText';
+import SectionImage from '../SectionImage';
+import SectionMap from '../SectionMap';
 import { IMAGE_TYPES } from '../IMAGE_TYPES';
 
 class WelcomeSections extends React.Component {
@@ -67,53 +71,58 @@ class WelcomeSections extends React.Component {
 
     this.quoteSections.forEach((quoteSection, index) => {
       QuoteSections.push(
-        <Section
-          key={index}
-          title={quoteSection.title}
-          href={quoteSection.href}
-          text={quoteSection.text}
-          linkText={quoteSection.linkText}
-          imageType={IMAGE_TYPES.ROUND}
-          imageSource={quoteSection.imageSource}
-          imageAlt={quoteSection.imageAlt}
-        />,
+        <TwoColumnSection key={index} href={quoteSection.href}>
+          <SectionImage imageSource={quoteSection.imageSource}
+                        imageAlt={quoteSection.imageAlt}
+                        imageType={IMAGE_TYPES.ROUND}/>
+          <SectionText title={quoteSection.title}
+                       text={quoteSection.text}
+                       href={quoteSection.href}
+                       linkText={quoteSection.linkText}/>
+        </TwoColumnSection>
       )
     });
 
     return (
       <div className={styles.welcomeSections}>
-        <Section
-          key="exlusief"
-          title="Exclusief wonen in het groen met de stad aan je voordeur"
-          href="/aanbod"
-          text="
-      Verborgen achter de historische gevel van het voormalige slotklooster realiseren we het exclusieve project 'Stocktveld'.
+        <OneColumnSection href="/aanbod">
+          <SectionText
+            title="Exclusief wonen in het groen met de stad aan je voordeur"
+            text="Verborgen achter de historische gevel van het voormalige slotklooster realiseren we het exclusieve project 'Stocktveld'.
       Dit unieke project is een elegant samengaan van energiezuinige nieuwbouw in combinatie met de bewaarde historiciteit van het klooster.
       Het klooster wordt opgeknapt en ten dienste gesteld van alle bewoners.
-      De site heeft een bijzonder karakter, met een mooi evenwicht tussen publiek en privé.
-      "
-          linkText="Ontdek het aanbod"
-        />
+      De site heeft een bijzonder karakter, met een mooi evenwicht tussen publiek en privé."
+            href="/aanbod"
+            linkText="Ontdek het aanbod"
+          />
+        </OneColumnSection>
+        <TwoColumnSection href="/aanbod">
+          <SectionText
+            title="Uniek klooster met 3 renovatie loften, 20 nieuwbouwwoningen en 14 appartementen"
+            text="Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen."
+            href="/aanbod"
+            linkText="Ontdek het aanbod"
+          />
+          <SectionImage imageSource="/assets/img/aanbod/intro/schets_zijaanzicht.jpg" imageAlt="Schets klooster"/>
+        </TwoColumnSection>
+
         {QuoteSections[this.state.quoteIndex]}
-        <Section
-          key="uniek"
-          title="Uniek klooster met 3 renovatie loften, 20 nieuwbouwwoningen en 14 appartementen"
-          href="/aanbod"
-          text="Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen."
-          linkText="Ontdek het aanbod"
-          imageSource="/assets/img/banner/test_foto_1.jpg"
-          imageAlt="Whatever picture"
-        />
-        <Section
-          key="bouw"
-          title="Bouw mee aan een warme buurt binnen een mooie stad"
+
+        <TwoColumnSection
           href="/locatie"
-          text="Stocktveld is gelegen in het hartje van Tielt, met zijn locatie vlakbij het
+        >
+          <SectionText
+            key="locationText"
+            title="Bouw mee aan een warme buurt binnen een mooie stad"
+            text="Stocktveld is gelegen in het hartje van Tielt, met zijn locatie vlakbij het
             station, met scholen binnen handbereik, is het ideaal gelegen."
-          linkText="Bekijk de locatie"
-          imageSource="/assets/img/banner/test_foto_1.jpg"
-          imageAlt="Whatever picture"
-        />
+            href="/locatie"
+            linkText="Bekijk de locatie"
+          />
+          <SectionMap
+            key="locationMap"
+          />
+        </TwoColumnSection>
       </div>
     )
   }

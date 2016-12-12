@@ -18,7 +18,7 @@ export default (config = {}) => {
           variables: {
             containerWidth: "1140px",
             palleteColor1: "#F4F7F7", //emerald https://flatuicolors.com/ //http://www.colorhunt.co/hot
-            palleteColor2: "#79A8A9",
+            palleteColor2: "#f1c40f",
             palleteColor3: "#4D727E",
             palleteColor4: "#1F4E5F",
             textColor: "#537780"

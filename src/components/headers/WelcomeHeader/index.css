@@ -49,6 +49,8 @@ h1 {
 
 .btnGhost:link,
 .btnGhost:visited {
+  background-color: var(--palleteColor1);
+  border: 1px solid var(--palleteColor1);
   color: var(--palleteColor4);
 }
 

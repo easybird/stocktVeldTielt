@@ -7,9 +7,9 @@ const WelcomeHeader = () => (
   <header>
     <div className={styles.banner}>
       <Banner autoplayInteval={3000}
-              links={['/assets/img/banner/test_foto_1.jpg',
-                '/assets/img/banner/test_foto_2.jpg',
-                '/assets/img/banner/test_foto_3.jpg'
+              links={['/assets/img/banner/kloostertuin.jpg',
+                '/assets/img/banner/binnenplein.jpg',
+                '/assets/img/banner/tuin-achterkant.jpg'
               ]}/>
       <div className={styles.heroTextBox}>
         <h1></h1>
