@@ -8,8 +8,8 @@ const TwoColumnSection = ({ href, children }) => {
       <span className={styles.emptySpan}></span>
     </Link>;
 
-  const renderedChildren = children.map((child) =>
-    <div className={`${styles.col2md} ${styles.center}`}>
+  const renderedChildren = children.map((child, key) =>
+    <div key={key} className={`${styles.col2md} ${styles.center}`}>
       {child}
     </div>
   );
