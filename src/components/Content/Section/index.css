@@ -47,13 +47,12 @@ h2 {
   transition: all 0.35s;
   font-size: 90%;
   border: 1px solid;
+  background-color: var(--palleteColor2);
 }
 
 .sectionLink:hover,
 .sectionLink:active {
   font-size: 95%;
-  color: var(--palleteColor3);
-  border: 1px solid var(--palleteColor3);
 }
 
 .columns {

@@ -1,6 +1,15 @@
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3vh auto;
   width: 25%;
   height: auto;
   position: relative;
+  flex-direction: column;
+}
+
+.icon {
+  font-size: 250%;
+  color: var(--palleteColor2);
 }

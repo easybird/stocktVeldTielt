@@ -9,10 +9,14 @@
 .navBarWrapper {
   background-color: var(--palleteColor2);
   color: var(--palleteColor4);
+}
+
+.navBarWrapper .top {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99;
+  opacity: 0.8;
 }
 
 .navBar {
