@@ -5,7 +5,7 @@ import facebookSvg from '../../icons/iconmonstr-facebook-5.svg';
 import styles from './index.css';
 
 const NavBar = (props, { metadata: { pkg } }) => (
-  <div className={styles.navBarWrapper}>
+  <div className={styles.navBarWrapper} style={{opacity: 0.8}}>
     <div className={styles.navBar}>
       <i className={`${styles.icon} material-icons`}>view_headline</i>
       <span className={styles.menuIcon}></span>
@@ -67,16 +67,11 @@ const NavBar = (props, { metadata: { pkg } }) => (
         </div>
       </li>
     </ul>
-
-
     <div className={styles.navbar}>
       <nav className={ styles.nav }>
         <div className={ styles.navPart1 }>
-
-
         </div>
       </nav>
-
     </div>
   </div>
 );
