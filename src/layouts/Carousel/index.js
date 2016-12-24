@@ -6,9 +6,13 @@ class Carousel extends React.Component {
   constructor(props) {
     super(props);
 
+    const max = props.children.length;
+    const min = 0;
+
     this.state = {
-      quoteIndex: Math.round(Math.random(0, props.children.length - 1))
+      quoteIndex: this.props.random ? Math.floor(Math.random() * (max - min)) + min : 0
     };
+
     this.setTimer = this.setTimer.bind(this);
   }
 
@@ -30,7 +34,7 @@ class Carousel extends React.Component {
         quoteIndex = this.state.quoteIndex + 1;
       }
       this.setState({ quoteIndex });
-    }, 5000);
+    }, this.props.interval);
   }
 
   render() {
@@ -57,6 +61,8 @@ class Carousel extends React.Component {
 }
 
 Carousel.propTypes = {
-  children: React.PropTypes.array.isRequired
+  children: React.PropTypes.array.isRequired,
+  interval: React.PropTypes.number.isRequired,
+  random: React.PropTypes.bool
 };
 export default Carousel;

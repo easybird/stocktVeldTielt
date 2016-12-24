@@ -84,7 +84,10 @@ class WelcomeSections extends React.Component {
           <SectionImage imageSource="/assets/img/aanbod/intro/schets_zijaanzicht.jpg" imageAlt="Schets klooster"/>
         </TwoColumnSection>
 
-        <Carousel>
+        <Carousel
+          interval={10000}
+          random={true}
+        >
           {QuoteSections}
         </Carousel>
 
