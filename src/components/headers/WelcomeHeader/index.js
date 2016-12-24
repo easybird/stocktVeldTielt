@@ -3,7 +3,7 @@ import Banner from '../Banner';
 import Logo from '../Logo';
 import styles from './index.css';
 
-const WelcomeHeader = () => (
+const WelcomeHeader = ({ scrollTo }) => (
   <header>
     <div className={styles.banner}>
       <Banner autoplayInteval={3000}
@@ -18,9 +18,13 @@ const WelcomeHeader = () => (
       </div>
     </div>
     <div className={styles.logo}>
-      <Logo/>
+      <Logo scrollTo={scrollTo}/>
     </div>
   </header>
 );
+
+WelcomeHeader.propTypes = {
+  scrollTo: React.PropTypes.string
+};
 
 export default WelcomeHeader

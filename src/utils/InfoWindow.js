@@ -71,7 +71,7 @@ InfoWindow.propTypes = {
   google: React.PropTypes.object,
   mapCenter: React.PropTypes.object,
   children: React.PropTypes.object,
-  visible: React.PropTypes.boolean,
+  visible: React.PropTypes.bool,
   marker: React.PropTypes.object,
   onOpen: React.PropTypes.func,
   onClose: React.PropTypes.func

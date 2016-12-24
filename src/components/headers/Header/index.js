@@ -5,7 +5,7 @@ import styles from './index.css';
 
 const Header = (props) => (
   <div className={ styles.header }>
-    <Logo/>
+    <Logo scrollTo={ props.scrollTo }/>
     <NavBar {...props}/>
   </div>
 )

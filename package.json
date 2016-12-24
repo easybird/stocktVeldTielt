@@ -136,5 +136,8 @@
     "stylelint-config-standard": "^13.0.0",
     "webpack": "^1.11.0",
     "whatwg-fetch": "^0.11.0"
+  },
+  "dependencies": {
+    "react-scroll": "^1.4.4"
   }
 }
