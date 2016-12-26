@@ -17,6 +17,17 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  padding-bottom: 5%;
+  font-size: 150%;
+  font-weight: 300;
+  color: inherit;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 110%;
+  text-align: center;
+}
+
 .full {
   width: 50%;
   margin-left: 25%;
