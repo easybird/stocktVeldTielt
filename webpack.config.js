@@ -23,8 +23,6 @@ export default (config = {}) => {
         },
       },
     }),
-    require("postcss-media-minmax")(),
-    require("postcss-custom-media")(),
     require("postcss-reporter")(),
     ...!config.production ? [
       require("postcss-browser-reporter")(),
