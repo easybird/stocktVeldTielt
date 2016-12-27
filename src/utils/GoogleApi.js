@@ -10,7 +10,10 @@ export const GoogleApi = function(opts) {
 
   const googleVersion = '3.25';
   let script = null;
-  let google = window.google = null;
+  let google = null;
+  if (typeof window !== 'undefined') {
+    google = window.google = null;
+  }
   let loading = false;
   let channel = null;
   let language = null;

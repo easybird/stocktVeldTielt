@@ -8,6 +8,10 @@ const Header = (props) => (
     <Logo scrollTo={ props.scrollTo }/>
     <NavBar {...props}/>
   </div>
-)
+);
+
+Header.propTypes = {
+  scrollTo: React.PropTypes.string
+}
 
 export default Header

@@ -22,11 +22,11 @@ export const ScriptCache = (function(global) {
 
     Cache._scriptTag = (key, src) => {
       if (!scriptMap.has(key)) {
-        let tag = document.createElement('script');
+        let tag = typeof document !== 'undefined' ? document.createElement('script') : {};
         let promise = new Promise((resolve, reject) => {
           let resolved = false,
             errored = false,
-            body = document.getElementsByTagName('body')[0];
+            body = typeof document !== 'undefined' ? document.getElementsByTagName('body')[0] : {};
 
           tag.type = 'text/javascript';
           tag.async = false; // Load in order
@@ -99,6 +99,6 @@ export const ScriptCache = (function(global) {
 
     return Cache;
   }
-})(window)
+})(typeof window !== 'undefined' ? window : undefined);
 
 export default ScriptCache;
