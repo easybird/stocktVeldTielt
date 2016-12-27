@@ -41,11 +41,16 @@ header {
 .btnGhost:visited {
   background-color: var(--palleteColor1);
   border: 1px solid var(--palleteColor1);
-  color: var(--palleteColor4);
 }
 
 .btn:hover,
 .btn:active {
   background-color: var(--palleteColor1);
   border: 1px solid var(--palleteColor1);
+}
+
+.btnGhost:hover,
+.btnGhost:active {
+  background-color: var(--palleteColor2);
+  border: 1px solid var(--palleteColor2);
 }

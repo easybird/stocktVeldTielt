@@ -91,7 +91,7 @@ class WelcomeSections extends React.Component {
         >
           {QuoteSections}
         </Carousel>
-<hr/>
+        <hr/>
         <TwoColumnSection
           href="/locatie"
         >

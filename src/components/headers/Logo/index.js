@@ -7,7 +7,7 @@ const Logo = ({ scrollTo }) => (
     to={scrollTo}
     spy={true}
     smooth={true}
-    offset={50}
+    offset={-10}
     duration={750}
     className={styles.logo}
     style={{ cursor: "pointer", width: "100%" }}

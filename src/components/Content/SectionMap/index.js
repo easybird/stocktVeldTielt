@@ -52,7 +52,7 @@ class SectionMap extends React.Component {
     }
 
     return (
-      <div style={{ zIndex: 100, position: "relative" }}>
+      <div style={{ zIndex: 101, position: "relative" }}>
         <Map
           google={this.props.google}
           onClick={this.onMapClick}
