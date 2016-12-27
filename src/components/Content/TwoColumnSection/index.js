@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
-import styles from '../Section/index.css';
+import sectionStyles from '../Section/index.css';
+import styles from './index.css';
 
 const TwoColumnSection = ({ href, children, sectionStyle = {}, childStyle = {} }) => {
   const linkOverlay = href ?
     <Link to={href}>
-      <span className={styles.emptySpan}></span>
+      <span className={sectionStyles.emptySpan}></span>
     </Link> : undefined;
 
   const renderedChildren = children.map((child, key) =>

@@ -1,7 +1,8 @@
-.banner {
-  height: auto;
-  position: relative;
-}
+@custom-media --tablet-portrait (480px < width <= 786px);
+@custom-media --tablet-landscape (786px < width <= 1024px);
+@custom-media --tablet-and-up (width > 480px);
+@custom-media --tablet-landscape-and-up (width > 786px);
+@custom-media --desktop-and-up (width > 1024px);
 
 .flexslider {
   margin: 0;
@@ -20,10 +21,9 @@
 }
 
 .slide {
-  height: 80vh;
+  height: 70vh;
   background: no-repeat center;
   background-size: cover;
-  float: left;
 }
 
 .visible {

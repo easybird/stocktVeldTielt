@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styles from './index.css';
 
 class Map extends React.Component {
 
@@ -63,7 +64,10 @@ class Map extends React.Component {
 
   render() {
     return (
-      <div ref='map' style={{ minHeight: '50vh', minWidth: '40vw' }}>
+      <div
+        ref='map'
+        className={styles.map}
+      >
         Google Maps laden...
         {this.renderChildren()}
       </div>

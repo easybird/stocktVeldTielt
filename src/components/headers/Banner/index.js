@@ -57,12 +57,10 @@ export default class Banner extends Component {
     );
 
     return (
-      <div className={styles.banner}>
-        <div className={styles.flexslider}>
-          <ul className={styles.slides}>
-            {li}
-          </ul>
-        </div>
+      <div className={styles.flexslider}>
+        <ul className={styles.slides}>
+          {li}
+        </ul>
       </div>
     );
   }

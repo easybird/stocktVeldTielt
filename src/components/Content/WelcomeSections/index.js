@@ -74,6 +74,7 @@ class WelcomeSections extends React.Component {
             linkText="Ontdek het aanbod"
           />
         </OneColumnSection>
+        <hr/>
         <TwoColumnSection href="/aanbod">
           <SectionText
             title="Uniek klooster met 3 renovatie loften, 20 nieuwbouwwoningen en 14 appartementen"
@@ -83,14 +84,14 @@ class WelcomeSections extends React.Component {
           />
           <SectionImage imageSource="/assets/img/aanbod/intro/schets_zijaanzicht.jpg" imageAlt="Schets klooster"/>
         </TwoColumnSection>
-
+        <hr/>
         <Carousel
           interval={10000}
           random={true}
         >
           {QuoteSections}
         </Carousel>
-
+<hr/>
         <TwoColumnSection
           href="/locatie"
         >

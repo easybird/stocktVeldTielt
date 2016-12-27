@@ -1,0 +1,50 @@
+@custom-media --tablet-portrait (480px < width <= 786px);
+@custom-media --tablet-landscape (786px < width <= 1024px);
+@custom-media --tablet-and-up (width > 480px);
+@custom-media --tablet-landscape-and-up (width > 786px);
+@custom-media --desktop-and-up (width > 1024px);
+
+.columns {
+  display: block;
+}
+
+.col2md {
+  width: 100%;
+  padding: 5%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (--tablet-and-up) {
+  .full {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media (--tablet-landscape-and-up) {
+  .col2md {
+    width: 50%;
+    padding: 0 5%;
+  }
+
+  .columns {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+}
+
+@media (--desktop-and-up) {
+}
+
+@media (--tablet-portrait) {
+}
+
+@media (--tablet-landscape) {
+}

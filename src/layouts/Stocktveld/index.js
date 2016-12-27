@@ -6,7 +6,7 @@ import WelcomeSections from "../../components/Content/WelcomeSections"
 
 const Stocktveld = (props) => {
   return (
-    <div className={ styles.flex }>
+    <div className={ styles.stocktveld }>
       <WelcomeHeader scrollTo="welcomeSection"/>
       <NavBar { ...props }/>
 

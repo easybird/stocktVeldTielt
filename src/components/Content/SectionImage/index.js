@@ -1,6 +1,6 @@
 import React from 'react';
 import { IMAGE_TYPES } from '../IMAGE_TYPES';
-import styles from '../Section/index.css';
+import styles from './index.css';
 
 const SectionImage = ({ imageType, imageSource, imageAlt }) => (
   <img className={ imageType === IMAGE_TYPES.ROUND ? styles.imgCircle : styles.imgSquare }
