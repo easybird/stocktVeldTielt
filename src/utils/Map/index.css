@@ -1,0 +1,16 @@
+@custom-media --tablet-portrait (480px < width <= 786px);
+@custom-media --tablet-landscape (786px < width <= 1024px);
+@custom-media --tablet-and-up (width > 480px);
+@custom-media --tablet-landscape-and-up (width > 786px);
+@custom-media --desktop-and-up (width > 1024px);
+
+.map {
+  min-height: 50vh;
+  min-width: 90vw;
+}
+
+@media (--tablet-landscape-and-up) {
+  .map {
+    min-width: 40vw;
+  }
+}

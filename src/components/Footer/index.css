@@ -1,13 +1,36 @@
 .footer {
-  color: var(--mainColorContrasted);
-  background: var(--secondaryColor);
+  color: var(--palleteColor4);
+  background: var(--palleteColor2);
   text-align: center;
+}
+
+.footer a {
+  color: var(--palleteColor4);
+}
+
+input {
+  border: 1px solid var(--palleteColor4);
+  font-size: 15px;
+  min-height: 32px;
+  width: 58%;
+  min-width: 130px;
+  padding: 0 0.4em;
+  margin: 0 4% 10px 0;
+  border-radius: 3px;
+}
+
+.button {
+  background: var(--palleteColor4);
+  color: var(--palleteColor1);
+}
+
+.button:hover {
+  background: var(--palleteColor1);
+  color: var(--palleteColor4);
 }
 
 .phenomicReference {
   font-size: 0.75rem;
-  opacity: 0.4;
-  color: inherit;
   text-decoration: none;
 }
 

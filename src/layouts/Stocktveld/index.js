@@ -1,16 +1,16 @@
 import React from 'react';
-import Page from '../Page';
 import NavBar from '../../components/headers/NavBar';
 import styles from './index.css';
 import WelcomeHeader from "../../components/headers/WelcomeHeader"
+import WelcomeSections from "../../components/Content/WelcomeSections"
 
 const Stocktveld = (props) => {
   return (
-    <div className={ styles.flex }>
-      <WelcomeHeader/>
+    <div className={ styles.stocktveld }>
+      <WelcomeHeader scrollTo="welcomeSection"/>
       <NavBar { ...props }/>
-      <Page { ...props }>
-      </Page>
+
+      <WelcomeSections scrollElementName="welcomeSection"/>
     </div>
   )
 };

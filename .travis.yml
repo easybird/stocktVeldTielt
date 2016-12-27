@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '5'
+  - 'node'
   - '6'
 branches:
   except:
@@ -11,7 +11,7 @@ deploy:
   script: ./scripts/deploy.sh
   'on':
     branch: develop
-    node: '5'
+    node: '6'
 env:
   global:
     - secure: >-

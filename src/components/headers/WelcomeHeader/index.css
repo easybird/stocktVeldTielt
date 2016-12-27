@@ -2,31 +2,20 @@ header {
   height: 100vh;
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 240%;
-  font-weight: 300;
-  color: var(--mainColor);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 4px;
-}
-
 .banner {
-  height: 80vh;
+  height: 70vh;
 }
 
 .logo {
-  height: 20vh;
+  height: 30vh;
+  display: flex;
 }
 
 .heroTextBox {
   z-index: 10;
   position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
+  top: 60vh;
+  left: 35vw;
   transform: translate(-50%, -50%);
 }
 
@@ -34,36 +23,34 @@ h1 {
 .btn:visited {
   display: inline-block;
   padding: 10px 30px;
+  margin: 10px auto;
   text-decoration: none;
   font-weight: 300;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
+  background-color: var(--palleteColor2);
+  border: 1px solid var(--palleteColor2);
+  color: var(--palleteColor4);
 }
 
 .btnFull:link,
 .btnFull:visited {
-  background-color: var(--mainColor);
-  border: 1px solid var(--mainColor);
-  color: var(--backgroundColor);
   margin-right: 15px;
 }
 
 .btnGhost:link,
 .btnGhost:visited {
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
+  background-color: var(--palleteColor1);
+  border: 1px solid var(--palleteColor1);
 }
 
 .btn:hover,
 .btn:active {
-  background-color: var(--mainColorDarker);
-}
-
-.btnFull:hover,
-.btnFull:active {
-  border: 1px solid var(--mainColorDarker);
+  background-color: var(--palleteColor1);
+  border: 1px solid var(--palleteColor1);
 }
 
 .btnGhost:hover,
 .btnGhost:active {
-  color: var(--backgroundColor);
+  background-color: var(--palleteColor2);
+  border: 1px solid var(--palleteColor2);
 }

@@ -1,0 +1,24 @@
+@custom-media --tablet-portrait (480px < width <= 786px);
+@custom-media --tablet-landscape (786px < width <= 1024px);
+@custom-media --tablet-and-up (width > 480px);
+@custom-media --tablet-landscape-and-up (width > 786px);
+@custom-media --desktop-and-up (width > 1024px);
+
+img {
+  height: auto;
+}
+
+.imgCircle {
+  border-radius: 50%;
+  width: 70%;
+}
+
+@media (--desktop-and-up) {
+  .imgCircle {
+    width: 50%;
+  }
+}
+
+.imgSquare {
+  width: 92.5%;
+}
