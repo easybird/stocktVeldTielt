@@ -1,17 +1,14 @@
 import React from 'react';
 import Logo from '../Logo';
-import NavBar from '../NavBar';
 import styles from './index.css';
 
-const Header = (props) => (
-  <div className={ styles.header }>
-    <Logo scrollTo={ props.scrollTo }/>
-    <NavBar {...props}/>
-  </div>
-);
-
-Header.propTypes = {
-  scrollTo: React.PropTypes.string
-}
+const Header = () =>
+  (
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <Logo/>
+      </div>
+    </header>
+  );
 
 export default Header

@@ -68,7 +68,6 @@ class Map extends React.Component {
         ref='map'
         className={styles.map}
       >
-        Google Maps laden...
         {this.renderChildren()}
       </div>
     )
