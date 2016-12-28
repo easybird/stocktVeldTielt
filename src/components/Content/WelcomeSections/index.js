@@ -24,7 +24,7 @@ class WelcomeSections extends React.Component {
         imageAlt: "Whatever picture"
       },
       {
-        title: "“Ik ben zeer benieuwd naar de dynamiek deze plek kan voortbrengen”",
+        title: "“Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen”",
         href: "/verhalen#j-en-b",
         text: "Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen.",
         linkText: "Lees het verhaal",

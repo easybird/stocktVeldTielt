@@ -11,7 +11,8 @@ class Map extends React.Component {
 
     const { lat, lng } = this.props.initialCenter;
     this.state = {
-      currentLocation: { lat, lng }
+      currentLocation: { lat, lng },
+      map: undefined
     }
   }
 
@@ -28,22 +29,22 @@ class Map extends React.Component {
   }
 
   renderChildren() {
-    const { children } = this.props;
+    const { children, google } = this.props;
+    const { map, currentLocation } = this.state;
 
     if (!children) return;
 
     return React.Children.map(children, c => {
       return React.cloneElement(c, {
-        map: this.map,
-        google: this.props.google,
-        mapCenter: this.state.currentLocation
+        map,
+        google,
+        mapCenter: currentLocation
       });
     });
   }
 
   loadMap() {
     if (this.props && this.props.google) {
-      // google is available
       const { google, zoom } = this.props;
       const maps = google.maps;
 
@@ -56,9 +57,8 @@ class Map extends React.Component {
         center,
         zoom
       });
-      this.map = new maps.Map(node, mapConfig);
+      this.setState({ map: new maps.Map(node, mapConfig) });
     }
-    // ...
   }
 
 
@@ -83,7 +83,6 @@ Map.propTypes = {
 
 Map.defaultProps = {
   zoom: 10,
-  // San Francisco, by default
   initialCenter: {
     lat: 50.9895982,
     lng: 3.3289063

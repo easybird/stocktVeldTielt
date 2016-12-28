@@ -29,6 +29,10 @@ input {
   color: var(--palleteColor4);
 }
 
+.content {
+  margin: 0 auto;
+}
+
 .phenomicReference {
   font-size: 0.75rem;
   text-decoration: none;
