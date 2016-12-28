@@ -1,7 +1,8 @@
-:root {
-  --nav-item-padding: 0.5rem;
+.header {
+  height: 30vh;
 }
 
-.header {
-  background: var(--palleteColor4);
+.logo {
+  height: 30vh;
+  display: flex;
 }

@@ -140,6 +140,7 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
+    "react-async-script": "^0.6.0",
     "react-scroll": "^1.4.4"
   }
 }

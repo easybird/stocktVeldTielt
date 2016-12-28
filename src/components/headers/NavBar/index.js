@@ -88,7 +88,7 @@ class NavBar extends React.Component {
             <li>
               <Link
                 className={ styles.link }
-                to="/"
+                to="/locatie"
               >
                 { "Locatie" }
               </Link>
@@ -96,7 +96,7 @@ class NavBar extends React.Component {
             <li>
               <Link
                 className={ styles.link }
-                to="/"
+                to="/aanbod"
               >
                 { "Aanbod" }
               </Link>
@@ -104,7 +104,7 @@ class NavBar extends React.Component {
             <li>
               <Link
                 className={ styles.link }
-                to="/"
+                to="/verhalen"
               >
                 { "Verhalen" }
               </Link>
@@ -112,7 +112,7 @@ class NavBar extends React.Component {
             <li>
               <Link
                 className={ styles.link }
-                to="/"
+                to="/contact"
               >
                 { "Contact" }
               </Link>

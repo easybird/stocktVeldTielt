@@ -1,22 +1,15 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import invariant from 'invariant';
-import { BodyContainer, joinUri } from 'phenomic';
-import Loading from '../../components/Loading';
-import styles from './index.css';
+import { joinUri } from 'phenomic';
 
-const Page = ({
-  isLoading,
+const Metadata = ({
   __filename,
   __url,
-  head,
-  body,
-  header,
-  footer,
-  children,
+  head
 },
   {
-    metadata: { pkg },
+    metadata: { pkg }
   }) => {
   invariant(
     typeof head.title === "string",
@@ -40,7 +33,7 @@ const Page = ({
     { name: "description", content: head.description },
     { name: "theme-color", content: "#ffffff" }
   ];
-  
+
   const favicons = [
     // created by realfavicongenerator.net
     { "rel": "apple-touch-icon", "sizes": "180x180", "href": "/assets/img/favicon/apple-touch-icon.png" },
@@ -51,41 +44,22 @@ const Page = ({
   ];
 
   return (
-    <div className={ styles.page }>
       <Helmet
         link={ favicons }
         title={ metaTitle }
         meta={ meta }
       />
-      {
-        head.title &&
-        <h1 className={ styles.heading }>{ head.title }</h1>
-      }
-      { header }
-      {
-        isLoading
-          ? <Loading />
-          : <BodyContainer>{ body }</BodyContainer>
-      }
-      { children }
-      { footer }
-    </div>
   )
-}
+};
 
-Page.propTypes = {
-  children: PropTypes.node,
-  isLoading: PropTypes.bool,
+Metadata.propTypes = {
   __filename: PropTypes.string,
   __url: PropTypes.string,
   head: PropTypes.object.isRequired,
-  body: PropTypes.string,
-  header: PropTypes.element,
-  footer: PropTypes.element,
-}
+};
 
-Page.contextTypes = {
+Metadata.contextTypes = {
   metadata: PropTypes.object.isRequired,
-}
+};
 
-export default Page
+export default Metadata
