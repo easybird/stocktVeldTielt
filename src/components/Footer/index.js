@@ -6,14 +6,14 @@ const Footer = () => {
   return (
     <footer className={ styles.footer }>
       <TwoColumnSection
-        sectionStyle={{ padding: "20px 0" }}
+        sectionStyle={{ padding: "20px 0", margin: "0" }}
         childStyle={{ justifyContent: "flex-start" }}
       >
-        <div>
+        <div className={styles.content}>
           <h4>Stocktveld</h4>
           <p> Blekerijstraat 22 <br/> 8700 Tielt </p>
         </div>
-        <div>
+        <div className={styles.content}>
           <h4>Schrijf je in voor onze nieuwsbrief</h4>
           <form action="//stocktveld.us14.list-manage.com/subscribe/post?u=041f919b289ed959879e83596&amp;id=11624355c8"
                 method="post"

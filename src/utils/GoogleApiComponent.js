@@ -1,12 +1,11 @@
 /* eslint-disable no-undef, react/prop-types, no-unused-vars, react/no-find-dom-node */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import cache from './ScriptCache';
+import GoogleApi from './GoogleApi';
 
-import React, { PropTypes as T } from 'react'
-import ReactDOM from 'react-dom'
+const defaultMapConfig = {};
 
-import cache from './ScriptCache'
-import GoogleApi from './GoogleApi'
-
-const defaultMapConfig = {}
 export const wrapper = (options) => (WrappedComponent) => {
   const apiKey = options.apiKey;
   const libraries = options.libraries || ['places'];
@@ -24,20 +23,18 @@ export const wrapper = (options) => (WrappedComponent) => {
 
     componentDidMount() {
       const refs = this.refs;
+      const { zoom, lat, lng } = this.props;
+
       this.scriptCache.google.onLoad((err, tag) => {
         const maps = window.google.maps;
-        const props = Object.assign({}, this.props, {
-          loaded: this.state.loaded
-        });
-
         const mapRef = refs.map;
 
         const node = ReactDOM.findDOMNode(mapRef);
-        let center = new maps.LatLng(this.props.lat, this.props.lng)
+        let center = new maps.LatLng(lat, lng);
 
         let mapConfig = Object.assign({}, defaultMapConfig, {
-          center, zoom: this.props.zoom
-        })
+          center, zoom
+        });
 
         this.map = new maps.Map(node, mapConfig);
 
@@ -64,7 +61,8 @@ export const wrapper = (options) => (WrappedComponent) => {
         map: this.state.map,
         google: this.state.google,
         mapComponent: this.refs.map
-      })
+      });
+
       return (
         <div>
           <WrappedComponent {...props} />
@@ -75,6 +73,6 @@ export const wrapper = (options) => (WrappedComponent) => {
   }
 
   return Wrapper;
-}
+};
 
 export default wrapper;

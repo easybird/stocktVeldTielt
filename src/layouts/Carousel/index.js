@@ -38,21 +38,28 @@ class Carousel extends React.Component {
   }
 
   render() {
-    const renderedChildren = this.props.children.map((child, index) => {
-      return <div
+    const renderedChildren = this.props.children.map(
+      (child, index) => <div
         key={index}
         className={`${this.state.quoteIndex == index ? styles.visible : styles.invisible}`}
-        style={ index !== this.state.quoteIndex ? { position: 'absolute', top: 0 } : {}}
+        style={{
+          float: "left",
+          marginRight: "-100%",
+          width: '100%',
+          display: 'block',
+          zIndex: `${ this.state.quoteIndex == index ? 2 : 1}`
+        }}
       >
         {child}
       </div>
-    });
+    );
 
     return (
       <div
         style={{
           position: 'relative',
-          height: '100%'
+          height: '100%',
+          overflow: 'hidden'
         }}>
         {renderedChildren}
       </div>
