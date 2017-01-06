@@ -20,13 +20,17 @@ class NavBar extends React.Component {
 
   componentDidMount() {
     this.initialiseScrollEvent();
-    window.addEventListener('scroll', this.handleScroll, false);
-    window.addEventListener('touchmove', this.handleScroll, false);
+    window.addEventListener('scroll', this.handleScroll, true);
+    window.addEventListener('touchmove', this.handleScroll, true);
+    window.addEventListener("gesturestart", this.handleScroll, true);
+    window.addEventListener("touchstart", this.handleScroll, true);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
     window.removeEventListener('touchmove', this.handleScroll);
+    window.removeEventListener('gesturestart', this.handleScroll);
+    window.removeEventListener('touchstart', this.handleScroll);
   }
 
   _initialiseScrollEvent() {
@@ -104,9 +108,9 @@ class NavBar extends React.Component {
             <li>
               <Link
                 className={ styles.link }
-                to="/verhalen"
+                to="/wie-zijn-we"
               >
-                { "Verhalen" }
+                { "Wie zijn we" }
               </Link>
             </li>
             <li>

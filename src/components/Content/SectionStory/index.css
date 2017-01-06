@@ -1,0 +1,15 @@
+.title {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+.info {
+  text-align: right;
+  font-style: italic;
+}
+
+.paragraph {
+  margin: 2% 0;
+  text-align: justify;
+}

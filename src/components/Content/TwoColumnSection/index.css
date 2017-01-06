@@ -40,6 +40,10 @@
   }
 }
 
+hr {
+  margin-top: 50px;
+}
+
 @media (--desktop-and-up) {
 }
 

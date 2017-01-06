@@ -17,7 +17,7 @@ class WelcomeSections extends React.Component {
     this.quoteSections = [
       {
         title: "”Door in het project te stappen, krijg ik de mogelijkheid om soepel en jong van geest te blijven”",
-        href: "/verhalen#trees",
+        href: "/wie-zijn-we#trees",
         text: "Ik woon in het centrum van Tielt, ik woon hier graag maar de formule van cohousen biedt me meer. Het is voor mij belangrijk om in verbinding te staan met mensen, om betrokkenheid, openheid en inspiratie te ervaren. Zeker nu mijn kinderen de deur uit zijn. Ik geniet van het meeleven en samenleven met anderen, jong en oud, met respect voor ieders privéleven. Dat ik de mensen om me heen ken, biedt me een gevoel van geborgenheid.",
         linkText: "Lees het verhaal",
         imageSource: "/assets/img/verhalen/gezinnen/t-portret.jpg",
@@ -25,7 +25,7 @@ class WelcomeSections extends React.Component {
       },
       {
         title: "“Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen”",
-        href: "/verhalen#j-en-b",
+        href: "/wie-zijn-we#j-en-b",
         text: "Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen.",
         linkText: "Lees het verhaal",
         imageSource: "/assets/img/verhalen/gezinnen/j-en-b-portret.jpg",
@@ -33,8 +33,8 @@ class WelcomeSections extends React.Component {
       },
       {
         title: "“Wonen in het groen met de stad aan je voordeur“",
-        href: "/verhalen#w-en-e",
-        text: "We waren op zoek naar een nieuwe thuis in Tielt. Liefst met wat groen, vlak bij het centrum zodat onze kinderen makkelijk naar school kunnen en we ze niet om de haverklap met de auto ergens heen moeten rijden voor hun hobby’s. Verder hadden we ook nog graag een kwaliteitsvolle, gezonde en energiezuinige woning. Het viel al snel op dat onze verwachtingen ook een  nancieel kostenplaatje met zich meebracht. Het is dus interessanter kosten te kunnen delen.",
+        href: "/wie-zijn-we#w-en-e",
+        text: "We waren op zoek naar een nieuwe thuis in Tielt. Liefst met wat groen, vlak bij het centrum zodat onze kinderen makkelijk naar school kunnen en we ze niet om de haverklap met de auto ergens heen moeten rijden voor hun hobby’s. Verder hadden we ook nog graag een kwaliteitsvolle, gezonde en energiezuinige woning. Het viel al snel op dat onze verwachtingen ook een financieel kostenplaatje met zich meebracht. Het is dus interessanter kosten te kunnen delen.",
         linkText: "Lees het verhaal",
         imageSource: "/assets/img/verhalen/gezinnen/w-en-e-portret.jpg",
         imageAlt: "Whatever picture"

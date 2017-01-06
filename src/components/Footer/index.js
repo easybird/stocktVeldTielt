@@ -53,6 +53,7 @@ const Footer = () => {
       <p>
         <a
           href={ "http://easybird.be" }
+          target="_blank"
           className={ styles.phenomicReference }
         >
           { "Website gemaakt door " }

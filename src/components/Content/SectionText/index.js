@@ -6,17 +6,18 @@ const SectionText = ({ title, text, href, linkText }) => (
   <div>
     <h2>{title}</h2>
     <div className={styles.longCopy}>{text}</div>
+    { href &&
     <Link className={styles.sectionLink} to={href}>
       {linkText}
-    </Link>
+    </Link>}
   </div>
 );
 
 SectionText.propTypes = {
   title: React.PropTypes.string.isRequired,
   text: React.PropTypes.string.isRequired,
-  href: React.PropTypes.string.isRequired,
-  linkText: React.PropTypes.string.isRequired
+  href: React.PropTypes.string,
+  linkText: React.PropTypes.string
 };
 
 export default SectionText;

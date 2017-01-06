@@ -14,7 +14,7 @@ const WelcomeHeader = ({ scrollTo }) =>
                 ]}/>
         <div className={styles.heroTextBox}>
           <a className={`${styles.btn} ${styles.btnFull}`} href="/aanbod">Bekijk ons aanbod</a>
-          <a className={`${styles.btn} ${styles.btnGhost}`} href="/verhalen">Benieuwd naar wie we zijn?</a>
+          <a className={`${styles.btn} ${styles.btnGhost}`} href="/wie-zijn-we">Benieuwd naar wie we zijn?</a>
         </div>
       </div>
       <div className={styles.logo}>
