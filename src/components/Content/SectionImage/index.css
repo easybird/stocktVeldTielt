@@ -8,17 +8,27 @@ img {
   height: auto;
 }
 
+.sectionImage {
+  height: auto;
+  width: 92.5%;
+}
+
 .imgCircle {
+  width: 76%;
   border-radius: 50%;
-  width: 70%;
+}
+
+.imgCaption {
+  padding-top: 5%;
 }
 
 @media (--desktop-and-up) {
-  .imgCircle {
+  .sectionImage {
     width: 50%;
   }
-}
 
-.imgSquare {
-  width: 92.5%;
+  .imgCircle {
+    width: auto;
+    border-radius: 50%;
+  }
 }

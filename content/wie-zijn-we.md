@@ -1,7 +1,7 @@
 ---
 title: Wie zijn we - Stocktveld
 pageTitle: Wie zijn we?
-layout: StocktveldPage
+layout: StocktveldWieZijnWij
 hero:
   src: /assets/img/wie-zijn-we/groepsfoto.jpg
   alt: groepsfoto

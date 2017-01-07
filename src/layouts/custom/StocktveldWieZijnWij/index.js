@@ -1,13 +1,13 @@
 import React, { PropTypes, Component } from 'react';
-import NavBar from '../../components/headers/NavBar';
+import NavBar from '../../../components/headers/NavBar';
 import styles from './index.css';
-import ThemeHeader from '../../components/headers/ThemeHeader';
-import Metadata from '../../components/head/Metadata';
-import TwoColumnSection from '../../components/Content/TwoColumnSection';
-import SectionImage from '../../components/Content/SectionImage';
-import SectionText from '../../components/Content/SectionText';
-import SectionStory from '../../components/Content/SectionStory';
-import { IMAGE_TYPES } from '../../components/Content/IMAGE_TYPES';
+import ThemeHeader from '../../../components/headers/ThemeHeader';
+import Metadata from '../../../components/head/Metadata';
+import TwoColumnSection from '../../../components/Content/TwoColumnSection';
+import SectionImage from '../../../components/Content/SectionImage';
+import SectionText from '../../../components/Content/SectionText';
+import SectionStory from '../../../components/Content/SectionStory';
+import { IMAGE_TYPES } from '../../../components/Content/IMAGE_TYPES';
 
 class StocktveldPage extends Component {
   constructor(props) {
