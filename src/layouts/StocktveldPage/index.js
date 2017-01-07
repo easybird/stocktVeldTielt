@@ -91,7 +91,6 @@ class StocktveldPage extends Component {
 
   hashLinkScroll() {
     const { hash } = window.location;
-    console.log(`hash!:${hash}`)
     if (hash !== '') {
       setTimeout(() => {
         const id = hash.replace('#', '');
@@ -127,7 +126,7 @@ Deze vorm van samenwonen biedt de ruimte om dingen samen te organiseren, zonder 
     )
   }
 }
-;
+
 
 StocktveldPage.propTypes = {
   children: PropTypes.node,
