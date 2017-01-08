@@ -1,0 +1,111 @@
+@custom-media --tablet-portrait (480px < width <= 786px);
+@custom-media --tablet-landscape (786px < width <= 1024px);
+@custom-media --tablet-and-up (width > 480px);
+@custom-media --desktop-and-up (width > 1024px);
+
+.cornerRibbon {
+  width: 200px;
+  background: #e43;
+  font-size: 150%;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media (--tablet-and-up) {
+  .cornerRibbon {
+    font-size: 110%;
+  }
+}
+
+/* Custom styles */
+
+.sticky {
+  position: fixed;
+}
+
+.shadow {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Different positions */
+.topLeft {
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.topRight {
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.bottomLeft {
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.bottomRight {
+  top: auto;
+  right: -50px;
+  bottom: 25px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Colors */
+
+.white {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.black {
+  background: #333;
+}
+
+.grey {
+  background: #999;
+}
+
+.blue {
+  background: #39d;
+}
+
+.green {
+  background: #2c7;
+}
+
+.turquoise {
+  background: #1b9;
+}
+
+.purple {
+  background: #95b;
+}
+
+.red {
+  background: #e43;
+}
+
+.orange {
+  background: #e82;
+}
+
+.yellow {
+  background: #ec0;
+}

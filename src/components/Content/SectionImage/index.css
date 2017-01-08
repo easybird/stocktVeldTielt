@@ -14,7 +14,6 @@ img {
 }
 
 .imgCircle {
-  width: 76%;
   border-radius: 50%;
 }
 
@@ -23,10 +22,6 @@ img {
 }
 
 @media (--desktop-and-up) {
-  .sectionImage {
-    width: 50%;
-  }
-
   .imgCircle {
     width: auto;
     border-radius: 50%;

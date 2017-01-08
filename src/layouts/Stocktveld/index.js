@@ -13,9 +13,16 @@ const Stocktveld = (props) => {
         scrollTo="welcomeSection"
       />
       <NavBar { ...props }/>
-      <WelcomeSections scrollElementName="welcomeSection"/>
+      <WelcomeSections
+        percentageSold={props.head.percentageSold}
+        scrollElementName="welcomeSection"
+      />
     </div>
   )
 };
+
+Stocktveld.propTypes = {
+  head: React.PropTypes.object.isRequired
+}
 
 export default Stocktveld
