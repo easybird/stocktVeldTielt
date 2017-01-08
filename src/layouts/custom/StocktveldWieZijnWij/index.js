@@ -110,6 +110,7 @@ class StocktveldPage extends Component {
         <ThemeHeader
           height="50vh"
           hero={this.props.head.hero}
+          customStyle={{backgroundPosition: "50% 43%"}}
         />
         <NavBar { ...this.props }/>
         <div className={styles.welcomeSections}>

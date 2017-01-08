@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from '../Section/index.css';
-import { Link } from 'react-router';
+import Button from '../../Button';
 
 const SectionText = ({ title, text, href, linkText, customStyle }) => (
   <div style={customStyle}>
     <h2>{title}</h2>
     <div className={styles.longCopy}>{text}</div>
     { href &&
-    <Link className={styles.sectionLink} to={href}>
-      {linkText}
-    </Link>}
+    <Button
+      linkText={linkText}
+      href={href}
+    />
+    }
   </div>
 );
 

@@ -6,6 +6,7 @@ import Metadata from '../../components/head/Metadata';
 import TwoColumnSection from '../../components/Content/TwoColumnSection';
 import SectionImage from '../../components/Content/SectionImage';
 import SectionText from '../../components/Content/SectionText';
+import Button from '../../components/Button';
 
 class StocktveldPage extends Component {
   constructor(props) {
@@ -38,18 +39,40 @@ class StocktveldPage extends Component {
         />
         <NavBar { ...this.props }/>
         <div className={styles.welcomeSections}>
-        <h2>{this.props.head.pageTitle}</h2>
           <TwoColumnSection>
-            <SectionText
-              title={this.props.head.pageTitle}
-              text="Cohousing Tielt bestaat momenteel uit een groep van vijftien gezinnen die samen een uniek en kwaliteitsvol woonproject willen realiseren.
-Het doel is samen te leven in een aangename buurt, waar mensen elkaar nog kennen, met het nodige respect voor de eigenheid en privacy van elk individueel gezin.
-Deze vorm van samenwonen biedt de ruimte om dingen samen te organiseren, zonder dat dit een absolute verplichting is."
-            />
-            <SectionImage imageSource="/assets/img/wie-zijn-we/woordwolk.png" imageAlt="Woordwolk"/>
+            <div>
+              <SectionText
+                title="Wat hebben we te bieden?"
+                text="37 woningen en appartementen (60- 145 m2) in een voormalig slotklooster vlak bij het station, elk met zijn privétuin of terras. Een grote groene gedeelde tuin, gemeenschappelijke leefruimtes (500m2) voor wie wil: eetplaats, keuken, bureau, vergaderzaal, logeerkamer, wasruimte en atelier. De mogelijkheid om externe functies zoals een kantoor of B&B in het gebouw onder te brengen"
+              />
+              <div className={styles.buttons}>
+                <Button
+                  linkText="Partners"
+                  href=""
+                />
+                <Button
+                  linkText="Prijzen"
+                  href=""
+                />
+                <Button
+                  linkText="Plannen"
+                  href=""
+                />
+                <Button
+                  linkText="Timing"
+                  href=""
+                />
+              </div>
+            </div>
+            <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
           </TwoColumnSection>
-          <hr/>
-          { this.QuoteSections }
+          <TwoColumnSection>
+            <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
+            <SectionText
+              title=""
+              text="37 woningen en appartementen (60- 145 m2) in een voormalig slotklooster vlak bij het station, elk met zijn privétuin of terras. Een grote groene gedeelde tuin, gemeenschappelijke leefruimtes (500m2) voor wie wil: eetplaats, keuken, bureau, vergaderzaal, logeerkamer, wasruimte en atelier. De mogelijkheid om externe functies zoals een kantoor of B&B in het gebouw onder te brengen"
+            />
+          </TwoColumnSection>
         </div>
       </div>
     )
