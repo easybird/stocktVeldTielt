@@ -5,7 +5,7 @@ import styles from './index.css';
 class Pointer extends React.Component {
   constructor(props) {
     super(props);
-    this.setInterval = this.setInterval.bind(this);
+    this.setInterval = () => this._setInterval();
     this.state = {
       isVisible: true
     }
@@ -19,7 +19,7 @@ class Pointer extends React.Component {
     window.clearInterval(this.interval);
   }
 
-  setInterval() {
+  _setInterval() {
     const interval = 1000;
     window.clearInterval(this.timer);
     this.interval = window.setInterval(
@@ -39,18 +39,26 @@ class Pointer extends React.Component {
   }
 
   render() {
-    const { isActive, scrollTo } = this.props;
+    const { isActive, scrollTo, offset, children } = this.props;
     const { isVisible } = this.state;
+    const activeClassName = styles.pointer;
+    let className = {};
+
+    if (this.props.className) {
+      className = this.props.className + ' ' + activeClassName;
+    } else {
+      className = activeClassName;
+    }
 
     return (
       <Link
         to={scrollTo}
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={offset || -70}
         duration={1000}
         onSetActive={isActive}
-        className={styles.pointer}
+        className={className}
         style={{
           cursor: "pointer",
           flexGrow: 1,
@@ -59,6 +67,7 @@ class Pointer extends React.Component {
           justifyContent: 'center'
         }}
       >
+        {children}
         <div
           className={`${styles.pointerIcon} ${!isVisible ? styles.invisible : ''}`}>
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +85,10 @@ class Pointer extends React.Component {
 
 Pointer.propTypes = {
   scrollTo: React.PropTypes.string,
-  isActive: React.PropTypes.func
+  isActive: React.PropTypes.func,
+  offset: React.PropTypes.number,
+  children: React.PropTypes.object,
+  className: React.PropTypes.object
 };
 
 export default Pointer;
