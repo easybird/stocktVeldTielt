@@ -19,7 +19,7 @@ class StocktveldPage extends Component {
         href: "/wie-zijn-we#trees",
         paragraphs: [
           {
-            title: "Waarom cohousen?",
+            title: "Waarom dit project?",
             text: "Ik woon in het centrum van Tielt, ik woon hier graag maar de formule van cohousen biedt me meer. Het is voor mij belangrijk om in verbinding te staan met mensen, om betrokkenheid, openheid en inspiratie te ervaren. Zeker nu mijn kinderen de deur uit zijn. Ik geniet van het meeleven en samenleven met anderen, jong en oud, met respect voor ieders privéleven. Dat ik de mensen om me heen ken, biedt me een gevoel van geborgenheid.",
           },
           {
@@ -117,9 +117,9 @@ class StocktveldPage extends Component {
           <TwoColumnSection>
             <SectionText
               title="Wie zijn we"
-              text="Cohousing Tielt bestaat momenteel uit een groep van vijftien gezinnen die samen een uniek en kwaliteitsvol woonproject willen realiseren.
+              text="Stocktveld bestaat momenteel uit een groep van vijftien gezinnen die samen met enkele professionals partners een uniek en kwaliteitsvol woonproject aan het realiseren zijn.
 Het doel is samen te leven in een aangename buurt, waar mensen elkaar nog kennen, met het nodige respect voor de eigenheid en privacy van elk individueel gezin.
-Deze vorm van samenwonen biedt de ruimte om dingen samen te organiseren, zonder dat dit een absolute verplichting is."
+Deze vorm van samenwonen biedt de ruimte om dingen samen te organiseren, zonder dat dit een verplichting is."
             />
             <SectionImage imageSource="/assets/img/wie-zijn-we/woordwolk.png" imageAlt="Woordwolk"/>
           </TwoColumnSection>

@@ -1,7 +1,7 @@
 ---
 title: Aanbod - Stocktveld
 pageTitle: Aanbod
-layout: StocktveldPage
+layout: StocktveldAanbod
 hero:
   src: /assets/img/aanbod/foto_tuin-achterkant2.jpg
   alt: kloostertuin

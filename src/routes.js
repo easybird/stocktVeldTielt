@@ -9,6 +9,7 @@ import Homepage from "./layouts/Homepage"
 import Stocktveld from "./layouts/Stocktveld"
 import StocktveldPage from "./layouts/StocktveldPage"
 import StocktveldWieZijnWij from "./layouts/custom/StocktveldWieZijnWij"
+import StocktveldAanbod from "./layouts/custom/StocktveldAanbod"
 import Post from "./layouts/Post"
 
 const PageContainer = (props) => (
@@ -21,6 +22,7 @@ const PageContainer = (props) => (
       Stocktveld,
       StocktveldPage,
       StocktveldWieZijnWij,
+      StocktveldAanbod,
       Post,
     }}
   />

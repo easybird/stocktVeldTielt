@@ -1,5 +1,5 @@
-.sectionLink:link,
-.sectionLink:visited {
+.sectionLink,
+.sectionLink {
   position: relative;
   z-index: 99;
   display: inline-block;
@@ -11,6 +11,7 @@
   transition: all 0.35s;
   font-size: 90%;
   border: 1px solid;
+  cursor: pointer;
   background-color: var(--palleteColor2);
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import sectionStyles from '../Section/index.css';
-import { Link } from 'react-router';
+import Button from '../../Button';
 import styles from './index.css';
+
 const SectionStory = ({ title, paragraphs, href, linkText }) => {
   const longCopy = paragraphs.map((paragraph, index) =>
     <div
@@ -21,9 +22,11 @@ const SectionStory = ({ title, paragraphs, href, linkText }) => {
       <h2>{title}</h2>
       {longCopy}
       { href &&
-      <Link className={sectionStyles.sectionLink} to={href}>
-        {linkText}
-      </Link>}
+      <Button
+        href={href}
+        linkText={linkText}
+      >
+      </Button>}
     </div>
   )
 };

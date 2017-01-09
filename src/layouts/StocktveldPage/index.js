@@ -6,12 +6,11 @@ import Metadata from '../../components/head/Metadata';
 import TwoColumnSection from '../../components/Content/TwoColumnSection';
 import SectionImage from '../../components/Content/SectionImage';
 import SectionText from '../../components/Content/SectionText';
-import Button from '../../components/Button';
+import { Element } from 'react-scroll';
 
 class StocktveldPage extends Component {
   constructor(props) {
     super(props);
-
   }
 
   componentDidMount() {
@@ -39,40 +38,17 @@ class StocktveldPage extends Component {
         />
         <NavBar { ...this.props }/>
         <div className={styles.welcomeSections}>
-          <TwoColumnSection>
-            <div>
-              <SectionText
-                title="Wat hebben we te bieden?"
-                text="37 woningen en appartementen (60- 145 m2) in een voormalig slotklooster vlak bij het station, elk met zijn privétuin of terras. Een grote groene gedeelde tuin, gemeenschappelijke leefruimtes (500m2) voor wie wil: eetplaats, keuken, bureau, vergaderzaal, logeerkamer, wasruimte en atelier. De mogelijkheid om externe functies zoals een kantoor of B&B in het gebouw onder te brengen"
-              />
-              <div className={styles.buttons}>
-                <Button
-                  linkText="Partners"
-                  href=""
-                />
-                <Button
-                  linkText="Prijzen"
-                  href=""
-                />
-                <Button
-                  linkText="Plannen"
-                  href=""
-                />
-                <Button
-                  linkText="Timing"
-                  href=""
+          <Element name="intro">
+            <TwoColumnSection>
+              <div>
+                <SectionText
+                  title={this.props.head.pageTitle}
+                  text=""
                 />
               </div>
-            </div>
-            <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
-          </TwoColumnSection>
-          <TwoColumnSection>
-            <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
-            <SectionText
-              title=""
-              text="37 woningen en appartementen (60- 145 m2) in een voormalig slotklooster vlak bij het station, elk met zijn privétuin of terras. Een grote groene gedeelde tuin, gemeenschappelijke leefruimtes (500m2) voor wie wil: eetplaats, keuken, bureau, vergaderzaal, logeerkamer, wasruimte en atelier. De mogelijkheid om externe functies zoals een kantoor of B&B in het gebouw onder te brengen"
-            />
-          </TwoColumnSection>
+              <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
+            </TwoColumnSection>
+          </Element>
         </div>
       </div>
     )
