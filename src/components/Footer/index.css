@@ -1,15 +1,18 @@
 .footer {
-  color: var(--palleteColor4);
-  background: var(--palleteColor2);
+  background: var(--mainColor);
   text-align: center;
 }
 
 .footer a {
-  color: var(--palleteColor4);
+  color: var(--secondaryColor);
+}
+
+h4 {
+  color: var(--textColor);
 }
 
 input {
-  border: 1px solid var(--palleteColor4);
+  border: 1px solid var(--secondaryColor);
   font-size: 15px;
   min-height: 32px;
   width: 58%;
@@ -20,13 +23,13 @@ input {
 }
 
 .button {
-  background: var(--palleteColor4);
-  color: var(--palleteColor1);
+  background: var(--secondaryColor);
+  color: var(--whiteColor);
 }
 
 .button:hover {
-  background: var(--palleteColor1);
-  color: var(--palleteColor4);
+  background: var(--whiteColor);
+  color: var(--secondaryColor);
 }
 
 .content {

@@ -8,6 +8,7 @@ const SectionText = ({ title, text, href, linkText, customStyle }) => (
     <div className={styles.longCopy}>{text}</div>
     { href &&
     <Button
+      style={{marginTop: "40px"}}
       linkText={linkText}
       href={href}
     />

@@ -9,7 +9,6 @@ section {
   position: relative;
   transition: opacity 1500ms ease-in;
   overflow: hidden;
-  color: var(--palleteColor4);
 }
 
 .full {

@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router';
 import { Link as ScrollLink } from 'react-scroll';
 import styles from './index.css';
 
-const Button = ({ href, linkText, isScrollLink }) =>
+const Button = ({ href, linkText, isScrollLink, style }) =>
   isScrollLink ?
     <ScrollLink
       to={href}
@@ -15,6 +15,7 @@ const Button = ({ href, linkText, isScrollLink }) =>
         {linkText}
     </ScrollLink> :
     <RouterLink
+      style={style}
       className={styles.sectionLink}
       to={href}
     >
@@ -26,6 +27,7 @@ Button.propTypes = {
   href: React.PropTypes.string,
   linkText: React.PropTypes.string,
   isScrollLink: React.PropTypes.bool,
+  style: React.PropTypes.object
 };
 
 export default Button;

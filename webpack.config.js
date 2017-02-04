@@ -14,11 +14,10 @@ export default (config = {}) => {
         customProperties: {
           variables: {
             containerWidth: "1140px",
-            palleteColor1: "#F4F7F7", //emerald https://flatuicolors.com/ //http://www.colorhunt.co/hot
-            palleteColor2: "#f1c40f", //A3DE83
-            palleteColor3: "#4D727E",
-            palleteColor4: "#1F4E5F",
-            textColor: "#537780"
+            whiteColor: "#F4F7F7", //emerald https://flatuicolors.com/ //http://www.colorhunt.co/hot
+            mainColor: "#9dc53c", //emerald https://flatuicolors.com/ //http://www.colorhunt.co/hot
+            secondaryColor: "#527f30",
+            textColor: "#20303c"
           },
         },
       },

@@ -10,9 +10,8 @@
   text-decoration: none;
   transition: all 0.35s;
   font-size: 90%;
-  border: 1px solid;
   cursor: pointer;
-  background-color: var(--palleteColor2);
+  background-color: var(--mainColor);
 }
 
 .sectionLink:hover,

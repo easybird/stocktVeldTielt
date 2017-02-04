@@ -114,15 +114,15 @@ class NavBar extends React.Component {
               </Link>
             </li>
             <li>
-              <Link
-                className={ styles.link }
-                to="/contact"
-              >
-                { "Contact" }
-              </Link>
+                <Link
+                  className={ styles.link }
+                  to="/contact"
+                >
+                  { "Contact" }
+                </Link>
             </li>
             <li>
-              <div className={ styles.navPart2 }>
+              <div>
                 {
                   pkg.facebook &&
                   <a

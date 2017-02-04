@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.css';
 
 const Sold = ({ percentageSold }) => (
-  <div className={`${styles.cornerRibbon} ${styles.topLeft} ${styles.green} ${styles.shadow}`}>
+  <div className={`${styles.cornerRibbon} ${styles.topLeft} ${styles.shadow}`}>
     {percentageSold}% verkocht
   </div>
 );
