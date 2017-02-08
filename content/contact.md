@@ -1,7 +1,7 @@
 ---
 title: Contact - Stocktveld
 pageTitle: Contact
-layout: StocktveldPage
+layout: StocktveldContact
 hero:
   src: /assets/img/wie-zijn-we/groepsfoto.jpg
   alt: groepsfoto

@@ -10,6 +10,8 @@ import Stocktveld from "./layouts/Stocktveld"
 import StocktveldPage from "./layouts/StocktveldPage"
 import StocktveldWieZijnWij from "./layouts/custom/StocktveldWieZijnWij"
 import StocktveldAanbod from "./layouts/custom/StocktveldAanbod"
+import StocktveldContact from "./layouts/custom/StocktveldContact"
+import StocktveldLocatie from "./layouts/custom/StocktveldLocatie"
 import Post from "./layouts/Post"
 
 const PageContainer = (props) => (
@@ -23,6 +25,8 @@ const PageContainer = (props) => (
       StocktveldPage,
       StocktveldWieZijnWij,
       StocktveldAanbod,
+      StocktveldContact,
+      StocktveldLocatie,
       Post,
     }}
   />

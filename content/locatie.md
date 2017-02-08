@@ -1,7 +1,7 @@
 ---
 title: Locatie - Stocktveld
 pageTitle: Locatie
-layout: StocktveldPage
+layout: StocktveldLocatie
 hero:
   src: /assets/img/wie-zijn-we/groepsfoto.jpg
   alt: groepsfoto
