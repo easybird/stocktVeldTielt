@@ -4,7 +4,9 @@ import styles from './index.css';
 import ThemeHeader from '../../../components/headers/ThemeHeader';
 import Metadata from '../../../components/head/Metadata';
 import TwoColumnSection from '../../../components/Content/TwoColumnSection';
+import OneColumnSection from '../../../components/Content/OneColumnSection';
 import SectionMap from '../../../components/Content/SectionMap';
+import SectionImage from '../../../components/Content/SectionImage';
 import SectionText from '../../../components/Content/SectionText';
 
 class StocktveldLocatie extends Component {
@@ -37,21 +39,21 @@ class StocktveldLocatie extends Component {
         />
         <NavBar { ...this.props }/>
         <div className={styles.welcomeSections}>
-          <TwoColumnSection
-            href="/locatie"
-          >
-            <SectionText
-              key="locationText"
-              title="Bouw mee aan een warme buurt binnen een mooie stad"
-              text="Stocktveld is gelegen in het hartje van Tielt, met zijn locatie vlakbij het
+          <TwoColumnSection>
+            <div>
+              <SectionText
+                title="Locatie"
+                text="Stocktveld is gelegen in het hartje van Tielt, met zijn locatie vlakbij het
             station, met scholen binnen handbereik, is het ideaal gelegen."
-              href="/locatie"
-              linkText="Bekijk de locatie"
-            />
+              />
+            </div>
+            <SectionImage imageSource="/assets/img/locatie/tielt.jpg" imageAlt="stad tielt"/>
+          </TwoColumnSection>
+          <OneColumnSection>
             <SectionMap
               key="locationMap"
             />
-          </TwoColumnSection>
+          </OneColumnSection>
         </div>
       </div>
     )

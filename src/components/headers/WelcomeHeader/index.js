@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner';
 import Logo from '../Logo';
 import styles from './index.css';
+import Button from '../../Button';
 
 const WelcomeHeader = ({ scrollTo }) =>
   (
@@ -13,8 +14,16 @@ const WelcomeHeader = ({ scrollTo }) =>
                   '/assets/img/banner/tuin-achterkant.jpg'
                 ]}/>
         <div className={styles.heroTextBox}>
-          <a className={`${styles.btn} ${styles.btnFull}`} href="/aanbod">Bekijk ons aanbod</a>
-          <a className={`${styles.btn} ${styles.btnGhost}`} href="/wie-zijn-we">Benieuwd naar wie we zijn?</a>
+          <Button
+            linkText="Bekijk ons aanbod"
+            href="/aanbod"
+            type={Button.TYPE.FULL}
+          />
+          <Button
+            linkText="Benieuwd naar wie we zijn?"
+            href="/wie-zijn-we"
+            type={Button.TYPE.GHOST}
+          />
         </div>
       </div>
       <div className={styles.logo}>

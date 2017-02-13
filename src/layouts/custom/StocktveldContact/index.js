@@ -33,8 +33,9 @@ class StocktveldContact extends Component {
       <div className={ styles.stocktveld }>
         <Metadata { ...this.props } />
         <ThemeHeader
-          height="50vh"
+          height="15vh"
           hero={this.props.head.hero}
+          hasLogo={true}
         />
         <NavBar { ...this.props }/>
         <div className={styles.welcomeSections}>
@@ -46,7 +47,7 @@ class StocktveldContact extends Component {
                   text="We zijn bereikbaar via heel wat kanalen: email, telefoon, persoonlijk contact via onze infosessies, facebook of onze nieuwbrief. Kies het kanaal wat jou het beste ligt om kennis met ons te maken."
                 />
               </div>
-              <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
+              <SectionImage imageSource="/assets/img/contact/hands-holding-jigsaw.png" imageAlt="contact"/>
             </TwoColumnSection>
           </Element>
           <Element name="email">

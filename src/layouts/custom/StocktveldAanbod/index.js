@@ -55,21 +55,25 @@ class StocktveldAanbod extends Component {
                 linkText="Partners"
                 href="partners"
                 isScrollLink={true}
+                type={Button.TYPE.FULL}
               />
               <Button
                 linkText="Plannen & Prijzen"
                 href="plannen"
                 isScrollLink={true}
+                type={Button.TYPE.GHOST}
               />
               <Button
                 linkText="Timing"
                 href="timing"
                 isScrollLink={true}
+                type={Button.TYPE.FULL}
               />
               <Button
                 linkText="Commerciële ruimtes te koop"
                 href="commercieel"
                 isScrollLink={true}
+                type={Button.TYPE.GHOST}
               />
             </div>
             <div className={styles.buttons}>
@@ -80,11 +84,29 @@ class StocktveldAanbod extends Component {
           </Element>
           <Element name="partners">
             <TwoColumnSection>
-              <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
               <SectionText
                 title="Onze partners"
-                text=""
-              />
+              >
+                <div style={{textAlign: "justify"}}>Om een kwalitatief en duurzaam project te realiseren op een betaalbare manier heeft Stocktveld
+                  enkele goeie partners onder de arm genomen.
+                </div>
+                <div style={{textAlign: "justify"}}>We kozen voor het team van architectenbureau aRCHITEC uit Wevelgem, aangevuld met landschapsbureau
+                  Studio Basta en bouwfysisch ingenieursbureau Daidalos Peutz. We kiezen ervoor om… Zij zorgen ervoor
+                  dat …
+                </div>
+                <div style={{textAlign: "justify"}}>De bouwfirma Dumobil - gekend van villabouw en woonprojecten - zorgt voor de bouw van onze
+                  wooneenheden.
+                </div>
+                <div style={{textAlign: "justify"}}>
+                  Cohousing Projects werd aangenomen voor de nodige ondersteuning, coördinatie en expertise.
+                  Zij bieden Stocktveld een totaalbegeleiding doorheen het ganse proces: gaande van groepsbegeleiding,
+                  over commerciële onderhandelingen, tot financiële ondersteuning.
+                </div>
+                <div style={{textAlign: "justify"}}>Deze partners helpen ons bij het ontwerpen en implementeren van het bouw - en groepsproces. Echter,
+                  de groep rond Stocktveld neemt steeds de uiteindelijke beslissingen.
+                </div>
+              </SectionText>
+              <SectionImage imageSource="/assets/img/aanbod/partners1.png" imageAlt="partners"/>
             </TwoColumnSection>
           </Element>
           <Element name="plannen">
