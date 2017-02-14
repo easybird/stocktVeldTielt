@@ -8,6 +8,8 @@ import SectionMap from '../SectionMap';
 import { Element } from 'react-scroll';
 import { IMAGE_TYPES } from '../IMAGE_TYPES';
 import Carousel from '../../../layouts/Carousel';
+import Infosessies from '../../../layouts/custom/Infosessies';
+import Plannen from '../../../layouts/custom/Plannen';
 import Sold from '../../icons/Sold';
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
@@ -73,7 +75,7 @@ class WelcomeSections extends React.Component {
       Het klooster wordt opgeknapt en ten dienste gesteld van alle bewoners.
       De site heeft een bijzonder karakter, met een mooi evenwicht tussen publiek en privé."
             href="/aanbod"
-            linkText="Ontdek het aanbod"
+            linkText="Meer weten?"
           />
         </OneColumnSection>
         <hr/>
@@ -89,7 +91,7 @@ class WelcomeSections extends React.Component {
             text="Met een enorm divers aanbod aan woningen, appartementen en renovatie biedt Stocktveld voor elk wat wils. Het project is een collectief particulier bouwproject op de site van het voormalig slotklooster aan het station van Tielt. Er zijn 37 individuele woningen van verschillende groottes met elk een eigen private buitenruimte in de vorm van een tuintje of een terras. Daarnaast is er een grote gemeenschappelijke tuin die eigendom is van alle bewoners en enkele gemeenschappelijke faciliteiten zoals onder andere een (feest)zaal met uitgeruste keuken, gastenkamers, bibliotheek, wassalon en kantoorruimte."
             href="/aanbod"
             linkText="Ontdek het aanbod"
-            customStyle={{marginTop: '50px'}}
+            customStyle={{ marginTop: '50px' }}
           />
           <SectionImage imageSource="/assets/img/aanbod/intro/schets_zijaanzicht.jpg" imageAlt="Schets klooster"/>
         </TwoColumnSection>
@@ -116,6 +118,17 @@ class WelcomeSections extends React.Component {
             key="locationMap"
           />
         </TwoColumnSection>
+        <hr/>
+        <OneColumnSection href="/contact" noOverlay>
+          <Infosessies
+            href="/contact"
+            linkText="Contact"
+          />
+        </OneColumnSection>
+        <hr />
+        <OneColumnSection href="/aanbod#plannen">
+          <Plannen/>
+        </OneColumnSection>
       </Element>
     )
   }

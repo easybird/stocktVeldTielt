@@ -6,7 +6,7 @@ const SectionText = ({ title, text, href, linkText, customStyle, children }) => 
   <div style={customStyle}>
     <h2>{title}</h2>
     {text && <div className={styles.longCopy}>{text}</div>}
-    {children && children.map((child) => <div className={styles.longCopy}>{child}</div>)}
+    {children && children.map((child, index) => <div key={index} className={styles.longCopy}>{child}</div>)}
     { href &&
     <Button
       style={{marginTop: "40px"}}
@@ -23,7 +23,7 @@ SectionText.propTypes = {
   href: React.PropTypes.string,
   linkText: React.PropTypes.string,
   customStyle: React.PropTypes.object,
-  children: React.PropTypes.element.isRequired
+  children: React.PropTypes.array
 };
 
 export default SectionText;

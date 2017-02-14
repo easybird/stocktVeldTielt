@@ -3,11 +3,14 @@ import NavBar from '../../../components/headers/NavBar';
 import styles from './index.css';
 import ThemeHeader from '../../../components/headers/ThemeHeader';
 import Metadata from '../../../components/head/Metadata';
+import OneColumnSection from '../../../components/Content/OneColumnSection';
 import TwoColumnSection from '../../../components/Content/TwoColumnSection';
 import SectionImage from '../../../components/Content/SectionImage';
 import SectionText from '../../../components/Content/SectionText';
 import Button from '../../../components/Button';
 import Pointer from '../../../components/Pointer';
+import ExternalLink from '../../../components/ExternalLink';
+import Plannen from '../Plannen';
 import { Element } from 'react-scroll';
 
 class StocktveldAanbod extends Component {
@@ -82,41 +85,10 @@ class StocktveldAanbod extends Component {
               />
             </div>
           </Element>
-          <Element name="partners">
-            <TwoColumnSection>
-              <SectionText
-                title="Onze partners"
-              >
-                <div style={{textAlign: "justify"}}>Om een kwalitatief en duurzaam project te realiseren op een betaalbare manier heeft Stocktveld
-                  enkele goeie partners onder de arm genomen.
-                </div>
-                <div style={{textAlign: "justify"}}>We kozen voor het team van architectenbureau aRCHITEC uit Wevelgem, aangevuld met landschapsbureau
-                  Studio Basta en bouwfysisch ingenieursbureau Daidalos Peutz. We kiezen ervoor om… Zij zorgen ervoor
-                  dat …
-                </div>
-                <div style={{textAlign: "justify"}}>De bouwfirma Dumobil - gekend van villabouw en woonprojecten - zorgt voor de bouw van onze
-                  wooneenheden.
-                </div>
-                <div style={{textAlign: "justify"}}>
-                  Cohousing Projects werd aangenomen voor de nodige ondersteuning, coördinatie en expertise.
-                  Zij bieden Stocktveld een totaalbegeleiding doorheen het ganse proces: gaande van groepsbegeleiding,
-                  over commerciële onderhandelingen, tot financiële ondersteuning.
-                </div>
-                <div style={{textAlign: "justify"}}>Deze partners helpen ons bij het ontwerpen en implementeren van het bouw - en groepsproces. Echter,
-                  de groep rond Stocktveld neemt steeds de uiteindelijke beslissingen.
-                </div>
-              </SectionText>
-              <SectionImage imageSource="/assets/img/aanbod/partners1.png" imageAlt="partners"/>
-            </TwoColumnSection>
-          </Element>
-          <Element name="plannen">
-            <TwoColumnSection>
-              <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
-              <SectionText
-                title="Plannen en prijzen"
-                text=""
-              />
-            </TwoColumnSection>
+          <Element name="plannen" id="plannen">
+            <OneColumnSection>
+            <Plannen />
+            </OneColumnSection>
           </Element>
           <Element name="timing">
             <TwoColumnSection>
@@ -124,7 +96,40 @@ class StocktveldAanbod extends Component {
                 title="Timing"
                 text=""
               />
-              <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
+              <SectionImage imageSource="/assets/img/aanbod/timing/timing.jpg" imageAlt="timing"/>
+            </TwoColumnSection>
+          </Element>
+          <Element name="partners">
+            <TwoColumnSection>
+              <SectionText
+                title="Onze partners"
+              >
+                <div style={{ textAlign: "justify" }}>
+                  <div>We kunnen dit uiteraard niet alleen. Om een kwalitatief en duurzaam project te realiseren op een
+                    betaalbare manier heeft Stocktveld
+                    enkele goeie partners onder de arm genomen.
+                  </div>
+                  <div>
+                    We kozen voor het team van architectenbureau <ExternalLink href="http://www.architec.be"
+                                                                               text="aRCHITEC"/> uit Wevelgem, aangevuld
+                    met landschapsbureau
+                    <ExternalLink href="http://studiobasta.be" text="Studio Basta"/> en bouwfysisch ingenieursbureau
+                    <ExternalLink href="http://www.daidalospeutz.be/" text="Daidalos Peutz"/>.
+                    De bouwfirma <ExternalLink href="http://www.dumobil.be" text="Dumobil"/>, gekend van villabouw en
+                    woonprojecten, zorgt voor de bouw van onze
+                    wooneenheden.
+                    <ExternalLink href="http://cohousingprojects.be" text="Cohousing Projects"/> werd aangenomen voor de
+                    nodige ondersteuning, coördinatie en expertise.
+                    Zij bieden Stocktveld een totaalbegeleiding doorheen het ganse proces: gaande van groepsbegeleiding,
+                    over commerciële onderhandelingen, tot financiële ondersteuning.
+                  </div>
+                  <div>Deze partners helpen ons bij het ontwerpen en implementeren van het bouw - en groepsproces.
+                    De toekomstige bewoners van Stocktveld nemen wel steeds de uiteindelijke beslissingen in een consensusmodel.
+                  </div>
+                </div>
+                <div></div>
+              </SectionText>
+              <SectionImage imageSource="/assets/img/aanbod/partners1.png" imageAlt="partners"/>
             </TwoColumnSection>
           </Element>
           <Element name="commercieel">

@@ -88,7 +88,7 @@ Pointer.propTypes = {
   isActive: React.PropTypes.func,
   offset: React.PropTypes.number,
   children: React.PropTypes.object,
-  className: React.PropTypes.object
+  className: React.PropTypes.string
 };
 
 export default Pointer;

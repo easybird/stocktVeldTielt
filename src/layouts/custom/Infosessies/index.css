@@ -1,0 +1,7 @@
+strong {
+  color: var(--mainColor);
+}
+
+ul {
+  list-style: none;
+}

@@ -4,9 +4,11 @@ import styles from './index.css';
 import ThemeHeader from '../../../components/headers/ThemeHeader';
 import Metadata from '../../../components/head/Metadata';
 import TwoColumnSection from '../../../components/Content/TwoColumnSection';
+import OneColumnSection from '../../../components/Content/OneColumnSection';
 import SectionImage from '../../../components/Content/SectionImage';
 import SectionText from '../../../components/Content/SectionText';
-import { Element } from 'react-scroll';
+import MailTo from '../../../components/MailTo';
+import Infosessies from '../Infosessies';
 
 class StocktveldContact extends Component {
   constructor(props) {
@@ -39,42 +41,47 @@ class StocktveldContact extends Component {
         />
         <NavBar { ...this.props }/>
         <div className={styles.welcomeSections}>
-          <Element name="intro">
-            <TwoColumnSection>
+          <TwoColumnSection>
+            <div>
+              <SectionText
+                title="Contacteer ons"
+                text="We zijn bereikbaar via heel wat kanalen: email, telefoon, persoonlijk contact via onze infosessies, facebook of onze nieuwbrief. Kies het kanaal wat jou het beste ligt om kennis met ons te maken."
+              />
+            </div>
+            <SectionImage imageSource="/assets/img/contact/hands-holding-jigsaw.png" imageAlt="contact"/>
+          </TwoColumnSection>
+          <hr/>
+          <OneColumnSection>
+            <Infosessies />
+          </OneColumnSection>
+          <hr/>
+          <TwoColumnSection>
+            <SectionText
+              title="Facebook"
+              text="Via onze facebookpagina kun je op de hoogte blijven van het reilen en zeilen binnen het project. Neem gerust een kijkje!"
+            />
+            <SectionText
+              title="Nieuwsbrief"
+              text="Wens je graag op de hoogte gehouden te worden van het reilen en zeilen van ons project? Schrijf je dan in voor onze nieuwsbrief."
+            />
+          </TwoColumnSection>
+          <hr/>
+          <OneColumnSection>
+            <SectionText
+              title="Email"
+            >
               <div>
-                <SectionText
-                  title="Contacteer ons"
-                  text="We zijn bereikbaar via heel wat kanalen: email, telefoon, persoonlijk contact via onze infosessies, facebook of onze nieuwbrief. Kies het kanaal wat jou het beste ligt om kennis met ons te maken."
-                />
+                Heb je vragen? Wens je graag een individueel gesprek met 1 van ons? Of zou je graag het klooster en de tuin bezoeken?
+                Dat is mogelijk!
               </div>
-              <SectionImage imageSource="/assets/img/contact/hands-holding-jigsaw.png" imageAlt="contact"/>
-            </TwoColumnSection>
-          </Element>
-          <Element name="email">
-            <TwoColumnSection>
-              <SectionText
-                title="Infosessies"
-                text="Wij organiseren regelmatig een infosessie over ons woonproject. De infosessies vinden steeds plaats op onze site in de Blekerijstraat nr. 22.
-De data van de eerstkomende infosessies zijn - VUL DIE HIER AAN. Deze worden telkens georganiseerd in het klooster, Blekerijstraat 22 te Tielt."
-              />
-              <SectionText
-                title="Email"
-                text="Vragen? Stuur ons gerust een mail via stocktveld@gmail.com. Indien je graag een individueel gesprek hebt met 1 van ons, het klooster en de tuin wenst te bezoeken,... dan is dit mogelijk!"
-              />
-            </TwoColumnSection>
-          </Element>
-          <Element name="infosessie">
-            <TwoColumnSection>
-              <SectionText
-                title="Facebook"
-                text="Via onze facebookpagina kun je op de hoogte blijven van het reilen en zeilen binnen het project. Neem gerust een kijkje!"
-              />
-              <SectionText
-                title="Nieuwsbrief"
-                text="Wens je graag op de hoogte gehouden te worden van het reilen en zeilen van ons project? Schrijf je dan in voor onze nieuwsbrief."
-              />
-            </TwoColumnSection>
-          </Element>
+              <div>
+                Stuur ons gerust een mail via
+                <MailTo emailAddress="stocktveld@gmail.com" text="stocktveld@gmail.com"
+                        subject="Interesse%20in%20de%20infosessie"/>
+                .
+              </div>
+            </SectionText>
+          </OneColumnSection>
         </div>
       </div>
     )
