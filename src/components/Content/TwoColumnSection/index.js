@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import sectionStyles from '../Section/index.css';
 import styles from './index.css';
 
-const TwoColumnSection = ({ id, href, children, hasHr, sectionStyle = {}, childStyle = {}, hasAbsoluteDiv }) => {
+const TwoColumnSection = ({ id, href, children, hasHr, sectionStyle = {}, childStyle = {}, hasAbsoluteDiv, noPadding, title }) => {
   const linkOverlay = href ?
     <Link to={href}>
       <span className={sectionStyles.emptySpan}></span>
@@ -27,8 +27,9 @@ const TwoColumnSection = ({ id, href, children, hasHr, sectionStyle = {}, childS
   return (
     <section
       id={id}
-      className={styles.half}
+      className={`${noPadding && sectionStyles.noSectionPadding}`}
       style={ sectionStyle }>
+      {title && <h2>{title}</h2>}
       {linkOverlay}
       <div
         className={styles.columns}
@@ -47,7 +48,9 @@ TwoColumnSection.propTypes = {
   sectionStyle: React.PropTypes.object,
   childStyle: React.PropTypes.object,
   hasHr: React.PropTypes.bool,
-  hasAbsoluteDiv: React.PropTypes.bool
+  hasAbsoluteDiv: React.PropTypes.bool,
+  noPadding: React.PropTypes.bool,
+  title: React.PropTypes.string
 };
 
 export default TwoColumnSection;

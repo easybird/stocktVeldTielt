@@ -4,12 +4,11 @@ import Button from '../../Button';
 
 const SectionText = ({ title, text, href, linkText, customStyle, children }) => (
   <div style={customStyle}>
-    <h2>{title}</h2>
+    { title && <h2>{title}</h2>}
     {text && <div className={styles.longCopy}>{text}</div>}
     {children && children.map((child, index) => <div key={index} className={styles.longCopy}>{child}</div>)}
     { href &&
     <Button
-      style={{marginTop: "40px"}}
       linkText={linkText}
       href={href}
     />

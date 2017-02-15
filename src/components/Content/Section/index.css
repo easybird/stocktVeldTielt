@@ -22,6 +22,10 @@ section {
   font-weight: 200;
 }
 
+.noSectionPadding {
+  padding: 0;
+}
+
 @media (--tablet-and-up) {
   section {
     padding: 50px 0;

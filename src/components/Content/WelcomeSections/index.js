@@ -10,6 +10,7 @@ import { IMAGE_TYPES } from '../IMAGE_TYPES';
 import Carousel from '../../../layouts/Carousel';
 import Infosessies from '../../../layouts/custom/Infosessies';
 import Plannen from '../../../layouts/custom/Plannen';
+import Paviljoen from '../../../layouts/custom/Paviljoen';
 import Sold from '../../icons/Sold';
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
@@ -126,8 +127,20 @@ class WelcomeSections extends React.Component {
           />
         </OneColumnSection>
         <hr />
-        <OneColumnSection href="/aanbod#plannen">
+        <OneColumnSection href="/aanbod" noCentered>
           <Plannen/>
+          <SectionText
+            href="/aanbod"
+            linkText="Bekijk de details"
+          />
+        </OneColumnSection>
+        <hr/>
+        <OneColumnSection href="/aanbod#paviljoen" noCentered>
+          <Paviljoen noPadding/>
+          <SectionText
+            href="/aanbod"
+            linkText="Lees meer"
+          />
         </OneColumnSection>
       </Element>
     )

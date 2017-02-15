@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionText from '../../../components/Content/SectionText';
 import MailTo from '../../../components/MailTo';
-require("./index.css");
+import "./index.css";
 
 const Infosessies = ({ href, linkText }) => (
   <SectionText

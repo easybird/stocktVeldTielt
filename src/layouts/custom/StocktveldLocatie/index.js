@@ -47,7 +47,28 @@ class StocktveldLocatie extends Component {
             station, met scholen binnen handbereik, is het ideaal gelegen."
               />
             </div>
-            <SectionImage imageSource="/assets/img/locatie/tielt.jpg" imageAlt="stad tielt"/>
+            <SectionImage imageSource="/assets/img/locatie/omslagfoto-kloostersite.jpg"
+                          imageAlt="omslagfoto kloostersite"/>
+          </TwoColumnSection>
+          <TwoColumnSection>
+            <SectionImage imageSource="/assets/img/locatie/klooster.jpg"
+                          imageAlt="omslagfoto kloostersite"/>
+            <div>
+              <SectionText
+                title="Slotklooster aan het station"
+                text="Het slotklooster ligt aan de achterzijde van het station van Tielt op het uiteinde van de Blekerijstraat. Het is een sober neogotisch gebouwencomplex met grotendeels ommuurde tuin. De totale kloostersite is ongeveer 1,3 ha groot en ligt in een zone die op het gewestplan is aangeduid als woonzone. Ons plan is om de bestaande site te renoveren, en hier nieuwbouwwoningen bij te plaatsen."
+              />
+            </div>
+          </TwoColumnSection>
+          <TwoColumnSection>
+            <div>
+              <SectionText
+                title="Grote tuin middenin de stad"
+                text="Onze droom is ook om van de grote tuin een echt pareltje te maken. Geen strak afgelijnde groenstructuren, maar eerder een combinatie van frisse groenpartijen, ontmoetingsplaatsen voor jong en oud, ingebouwde natuurlijke speelelementen voor kinderen, kalme hoekjes, hier en daar een bankje, … Wonen in een groene oase van rust, met ruimte voor privacy en informele contacten, hier streven we naar."
+              />
+            </div>
+            <SectionImage imageSource="/assets/img/locatie/tuin-achterkant.jpg"
+                          imageAlt="omslagfoto kloostersite"/>
           </TwoColumnSection>
           <OneColumnSection>
             <SectionMap
