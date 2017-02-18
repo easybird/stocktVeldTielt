@@ -55,12 +55,6 @@ class StocktveldAanbod extends Component {
             </OneColumnSection>
             <div className={styles.buttons}>
               <Button
-                linkText="Partners"
-                href="partners"
-                isScrollLink={true}
-                type={Button.TYPE.FULL}
-              />
-              <Button
                 linkText="Plannen & Prijzen"
                 href="plannen"
                 isScrollLink={true}
@@ -73,19 +67,23 @@ class StocktveldAanbod extends Component {
                 type={Button.TYPE.FULL}
               />
               <Button
+                linkText="Partners"
+                href="partners"
+                isScrollLink={true}
+                type={Button.TYPE.GHOST}
+              />
+              <Button
                 linkText="Commerciële ruimtes te koop"
                 href="commercieel"
                 isScrollLink={true}
-                type={Button.TYPE.GHOST}
+                type={Button.TYPE.FULL}
               />
               <Button
                 linkText="Van klooster tot paviljoen"
                 href="paviljoen"
                 isScrollLink={true}
-                type={Button.TYPE.FULL}
+                type={Button.TYPE.GHOST}
               />
-            </div>
-            <div className={styles.buttons}>
             </div>
           </Element>
           <br/>
@@ -108,8 +106,8 @@ class StocktveldAanbod extends Component {
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
                   Tegen halverwege 2017 ronden we het ontwerpproces af en vragen we de bouwvergunning aan. Eind 2017
-                  hopen we de vergunning op zak te hebben en te beginnen bouwen. Eind 2018 - begin 2019, willen we
-                  verhuizen naar het ‘Stocktveld’. Ondertussen zoeken we verder naar toffe buren!
+                  denken we de vergunning op zak te hebben en te beginnen bouwen. Begin 2019, willen we
+                  verhuizen naar het ‘Stocktveld’.
                 </div>
                 <div></div>
               </SectionText>
@@ -174,7 +172,9 @@ class StocktveldAanbod extends Component {
                     <h3>Troeven:</h3>
                     <ul style={{
                       listStyleType: 'disc',
-                      listStylePosition: 'inside'
+                      listStylePosition: 'inside',
+                      textIndent: '-2em',
+                      paddingLeft: '2em'
                     }}>
                       <li>Wandelafstand tot het centrum van Tielt</li>
                       <li>Aansluiting op alle openbaar vervoer</li>

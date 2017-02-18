@@ -19,11 +19,13 @@ const WelcomeHeader = ({ scrollTo }) =>
             href="/aanbod"
             type={Button.TYPE.FULL}
           />
-          <Button
-            linkText="Benieuwd naar wie we zijn?"
-            href="/wie-zijn-we"
-            type={Button.TYPE.GHOST}
-          />
+          <div className={styles.heroButton}>
+            <Button
+              linkText="Benieuwd naar wie we zijn?"
+              href="/wie-zijn-we"
+              type={Button.TYPE.GHOST}
+            />
+          </div>
         </div>
       </div>
       <div className={styles.logo}>

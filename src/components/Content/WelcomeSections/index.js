@@ -127,7 +127,7 @@ class WelcomeSections extends React.Component {
           />
         </OneColumnSection>
         <hr />
-        <OneColumnSection href="/aanbod" noCentered>
+        <OneColumnSection href="/aanbod" noCentered noOverlay>
           <Plannen/>
           <SectionText
             href="/aanbod"

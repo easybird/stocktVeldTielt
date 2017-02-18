@@ -23,10 +23,11 @@ MyTextCell.propTypes = {
 
 class MyLinkCell extends React.Component {
   render() {
-    const { rowIndex, field, link, data, ...props } = this.props;
+    const { rowIndex, field, data, ...props } = this.props;
     return (
       <Cell {...props}>
-        <a href={data[rowIndex][link]}>
+        <a href="http://www.cohousingprojects.be/index.php/tielt/222-beschikbaarheid-tielt-stocktveld"
+        target="_blank">
           {data[rowIndex][field]}
         </a>
       </Cell>
@@ -37,9 +38,8 @@ class MyLinkCell extends React.Component {
 MyLinkCell.propTypes = {
   rowIndex: React.PropTypes.number.isRequired,
   field: React.PropTypes.string.isRequired,
-  link: React.PropTypes.string.isRequired,
   data: React.PropTypes.object.isRequired
-}
+};
 
 export default class TableV2 extends React.Component {
   constructor(props) {
@@ -81,9 +81,9 @@ export default class TableV2 extends React.Component {
         { lot: 32, type: 'Appartement +2', status: 'Bekijk details', unit: 102 },
         { lot: 33, type: 'Appartement +2', status: 'Bekijk details', unit: 99 },
         { lot: 34, type: 'Appartement +2', status: 'Bekijk details', unit: 91 },
-        { lot: 35, type: 'Duplex +1 & +2', status: 'Bekijk details', unit: 105 },
-        { lot: 34, type: 'Duplex +1 & +2', status: 'Bekijk details', unit: 105 },
-        { lot: 34, type: 'Duplex +1 & +2', status: 'Bekijk details', unit: 123 },
+        { lot: 35, type: 'Duplex +1 & +2', status: 'TE LAAT', unit: 105 },
+        { lot: 36, type: 'Duplex +1 & +2', status: 'Bekijk details', unit: 105 },
+        { lot: 37, type: 'Duplex +1 & +2', status: 'Bekijk details', unit: 123 },
       ],
     };
   }
@@ -133,7 +133,6 @@ export default class TableV2 extends React.Component {
             <MyLinkCell
               data={this.state.myTableData}
               field="status"
-              link="lot"
             />
           }
           width={130}

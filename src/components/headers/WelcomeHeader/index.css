@@ -1,3 +1,9 @@
+@custom-media --tablet-portrait (480px < width <= 786px);
+@custom-media --tablet-landscape (786px < width <= 1024px);
+@custom-media --tablet-and-up (width > 480px);
+@custom-media --tablet-landscape-and-up (width > 786px);
+@custom-media --desktop-and-up (width > 1024px);
+
 .welcomeHeader {
   height: 100vh;
 }
@@ -17,4 +23,11 @@
   top: 60vh;
   left: 35vw;
   transform: translate(-50%, -50%);
+}
+
+@media (--tablet-landscape-and-up) {
+  .heroButton {
+    display: inline-block;
+    margin-left: 15px;
+  }
 }
