@@ -5,7 +5,7 @@ import ThemeHeader from '../../../components/headers/ThemeHeader';
 import Metadata from '../../../components/head/Metadata';
 import TwoColumnSection from '../../../components/Content/TwoColumnSection';
 import OneColumnSection from '../../../components/Content/OneColumnSection';
-import SectionMap from '../../../components/Content/SectionMap';
+import GoogleMaps from '../../../components/GoogleMaps';
 import SectionImage from '../../../components/Content/SectionImage';
 import SectionText from '../../../components/Content/SectionText';
 
@@ -71,9 +71,7 @@ class StocktveldLocatie extends Component {
                           imageAlt="omslagfoto kloostersite"/>
           </TwoColumnSection>
           <OneColumnSection>
-            <SectionMap
-              key="locationMap"
-            />
+            <GoogleMaps/>
           </OneColumnSection>
         </div>
       </div>

@@ -13,23 +13,21 @@ const Plannen = () => (
       noPadding={true}>
       <SectionText>
         <div>
-          Er komen 37 woningen en appartementen beschikbaar in het project. Hieronder vindt u enkele gegevens van de
+          Er zijn 37 woningen en appartementen beschikbaar in het project. Waarvan nu ongeveer de helft is verkocht. Hieronder vindt u enkele gegevens van de
           woningen en een link naar de prijzen.
         </div>
         <div></div>
       </SectionText>
     </OneColumnSection>
-    <TwoColumnSection
-      noPadding={true}>
+    <TwoColumnSection>
       <TableV2 />
       <SectionImage imageSource="/assets/img/aanbod/plattegrond_small_gedraaid.png" imageAlt="plattegrond"/>
     </TwoColumnSection>
-    <OneColumnSection
-      noPadding={true}>
+    <OneColumnSection>
       <SectionText>
         <div>
-          Verschillende opleveringsmodaliteiten zijn mogelijk: de woning kan zowel kant-en-klaar als casco plus worden
-          afgeleverd.
+          De woning kan zowel kant-en-klaar, als casco plus (= wind, water en luchtdicht, inclusief ventilatie en verwarming) worden
+          afgeleverd. Nu de bouwaanvraag nog niet is ingediend is er nog steeds flexibiliteit in de vierkante meters per woning. Als je nu instapt kan je met andere woorden nog spelen met het aantal slaapkamers, en de ruimte in je huis. Meer info hierover wordt binnenkort op de website toegevoegd.
         </div>
         <div></div>
       </SectionText>

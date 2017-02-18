@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './index.css';
 import OneColumnSection from '../OneColumnSection';
 import TwoColumnSection from '../TwoColumnSection';
+import GoogleMaps from '../../GoogleMaps';
 import SectionText from '../SectionText';
 import SectionImage from '../SectionImage';
-import SectionMap from '../SectionMap';
 import { Element } from 'react-scroll';
 import { IMAGE_TYPES } from '../IMAGE_TYPES';
 import Carousel from '../../../layouts/Carousel';
@@ -115,9 +115,7 @@ class WelcomeSections extends React.Component {
             href="/locatie"
             linkText="Bekijk de locatie"
           />
-          <SectionMap
-            key="locationMap"
-          />
+          <GoogleMaps/>
         </TwoColumnSection>
         <hr/>
         <OneColumnSection href="/contact" noOverlay>

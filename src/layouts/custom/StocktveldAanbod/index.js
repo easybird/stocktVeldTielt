@@ -49,7 +49,7 @@ class StocktveldAanbod extends Component {
               <div>
                 <SectionText
                   title="Wat hebben we te bieden?"
-                  text="37 woningen en appartementen (60- 145 &#13217;) in een voormalig slotklooster vlak bij het station, elk met zijn privétuin of terras. Een grote groene gedeelde tuin, gemeenschappelijke leefruimtes (500&#13217;) voor wie wil: eetplaats, keuken, bureau, vergaderzaal, logeerkamer, wasruimte en atelier. De mogelijkheid om externe functies zoals een kantoor of B&B in het gebouw onder te brengen"
+                  text="37 woningen en appartementen (60- 145 &#13217;) in een voormalig slotklooster vlak bij het station, elk met zijn privétuin of terras. Een grote groene gedeelde tuin, gemeenschappelijke leefruimtes (500 &#13217;) voor wie wil: eetplaats, keuken, bureau, vergaderzaal, logeerkamer, wasruimte en atelier. De mogelijkheid om externe functies zoals een kantoor of B&B in het gebouw onder te brengen"
                 />
               </div>
             </OneColumnSection>
