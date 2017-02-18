@@ -1,5 +1,4 @@
 let loadFacebook = function(d, s, id) {
-  console.log('load it!');
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;

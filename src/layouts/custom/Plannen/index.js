@@ -22,7 +22,7 @@ const Plannen = () => (
     <TwoColumnSection
       noPadding={true}>
       <TableV2 />
-      <SectionImage imageSource="/assets/img/aanbod/plattegrond_small.png" imageAlt="plattegrond"/>
+      <SectionImage imageSource="/assets/img/aanbod/plattegrond_small_gedraaid.png" imageAlt="plattegrond"/>
     </TwoColumnSection>
     <OneColumnSection
       noPadding={true}>
