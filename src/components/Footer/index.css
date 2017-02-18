@@ -22,16 +22,6 @@ input {
   border-radius: 3px;
 }
 
-.button {
-  background: var(--secondaryColor);
-  color: var(--whiteColor);
-}
-
-.button:hover {
-  background: var(--whiteColor);
-  color: var(--secondaryColor);
-}
-
 .content {
   margin: 0 auto;
 }

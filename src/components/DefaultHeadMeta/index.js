@@ -19,7 +19,7 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         { rel: "stylesheet", href: "/assets/css/fixed-data-table.min.css"}
       ] }
       script={ [
-        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
+        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" }
       ] }
     />
     { /* meta viewport safari/chrome/edge */ }

@@ -5,6 +5,7 @@ import ThemeHeader from '../../../components/headers/ThemeHeader';
 import Metadata from '../../../components/head/Metadata';
 import TwoColumnSection from '../../../components/Content/TwoColumnSection';
 import OneColumnSection from '../../../components/Content/OneColumnSection';
+import NewsletterSubscriptionForm from '../../../components/NewsletterSubscriptionForm';
 import SectionImage from '../../../components/Content/SectionImage';
 import SectionText from '../../../components/Content/SectionText';
 import MailTo from '../../../components/MailTo';
@@ -98,36 +99,46 @@ class StocktveldContact extends Component {
             <Element name="facebook" id="facebook">
               <SectionText
                 title="Facebook"
-                text="Via onze facebookpagina kun je op de hoogte blijven van het reilen en zeilen binnen het project. Neem gerust een kijkje!"
-              />
+              >
+                <div>Via onze facebookpagina kun je op de hoogte blijven van het reilen en zeilen binnen het project.
+                  Neem gerust een kijkje!
+                </div>
+                <Button
+                  linkText="Bekijk hier onze posts, ook als je geen lid bent Facebook"
+                  href="/facebook"
+                  type={Button.TYPE.GHOST}
+                />
+              </SectionText>
             </Element>
             <Element name="nieuwsbrief" id="nieuwsbrief">
               <SectionText
                 title="Nieuwsbrief"
                 text="Wens je graag op de hoogte gehouden te worden van het reilen en zeilen van ons project? Schrijf je dan in voor onze nieuwsbrief."
               />
+              <br/>
+              <NewsletterSubscriptionForm />
             </Element>
           </TwoColumnSection>
           <hr/>
           <Element name="email" id="eamil">
-          <OneColumnSection>
-            <SectionText
-              title="Email"
-            >
-              <div>
-                Heb je vragen? Wens je graag een individueel gesprek met 1 van ons? Of zou je graag het klooster en de
-                tuin bezoeken?
-                Dat is mogelijk!
-              </div>
-              <div>
-                Stuur ons gerust een mail via
-                <MailTo emailAddress="stocktveld@gmail.com" text="stocktveld@gmail.com"
-                        subject="Interesse%20in%20stocktveld"/>
-                .
-              </div>
-            </SectionText>
-          </OneColumnSection>
-            </Element>
+            <OneColumnSection>
+              <SectionText
+                title="Email"
+              >
+                <div>
+                  Heb je vragen? Wens je graag een individueel gesprek met 1 van ons? Of zou je graag het klooster en de
+                  tuin bezoeken?
+                  Dat is mogelijk!
+                </div>
+                <div>
+                  Stuur ons gerust een mail via
+                  <MailTo emailAddress="stocktveld@gmail.com" text="stocktveld@gmail.com"
+                          subject="Interesse%20in%20stocktveld"/>
+                  .
+                </div>
+              </SectionText>
+            </OneColumnSection>
+          </Element>
         </div>
       </div>
     )

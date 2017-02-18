@@ -1,0 +1,13 @@
+input {
+  border-radius: 0;
+}
+
+.button {
+  background: var(--secondaryColor);
+  color: var(--whiteColor);
+}
+
+.button:hover {
+  background: var(--whiteColor);
+  color: var(--secondaryColor);
+}
