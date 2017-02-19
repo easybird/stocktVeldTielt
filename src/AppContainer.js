@@ -10,7 +10,12 @@ import Footer from "./components/Footer"
 
 const AppContainer = (props) => (
   <Container>
-    <DefaultHeadMeta />
+    <DefaultHeadMeta
+      scripts={ [
+        // GOOGLE Analytics, part 2/2
+        { async: true, src: "https://www.google-analytics.com/analytics.js" },
+      ] }
+    />
     <Content>
       { props.children }
     </Content>

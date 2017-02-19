@@ -6,6 +6,7 @@ import Metadata from '../../../components/head/Metadata';
 import TwoColumnSection from '../../../components/Content/TwoColumnSection';
 import OneColumnSection from '../../../components/Content/OneColumnSection';
 import GoogleMaps from '../../../components/GoogleMaps';
+import SectionVideo from '../../../components/Content/SectionVideo';
 import SectionImage from '../../../components/Content/SectionImage';
 import SectionText from '../../../components/Content/SectionText';
 
@@ -47,8 +48,9 @@ class StocktveldLocatie extends Component {
             station, met scholen binnen handbereik, is het ideaal gelegen."
               />
             </div>
-            <SectionImage imageSource="/assets/img/locatie/omslagfoto-kloostersite.jpg"
-                          imageAlt="omslagfoto kloostersite"/>
+            <SectionVideo
+              src="https://www.youtube.com/embed/iXHufqsOoE4"
+            />
           </TwoColumnSection>
           <TwoColumnSection>
             <SectionImage imageSource="/assets/img/locatie/klooster.jpg"

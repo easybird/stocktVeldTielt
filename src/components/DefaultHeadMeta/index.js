@@ -19,7 +19,8 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         { rel: "stylesheet", href: "/assets/css/fixed-data-table.min.css"}
       ] }
       script={ [
-        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" }
+        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
+        ...props.scripts ? props.scripts : []
       ] }
     />
     { /* meta viewport safari/chrome/edge */ }
@@ -33,7 +34,11 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
 )
 
 DefaultHeadMeta.contextTypes = {
-  metadata: PropTypes.object.isRequired,
-}
+  metadata: PropTypes.object.isRequired
+};
+
+DefaultHeadMeta.propTypes = {
+  scripts: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default DefaultHeadMeta
