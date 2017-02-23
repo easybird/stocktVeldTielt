@@ -11,6 +11,14 @@
   flex-direction: column;
 }
 
+.card {
+  margin: 5% 0;
+}
+
+.newParagraph {
+  margin-top: 0;
+}
+
 h1,
 h2,
 h3,
