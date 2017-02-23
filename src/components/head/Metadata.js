@@ -31,7 +31,8 @@ const Metadata = ({
     { name: "twitter:creator", content: `@${ pkg.twitter }` },
     { name: "twitter:description", content: head.description },
     { name: "description", content: head.description },
-    { name: "theme-color", content: "#ffffff" }
+    { name: "theme-color", content: "#ffffff" },
+    { name: "google-site-verification", content: "XziH1JxX5-LwQmmxWANw-B1WtvUBUaJJOqerfQ3QSxU" }
   ];
 
   const favicons = [
@@ -44,11 +45,11 @@ const Metadata = ({
   ];
 
   return (
-      <Helmet
-        link={ favicons }
-        title={ metaTitle }
-        meta={ meta }
-      />
+    <Helmet
+      link={ favicons }
+      title={ metaTitle }
+      meta={ meta }
+    />
   )
 };
 
