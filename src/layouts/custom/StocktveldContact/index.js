@@ -82,8 +82,8 @@ class StocktveldContact extends Component {
               type={Button.TYPE.GHOST}
             />
             <Button
-              linkText="Facebook"
-              href="facebook"
+              linkText="Sociale media"
+              href="social-media"
               isScrollLink={true}
               type={Button.TYPE.FULL}
             />
@@ -105,7 +105,7 @@ class StocktveldContact extends Component {
                 </div>
                 <Button
                   linkText="Bekijk hier onze posts, ook als je geen lid bent Facebook"
-                  href="/facebook"
+                  href="/social-media"
                   type={Button.TYPE.GHOST}
                 />
               </SectionText>

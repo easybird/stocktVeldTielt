@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-import Svg from 'react-svg-inline';
-import facebookSvg from '../../icons/iconmonstr-facebook-5.svg';
 import styles from './index.css';
 
 class NavBar extends React.Component {
@@ -122,17 +120,12 @@ class NavBar extends React.Component {
               </Link>
             </li>
             <li>
-              <div>
-                {
-                  pkg.facebook &&
-                  <Link
-                    className={ styles.link }
-                    to="/facebook"
-                  >
-                    <Svg svg={ facebookSvg } cleanup/>
-                  </Link>
-                }
-              </div>
+              <Link
+                className={ styles.link }
+                to="/social-media"
+              >
+                { "Sociale media" }
+              </Link>
             </li>
           </ul>
         </div>

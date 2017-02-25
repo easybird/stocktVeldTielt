@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import NavBar from '../../../components/headers/NavBar';
-import OneColumnSection from '../../../components/Content/OneColumnSection';
+import TwoColumnSection from '../../../components/Content/TwoColumnSection';
 import SectionText from '../../../components/Content/SectionText';
 import styles from './index.css';
 import ThemeHeader from '../../../components/headers/ThemeHeader';
@@ -37,32 +37,60 @@ class StocktveldEmbedded extends Component {
           hero={this.props.head.hero}
           hasLogo={true}
         />
-        <NavBar { ...this.props }/>
+        <NavBar { ...this.props } />
+        <Helmet
+          script={ [
+            { src: "/assets/js/facebookPagePlugin.js" }, {
+              src: "//assets.pinterest.com/js/pinit.js",
+              async: true,
+              defer: true
+            },
+          ] }
+        />
         <div className={styles.welcomeSections}>
-          <OneColumnSection>
-            <SectionText
-              title="Facebook"
-              text="Ziehier onze activiteiten via sociale media. Volg ons op Facebook door op de 'Vind ik leuk'-knop te klikken."
-            />
-          </OneColumnSection>
-          <div id="fb-root"></div>
-          <Helmet
-            script={ [
-              { src: "/assets/js/facebookPagePlugin.js" },
-            ] }
-          />
-          <div className="fb-page"
-               data-href="https://www.facebook.com/stocktveld/"
-               data-tabs="timeline, events, messages"
-               data-width="500"
-               data-height="1000"
-               data-small-header="false"
-               data-adapt-container-width="true"
-               data-hide-cover="false"
-               data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/stocktveld/" className="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/stocktveld/">Stocktveld Cohousing Tielt</a></blockquote>
-          </div>
+          <TwoColumnSection
+            childStyle={{ margin: 0 }}
+            noTablets
+          >
+            <div>
+              <SectionText
+                title="Facebook"
+                text="Ziehier onze activiteiten via sociale media. Volg ons op Facebook door op de 'Vind ik leuk'-knop te klikken."
+                customStyle={{ paddingBottom: '5%' }}
+              />
+              <div id="fb-root"></div>
+              <div className="fb-page"
+                   data-href="https://www.facebook.com/stocktveld/"
+                   data-tabs="timeline, events, messages"
+                   data-width="500"
+                   data-height="1000"
+                   data-small-header="false"
+                   data-adapt-container-width="true"
+                   data-hide-cover="false"
+                   data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/stocktveld/" className="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/stocktveld/">Stocktveld Cohousing Tielt</a></blockquote>
+              </div>
+            </div>
+            <div>
+              <SectionText
+                title="Pinterest"
+                text="Bekijk onze boards op Pinterest, met al de ideetjes in verband met ons project."
+                customStyle={{ paddingBottom: '5%' }}
+              />
+              <a
+                data-pin-do="embedBoard"
+                data-pin-board-width="800"
+                data-pin-scale-height="400"
+                data-pin-scale-width="200"
+                href="https://www.pinterest.com/stocktveld/kloostertuin/">
+              </a>
+              <a data-pin-do="embedBoard" data-pin-board-width="800" data-pin-scale-height="400"
+                 data-pin-scale-width="200" href="https://www.pinterest.com/stocktveld/paviljoen-koken-eten/"></a>
+              <a data-pin-do="embedBoard" data-pin-board-width="800" data-pin-scale-height="400"
+                 data-pin-scale-width="200" href="https://www.pinterest.com/stocktveld/paviljoen-relax/"></a>
+            </div>
+          </TwoColumnSection>
         </div>
       </div>
     )
