@@ -32,7 +32,8 @@ const Metadata = ({
     { name: "twitter:description", content: head.description },
     { name: "description", content: head.description },
     { name: "theme-color", content: "#ffffff" },
-    { name: "google-site-verification", content: "XziH1JxX5-LwQmmxWANw-B1WtvUBUaJJOqerfQ3QSxU" }
+    { name: "google-site-verification", content: "XziH1JxX5-LwQmmxWANw-B1WtvUBUaJJOqerfQ3QSxU" },
+    { name: "p:domain_verify", content: "2ba475aad55941b7b7bfa5bf743fa44a" }
   ];
 
   const favicons = [
