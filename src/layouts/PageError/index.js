@@ -1,23 +1,21 @@
 import React, { PropTypes } from "react"
-
+import { Link } from 'react-router';
 import styles from "./index.css"
 
 const PageError = ({ error, errorText }) => (
   <div className={ styles.container }>
-    <div className={ styles.oops }>{ "😱 Oooops!" }</div>
     <div className={ styles.text }>
       <p className={ styles.title }>
-        <strong>{ error }</strong>
-        { " " }
         { errorText }
       </p>
       {
         error === 404 &&
-        <div>
-          { "It seems you found a broken link. " }
-          { "Sorry about that. " }
+        <div className={styles.text}>
+          { "Het ziet ernaar uit dat deze pagina niet bestaat. " }
+          <br/>
+          <Link to="/">Ga terug naar onze home pagina</Link>
           <br />
-          { "Do not hesitate to report this page 😁." }
+          { "Aarzel niet om dit aan ons te rapporteren 😁." }
         </div>
       }
     </div>
@@ -31,7 +29,7 @@ PageError.propTypes = {
 
 PageError.defaultProps = {
   error: 404,
-  errorText: "Page Not Found",
+  errorText: "Sorry, deze pagina werd niet gevonden",
 }
 
 export default PageError

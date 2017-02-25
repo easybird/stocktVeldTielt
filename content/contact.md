@@ -3,4 +3,5 @@ title: Contact - Stocktveld
 pageTitle: Contact
 layout: StocktveldContact
 ---
-Hier komt de de contact pagina
+Kom in contact met Stocktveld Tielt via onze infosessies, facebook, mail of nieuwsbrief
+---

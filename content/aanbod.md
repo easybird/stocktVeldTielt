@@ -6,4 +6,4 @@ hero:
   src: /assets/img/aanbod/foto_tuin-achterkant2.jpg
   alt: kloostertuin
 ---
-Hier komt de de aanbod pagina
+Stocktveld Tielt, het unieke kwaliteitsvolle bouwproject voor jong en oud.

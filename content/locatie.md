@@ -6,4 +6,5 @@ hero:
   src: /assets/img/locatie/arrondissementen.png
   alt: groepsfoto
 ---
-Hier komt de de locatie pagina
+Stocktveld Tielt, stad en natuur op een boogscheut. 
+---
