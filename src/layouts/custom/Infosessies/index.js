@@ -18,7 +18,7 @@ const Infosessies = ({ href, linkText }) => (
         <li><strong>Zondag 26 maart om 15u</strong></li>
       </ul>
       <br/>
-      De infosessie vinden steeds plaats op onze site, in het klooster.
+      De infosessies vinden steeds plaats op onze site, in het klooster.
       <ul>
         <li>
           <strong> Blekerijstraat 22,
