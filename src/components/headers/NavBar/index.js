@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React  from 'react';
 import { Link } from 'react-router';
 import styles from './index.css';
 
@@ -60,7 +60,6 @@ class NavBar extends React.Component {
   }
 
   render() {
-    const { metadata: { pkg } } = this.context;
     const { isFixed, isVisible } = this.state;
 
     return (
@@ -132,12 +131,6 @@ class NavBar extends React.Component {
       </nav>
     );
   }
-}
-
-NavBar.propTypes = {};
-
-NavBar.contextTypes = {
-  metadata: PropTypes.object.isRequired
 }
 
 export default NavBar;
