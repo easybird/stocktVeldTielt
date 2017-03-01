@@ -27,7 +27,7 @@ class StocktveldPage extends Component {
           },
           {
             title: "Waarom in Tielt? ",
-            text: "Ik ben hier geboren, ik heb hier jaren gewerkt als kleuterleidster en ik ken hier veel mensen. Mijn kinderen en kleinkinderen wonen in de buurt. Ik vind het heel jn dat een project waar ik al lang van droomde hier in Tielt vorm krijgt."
+            text: "Ik ben hier geboren, ik heb hier jaren gewerkt als kleuterleidster en ik ken hier veel mensen. Mijn kinderen en kleinkinderen wonen in de buurt. Ik vind het heel fijn dat een project waar ik al lang van droomde hier in Tielt vorm krijgt."
           }
         ],
         linkText: "Lees het verhaal",
@@ -46,7 +46,7 @@ class StocktveldPage extends Component {
           { text: "Betty: We wisten al langer dat we later niet in een villa zouden wonen. We zochten eerst naar een hoeve, maar via vrienden hoorden we over cohousen. Jonathan was zeer benieuwd naar het project in zijn geboortestad Tielt. Na de infosessie waren we allebei erg enthousiast. Al was ik pas echt overtuigd als ik wist dat mijn privacy gerespecteerd zou worden. Alle andere bewoners hebben datzelfde gevoel. Dat heeft mij echt over de streep getrokken. Wat cohousen ook heel interessant maakt, is dat alle leeftijden vertegenwoordigd zijn in het project. Het zal dus een zeer levendige wijk blijven." },
           {
             title: "Waarom in Tielt?",
-            text: "Jonathan: Nu wonen we in Gent en we wilden graag terug naar Tielt. Ik ben opgegroeid in Tielt en heel wat van onze vrienden wonen hier. We vinden het ook to er om onze kinderen later in een groene omgeving te laten opgroeien die veilig is en waar alles aan en bij is."
+            text: "Jonathan: Nu wonen we in Gent en we wilden graag terug naar Tielt. Ik ben opgegroeid in Tielt en heel wat van onze vrienden wonen hier. We vinden het ook tof er om onze kinderen later in een groene omgeving te laten opgroeien die veilig is en waar alles aan en bij is."
           }
         ],
         linkText: "Lees het verhaal",
