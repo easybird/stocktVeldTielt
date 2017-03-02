@@ -16,6 +16,7 @@ const Infosessies = ({ href, linkText }) => (
     <div>De eerstvolgende datum waarop je lang kan komen:
       <ul>
         <li><strong>Zondag 26 maart om 15u</strong></li>
+        <li><strong>Zaterdag 29 april om 15u</strong></li>
       </ul>
       <br/>
       De infosessies vinden steeds plaats op onze site, in het klooster.
