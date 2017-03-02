@@ -13,7 +13,7 @@ const Infosessies = ({ href, linkText }) => (
       bouw, de prijs, de visie van de huidige bewoners rond het project.
       En dat allemaal door een aantal mensen van de huidige bewoners
     </div><br/>
-    <div>De eerstvolgende datum waarop je lang kan komen:
+    <div>De eerstvolgende data waarop je lang kan komen:
       <ul>
         <li><strong>Zondag 26 maart om 15u</strong></li>
         <li><strong>Zaterdag 29 april om 15u</strong></li>
