@@ -12,24 +12,27 @@ const WelcomeHeader = ({ scrollTo }) =>
                 links={['/assets/img/banner/kloostertuin.jpg',
                   '/assets/img/banner/binnenplein.jpg',
                   '/assets/img/banner/tuin-achterkant.jpg'
-                ]}/>
+                ]} />
         <div className={styles.heroTextBox}>
           <Button
             linkText="Bekijk ons aanbod"
             href="/aanbod"
             type={Button.TYPE.FULL}
           />
-          <div className={styles.heroButton}>
-            <Button
-              linkText="Benieuwd naar wie we zijn?"
-              href="/wie-zijn-we"
-              type={Button.TYPE.GHOST}
-            />
-          </div>
+          <Button
+            linkText="Benieuwd naar wie we zijn?"
+            href="/wie-zijn-we"
+            type={Button.TYPE.GHOST}
+          />
+          <Button
+            linkText="Kom naar onze infosessies"
+            href="/contact#infosessies"
+            type={Button.TYPE.FULL}
+          />
         </div>
       </div>
       <div className={styles.logo}>
-        <Logo scrollTo={scrollTo}/>
+        <Logo scrollTo={scrollTo} />
       </div>
     </header>
   );

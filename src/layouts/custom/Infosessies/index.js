@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionText from '../../../components/Content/SectionText';
 import MailTo from '../../../components/MailTo';
+import ExternalLink from '../../../components/ExternalLink';
 import "./index.css";
 
 const Infosessies = ({ href, linkText }) => (
@@ -26,8 +27,8 @@ const Infosessies = ({ href, linkText }) => (
             Tielt </strong></li>
       </ul>
       <br/>
-      Wil je graag meer weten? Of wil je ons laten weten dat je komt?<br/>
-      Stuur ons een mailtje: <strong>
+      Wil je graag meer weten? Of wil je ons laten weten dat je komt?<br/><br/>
+      Schrijf je in via het <strong><ExternalLink href="http://www.cohousingprojects.be/index.php/interesseformulier" text="inschrijvingsformulier" /></strong> of stuur ons een mailtje: <strong>
         <MailTo emailAddress="stocktveld@gmail.com" text="stocktveld@gmail.com" subject="Interesse%20in%20de%20infosessie"/>
       </strong>
     </div>
