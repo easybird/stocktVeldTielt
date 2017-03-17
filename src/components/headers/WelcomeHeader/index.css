@@ -19,15 +19,17 @@
 
 .heroTextBox {
   z-index: 10;
-  position: absolute;
-  top: 60vh;
-  left: 35vw;
-  transform: translate(-50%, -50%);
+  position: relative;
+  transform: translate(0%, -100%);
 }
 
 @media (--tablet-landscape-and-up) {
   .heroButton {
     display: inline-block;
     margin-left: 15px;
+  }
+
+  .heroTextBox {
+    transform: translate(0%, -150%);
   }
 }
