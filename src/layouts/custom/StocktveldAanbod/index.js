@@ -101,7 +101,7 @@ class StocktveldAanbod extends Component {
               text="Bij ons krijg je méer voor hetzelfde bedrag: grote tuin en terrassen, moestuin, extra lounge -en eetruimte, extra was- en plasplaats, extra bureau -en ontspanningsruimtes." />
           </OneColumnSection>
           <hr />
-          <Element name="timing">
+          <Element name="timing" id="timing">
             <TwoColumnSection title="Timing">
               <SectionImage imageSource="/assets/img/aanbod/timing/timing.jpg" imageAlt="timing" />
               <SectionText>
@@ -210,7 +210,7 @@ class StocktveldAanbod extends Component {
             </TwoColumnSection>
           </Element>
           <hr />
-          <Element name="partners">
+          <Element name="partners" id="partners">
             <TwoColumnSection
               title="Onze partners">
               <SectionImage imageSource="/assets/img/aanbod/partners1.png" imageAlt="partners" />
@@ -246,7 +246,7 @@ class StocktveldAanbod extends Component {
             </TwoColumnSection>
           </Element>
           <hr />
-          <Element name="commercieel">
+          <Element name="commercieel" id="commercieel">
             <TwoColumnSection
               title="Uw eigen zaak of kantoorruimte in Stocktveld?">
               <SectionText>
