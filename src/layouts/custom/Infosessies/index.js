@@ -16,7 +16,6 @@ const Infosessies = ({ href, linkText }) => (
     </div><br/>
     <div>De eerstvolgende data waarop je lang kan komen:
       <ul>
-        <li><strong>Zondag 26 maart om 15u</strong></li>
         <li><strong>Zaterdag 29 april om 10u</strong></li>
       </ul>
       <br/>
