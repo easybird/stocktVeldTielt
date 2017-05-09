@@ -11,6 +11,7 @@ import SectionText from '../../../components/Content/SectionText';
 import MailTo from '../../../components/MailTo';
 import Infosessies from '../Infosessies';
 import Button from '../../../components/Button';
+import Opendeur from '../../../layouts/custom/Opendeur';
 import { Element } from 'react-scroll';
 
 class StocktveldContact extends Component {
@@ -88,6 +89,8 @@ class StocktveldContact extends Component {
               type={Button.TYPE.FULL}
             />
           </div>
+          <hr/>
+          <Opendeur />
           <hr/>
           <Element name="infosessies" id="infosessies">
             <OneColumnSection>

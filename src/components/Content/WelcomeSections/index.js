@@ -11,6 +11,7 @@ import Carousel from '../../../layouts/Carousel';
 import Infosessies from '../../../layouts/custom/Infosessies';
 import Plannen from '../../../layouts/custom/Plannen';
 import Paviljoen from '../../../layouts/custom/Paviljoen';
+import Opendeur from '../../../layouts/custom/Opendeur';
 import Sold from '../../icons/Sold';
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
@@ -70,6 +71,8 @@ class WelcomeSections extends React.Component {
 
     return (
       <Element name={scrollElementName} className={styles.welcomeSections}>
+        <Opendeur />
+        <hr/>
         <OneColumnSection href="/aanbod">
           <SectionText
             title="Exclusief wonen in het groen met de stad aan je voordeur"

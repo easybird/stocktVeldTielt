@@ -16,7 +16,7 @@ const Infosessies = ({ href, linkText }) => (
     </div><br/>
     <div>De eerstvolgende data waarop je lang kan komen:
       <ul>
-        <li><strong>Zaterdag 29 april om 10u</strong></li>
+        <li><strong>Momenteel is er geen infosessie gepland wegens de opendeurdag van 20 mei, allen welkom!</strong></li>
       </ul>
       <br/>
       De infosessies vinden steeds plaats op onze site, in het klooster.
