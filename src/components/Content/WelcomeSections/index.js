@@ -1,18 +1,18 @@
-import React from 'react';
-import styles from './index.css';
-import OneColumnSection from '../OneColumnSection';
-import TwoColumnSection from '../TwoColumnSection';
-import GoogleMaps from '../../GoogleMaps';
-import SectionText from '../SectionText';
-import SectionImage from '../SectionImage';
-import {Element} from 'react-scroll';
-import {IMAGE_TYPES} from '../IMAGE_TYPES';
-import Carousel from '../../../layouts/Carousel';
-import Infosessies from '../../../layouts/custom/Infosessies';
-import Plannen from '../../../layouts/custom/Plannen';
-import Paviljoen from '../../../layouts/custom/Paviljoen';
-import Opendeur from '../../../layouts/custom/Opendeur';
-import Sold from '../../icons/Sold';
+import React from "react";
+import styles from "./index.css";
+import OneColumnSection from "../OneColumnSection";
+import TwoColumnSection from "../TwoColumnSection";
+import GoogleMaps from "../../GoogleMaps";
+import SectionText from "../SectionText";
+import SectionImage from "../SectionImage";
+import { Element } from "react-scroll";
+import { IMAGE_TYPES } from "../IMAGE_TYPES";
+import Carousel from "../../../layouts/Carousel";
+import Infosessies from "../../../layouts/custom/Infosessies";
+import Plannen from "../../../layouts/custom/Plannen";
+import Paviljoen from "../../../layouts/custom/Paviljoen";
+import Nieuws from "../../../layouts/custom/Nieuws";
+import Sold from "../../icons/Sold";
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
 class WelcomeSections extends React.Component {
@@ -21,35 +21,35 @@ class WelcomeSections extends React.Component {
 
     this.quoteSections = [
       {
-        title: '”Door in het project te stappen, krijg ik de mogelijkheid om soepel en jong van geest te blijven”',
-        href: '/wie-zijn-we#trees',
-        text: 'Ik woon in het centrum van Tielt, ik woon hier graag maar de formule van cohousen biedt me meer. Het is voor mij belangrijk om in verbinding te staan met mensen, om betrokkenheid, openheid en inspiratie te ervaren. Zeker nu mijn kinderen de deur uit zijn. Ik geniet van het meeleven en samenleven met anderen, jong en oud, met respect voor ieders privéleven. Dat ik de mensen om me heen ken, biedt me een gevoel van geborgenheid.',
-        linkText: 'Lees het verhaal',
-        imageSource: '/assets/img/verhalen/gezinnen/t-portret.jpg',
-        imageAlt: 'Whatever picture',
+        title: "”Door in het project te stappen, krijg ik de mogelijkheid om soepel en jong van geest te blijven”",
+        href: "/wie-zijn-we#trees",
+        text: "Ik woon in het centrum van Tielt, ik woon hier graag maar de formule van cohousen biedt me meer. Het is voor mij belangrijk om in verbinding te staan met mensen, om betrokkenheid, openheid en inspiratie te ervaren. Zeker nu mijn kinderen de deur uit zijn. Ik geniet van het meeleven en samenleven met anderen, jong en oud, met respect voor ieders privéleven. Dat ik de mensen om me heen ken, biedt me een gevoel van geborgenheid.",
+        linkText: "Lees het verhaal",
+        imageSource: "/assets/img/verhalen/gezinnen/t-portret.jpg",
+        imageAlt: "Whatever picture"
       },
       {
-        title: '“Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen”',
-        href: '/wie-zijn-we#j-en-b',
-        text: 'Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen.',
-        linkText: 'Lees het verhaal',
-        imageSource: '/assets/img/verhalen/gezinnen/j-en-b-portret.jpg',
-        imageAlt: 'Whatever picture',
+        title: "“Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen”",
+        href: "/wie-zijn-we#j-en-b",
+        text: "Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen.",
+        linkText: "Lees het verhaal",
+        imageSource: "/assets/img/verhalen/gezinnen/j-en-b-portret.jpg",
+        imageAlt: "Whatever picture"
       },
       {
-        title: '“Wonen in het groen met de stad aan je voordeur“',
-        href: '/wie-zijn-we#w-en-e',
-        text: 'We waren op zoek naar een nieuwe thuis in Tielt. Liefst met wat groen, vlak bij het centrum zodat onze kinderen makkelijk naar school kunnen en we ze niet om de haverklap met de auto ergens heen moeten rijden voor hun hobby’s. Verder hadden we ook nog graag een kwaliteitsvolle, gezonde en energiezuinige woning. Het viel al snel op dat onze verwachtingen ook een financieel kostenplaatje met zich meebracht. Het is dus interessanter kosten te kunnen delen.',
-        linkText: 'Lees het verhaal',
-        imageSource: '/assets/img/verhalen/gezinnen/w-en-e-portret.jpg',
-        imageAlt: 'Whatever picture',
-      },
+        title: "“Wonen in het groen met de stad aan je voordeur“",
+        href: "/wie-zijn-we#w-en-e",
+        text: "We waren op zoek naar een nieuwe thuis in Tielt. Liefst met wat groen, vlak bij het centrum zodat onze kinderen makkelijk naar school kunnen en we ze niet om de haverklap met de auto ergens heen moeten rijden voor hun hobby’s. Verder hadden we ook nog graag een kwaliteitsvolle, gezonde en energiezuinige woning. Het viel al snel op dat onze verwachtingen ook een financieel kostenplaatje met zich meebracht. Het is dus interessanter kosten te kunnen delen.",
+        linkText: "Lees het verhaal",
+        imageSource: "/assets/img/verhalen/gezinnen/w-en-e-portret.jpg",
+        imageAlt: "Whatever picture"
+      }
     ];
   }
 
   render() {
     const QuoteSections = [];
-    const {scrollElementName} = this.props;
+    const { scrollElementName } = this.props;
 
     this.quoteSections.forEach((quoteSection, index) => {
       QuoteSections.push(
@@ -65,14 +65,14 @@ class WelcomeSections extends React.Component {
             href={quoteSection.href}
             linkText={quoteSection.linkText}
           />
-        </TwoColumnSection>,
+        </TwoColumnSection>
       );
     });
 
     return (
       <Element name={scrollElementName} className={styles.welcomeSections}>
-        <Opendeur />
-        <hr/>
+        <Nieuws />
+        <hr />
         <OneColumnSection href="/aanbod">
           <SectionText
             title="Exclusief wonen in het groen met de stad aan je voordeur"
@@ -92,7 +92,7 @@ class WelcomeSections extends React.Component {
             text="Met een enorm divers aanbod aan woningen, appartementen en renovatie biedt Stocktveld voor elk wat wils. Het project is een collectief particulier bouwproject op de site van het voormalig slotklooster aan het station van Tielt. Er zijn 37 individuele woningen van verschillende groottes met elk een eigen private buitenruimte in de vorm van een tuintje of een terras. Daarnaast is er een grote gemeenschappelijke tuin die eigendom is van alle bewoners en enkele gemeenschappelijke faciliteiten zoals onder andere een (feest)zaal met uitgeruste keuken, gastenkamers, bibliotheek, wassalon en kantoorruimte."
             href="/aanbod"
             linkText="Ontdek het aanbod"
-            customStyle={{marginTop: '50px'}}
+            customStyle={{ marginTop: "50px" }}
           />
           <SectionImage
             imageSource="/assets/img/aanbod/render_small.jpg"
@@ -136,7 +136,7 @@ class WelcomeSections extends React.Component {
 
 WelcomeSections.propTypes = {
   scrollElementName: React.PropTypes.string,
-  percentageSold: React.PropTypes.number.isRequired,
+  percentageSold: React.PropTypes.number.isRequired
 };
 
 export default WelcomeSections;
