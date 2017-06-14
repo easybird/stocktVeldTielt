@@ -15,8 +15,8 @@ const Opendeur = () => (
       <div>
         Een grond en vergevorderde bouwplannen hadden we al, de groep is in de maak, maar een bouwdatum en daaraan gekoppeld een verhuisdatum hadden we nog niet. Dat laatste stukje onzekerheid is nu van de baan. We kunnen nu vol goesting de laatste rechte lijn inzetten.
         <br />
-        Tegen begin juli finaliseren we de bouwaanvraag. We plannen om tegen eind februari 2018 de bouw te beginnen.
-        Een jaar later zouden we er dus kunnen wonen.
+        Tegen begin juli finaliseren we de bouwaanvraag. We kopen de grond aan in februari en plannen dus om tegen eind februari 2018 aan de werken te kunnen beginnen.
+        Begin 2020 plannen we er te gaan wonen.
       </div>
       <br />
       <div style={{ textAlign: "left" }}>
