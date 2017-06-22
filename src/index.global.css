@@ -59,6 +59,10 @@ body {
 /*position: relative;*/
 /*}*/
 
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
 :root {
   --phenomic-HeadingAnchor-width: 1.4rem;
   --phenomic-HeadingAnchor-margin: 0.4rem;
