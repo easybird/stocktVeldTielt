@@ -125,7 +125,7 @@ const areas = [
     id: "22",
     shape: "circle",
     coords: [570, 165, 15],
-    fillColor: redOpacity
+    fillColor: greenOpacity
   },
   {
     id: "23",
@@ -149,7 +149,7 @@ const areas = [
     id: "26",
     shape: "circle",
     coords: [580, 135, 15],
-    fillColor: greenOpacity
+    fillColor: redOpacity
   },
   {
     id: "27",
