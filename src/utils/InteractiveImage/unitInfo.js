@@ -2,7 +2,7 @@ import { AVAILABLE, SOLD, RESERVED } from "./STATUS";
 
 export const unitTypeDescriptions = {
   oostVleugel: {
-    description: "Deze nieuwbouwwoning bevindt zich in de oostvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de moestuin."
+    description: "Deze nieuwbouwwoning bevindt zich in de oostvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de moestuin. Bovendien ligt deze woning dichtbij de parking."
   },
   zuidVleugel: {
     description: "Deze nieuwbouwwoning bevindt zich in de zuidvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de grote gemeenschappelijke tuin."
