@@ -148,6 +148,7 @@
   },
   "dependencies": {
     "react-async-script": "^0.6.0",
+    "react-image-lightbox": "^4.1.0",
     "react-modal": "^2.0.6",
     "react-scroll": "^1.4.4"
   }

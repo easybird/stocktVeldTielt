@@ -5,11 +5,9 @@ import {
   detailPlattegrondAreas,
   detailAppartmentsAreas
 } from "./areas";
-import unitInfo from "./unitInfo";
 import SectionText from "../../components/Content/SectionText";
 import OneColumnSection from "../../components/Content/OneColumnSection";
-import Modal from "react-modal";
-import ToggleButton from "../../components/ToggleButton";
+import UnitDetailsModal from "./UnitDetailsModal";
 
 const WIDTH = 1000;
 const DETAIL_HOUSES_MAP = {
@@ -72,74 +70,27 @@ class InteractiveImage extends React.Component {
   render() {
     return (
       <div>
-        <Modal
+        <UnitDetailsModal
           isOpen={this.state.modalIsOpen}
-          onAfterOpen={() => {}}
-          onRequestClose={() => {}}
-          closeTimeoutMS={0}
-          style={{ backgroundColor: "white", zIndex: 100 }}
-          contentLabel="Modal"
-        >
-          <div style={{ position: "relative", height: "100%" }}>
-            <h2>
-              Lot:
-              {" "}
-              {this.state.selectedUnit && unitInfo[this.state.selectedUnit].lot}
-            </h2>
-            <h2>
-              Type:
-              {" "}
-              {this.state.selectedUnit &&
-                unitInfo[this.state.selectedUnit].type}
-            </h2>
-            <h2>
-              Bewoonbare oppervlakte woning:
-              {" "}
-              {this.state.selectedUnit &&
-                unitInfo[this.state.selectedUnit].squareMeters}
-              m<sup>2 </sup>
-            </h2>
-            <h2>
-              Grootte tuin:
-              {" "}
-              {this.state.selectedUnit &&
-                unitInfo[this.state.selectedUnit].gardenSquareMeters}
-              m<sup>2 </sup>
-            </h2>
-            <h2>
-              Aantal slaapkamers:
-              {" "}
-              {this.state.selectedUnit &&
-                unitInfo[this.state.selectedUnit].rooms}
-            </h2>
-            <h2>
-              Prijs:
-              {" "}
-              {this.state.selectedUnit &&
-                `€ ${unitInfo[this.state.selectedUnit].price}`}
-            </h2>
-            <p>Hier komt informatie over dit huis/appartement.</p>
-            <div style={{ position: "absolute", right: 0, bottom: 50 }}>
-              <ToggleButton
-                style={{}}
-                onClick={() =>
-                  this.setState({ modalIsOpen: !this.state.modalIsOpen })}
-              >
-                <h2>Sluit</h2>
-              </ToggleButton>
-            </div>
-          </div>
-        </Modal>
+          selectedUnit={this.state.selectedUnit}
+          onPrevious={() =>
+            this.setState({ selectedUnit: this.state.selectedUnit - 1 })}
+          onNext={() =>
+            this.setState({ selectedUnit: this.state.selectedUnit + 1 })}
+          onClose={() => {
+            this.setState({ selectedUnit: null, modalIsOpen: false });
+          }}
+        />
         <div style={{ position: "relative" }}>
           <OneColumnSection noPadding={true}>
             <SectionText>
               <div>
-                Er zijn 37 woningen en appartementen beschikbaar in het project. Bekijk hieronder de beschikbare units en hun plannen in detail. De nieuwbouw woningen en de appartementen worden elk in hun eigen rubriek belicht.
+                Er zijn 37 woningen en appartementen beschikbaar in het project. Bekijk hieronder de beschikbare units en hun plannen in detail. De nieuwbouw woningen en de appartementen worden elk in hun eigen rubriek belicht. De groene zijn nog vrij, de rode zijn verkocht, en voor de orangje is er een voorlopige optie hangende.
               </div><br /><div>
                 <h4>Nieuwbouw woningen en renovatie duplexen</h4>
                 Number 35 tot 37 zijn onze renovatie duplexen. De rest zijn nieuwbouw woningen.
-                Wil je graag meer informatie per huis?
-                Ga dan met je muis over het huis waarin je geïnteresseerd bent en klik op het bijhorende huisnummer voor gedetailleerde info.
+                Wil je graag meer informatie per unit?
+                Ga dan met je muis over de unit waarin je geïnteresseerd bent en klik op het bijhorende huisnummer voor gedetailleerde info.
               </div>
               <div />
             </SectionText>
