@@ -1,19 +1,19 @@
-import React, { PropTypes, Component } from 'react';
-import NavBar from '../../../components/headers/NavBar';
-import styles from './index.css';
-import ThemeHeader from '../../../components/headers/ThemeHeader';
-import Metadata from '../../../components/head/Metadata';
-import OneColumnSection from '../../../components/Content/OneColumnSection';
-import TwoColumnSection from '../../../components/Content/TwoColumnSection';
-import SectionImage from '../../../components/Content/SectionImage';
-import SectionVideo from '../../../components/Content/SectionVideo';
-import SectionText from '../../../components/Content/SectionText';
-import Button from '../../../components/Button';
-import Quote from '../../../components/Quote';
-import ExternalLink from '../../../components/ExternalLink';
-import Plannen from '../Plannen';
-import Paviljoen from '../Paviljoen';
-import { Element } from 'react-scroll';
+import React, { PropTypes, Component } from "react";
+import NavBar from "../../../components/headers/NavBar";
+import styles from "./index.css";
+import ThemeHeader from "../../../components/headers/ThemeHeader";
+import Metadata from "../../../components/head/Metadata";
+import OneColumnSection from "../../../components/Content/OneColumnSection";
+import TwoColumnSection from "../../../components/Content/TwoColumnSection";
+import SectionImage from "../../../components/Content/SectionImage";
+import SectionVideo from "../../../components/Content/SectionVideo";
+import SectionText from "../../../components/Content/SectionText";
+import Button from "../../../components/Button";
+import Quote from "../../../components/Quote";
+import ExternalLink from "../../../components/ExternalLink";
+import Plannen from "../Plannen";
+import Paviljoen from "../Paviljoen";
+import { Element } from "react-scroll";
 
 class StocktveldAanbod extends Component {
   constructor(props) {
@@ -26,24 +26,22 @@ class StocktveldAanbod extends Component {
 
   hashLinkScroll() {
     const { hash } = window.location;
-    if (hash !== '') {
+    if (hash !== "") {
       setTimeout(() => {
-        const id = hash.replace('#', '');
+        const id = hash.replace("#", "");
         const element = document.getElementById(id);
-        if (element) element.scrollIntoView({ block: "start", behavior: "instant" });
+        if (element)
+          element.scrollIntoView({ block: "start", behavior: "instant" });
       }, 0);
     }
   }
 
   render() {
     return (
-      <div className={ styles.stocktveld }>
-        <Metadata { ...this.props } />
-        <ThemeHeader
-          height="50vh"
-          hero={this.props.head.hero}
-        />
-        <NavBar { ...this.props } />
+      <div className={styles.stocktveld}>
+        <Metadata {...this.props} />
+        <ThemeHeader height="50vh" hero={this.props.head.hero} />
+        <NavBar {...this.props} />
         <div className={styles.welcomeSections}>
           <Element name="intro">
             <OneColumnSection>
@@ -90,25 +88,28 @@ class StocktveldAanbod extends Component {
           <br />
           <hr />
           <Element name="plannen" id="plannen">
-            <OneColumnSection
-              noCentered={true}>
-              <Plannen></Plannen>
+            <OneColumnSection noCentered={true}>
+              <Plannen />
             </OneColumnSection>
           </Element>
           <hr />
           <OneColumnSection>
-            <Quote
-              text="Bij ons krijg je méer voor hetzelfde bedrag: grote tuin en terrassen, moestuin, extra lounge -en eetruimte, extra was- en plasplaats, extra bureau -en ontspanningsruimtes." />
+            <Quote text="Bij ons krijg je méer voor hetzelfde bedrag: grote tuin en terrassen, moestuin, extra lounge -en eetruimte, extra was- en plasplaats, extra bureau -en ontspanningsruimtes." />
           </OneColumnSection>
           <hr />
           <Element name="timing" id="timing">
             <TwoColumnSection title="Timing">
-              <SectionImage imageSource="/assets/img/aanbod/timing/timing.jpg" imageAlt="timing" />
+              <SectionImage
+                imageSource="/assets/img/aanbod/timing/timing.jpg"
+                imageAlt="timing"
+              />
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
                   <h3>Wat hebben we al achter de rug?</h3>
                   <h3>Wedstrijdontwerp</h3>
-                  <div> Via een uitgeschreven wedstrijdontwerp kwamen we in 2016 tot de keuze van onze architect.
+                  <div>
+                    {" "}
+                    Via een uitgeschreven wedstrijdontwerp kwamen we in 2016 tot de keuze van onze architect.
                     In het winnende wedstrijdontwerp worden de woningen , appartementen en het klooster met elkaar
                     verbonden door een functionele galerij.
                     De collectieve buitenruimte bestaat uit gezellig plein tussen de woningen, appartementen en
@@ -117,14 +118,17 @@ class StocktveldAanbod extends Component {
                     kindvriendelijk, is.
                   </div>
                 </div>
-                <div></div>
+                <div />
               </SectionText>
             </TwoColumnSection>
-            <TwoColumnSection
-              childStyle={{ margin: 0 }}>
+            <TwoColumnSection childStyle={{ margin: 0 }}>
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
                   <h3>Waarmee zijn we bezig?</h3>
+                  <h3>Indienen bouwaanvraag</h3>
+                  <div className={`${styles.card} ${styles.newParagraph}`}>
+                    Onze architect en de huidige bewoners zijn volop bezig de laatste hand aan het leggen aan de bouwaanvraag. De bedoeling is om deze nog voor het bouwverlof van 2017 in te dienen. Spannend!
+                  </div>
                   <h3>Ontwerp tuin</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
                     Na de zomer van 2016 presenteerde Studio Basta het voorontwerp voor het plein en de tuin op basis
@@ -134,10 +138,14 @@ class StocktveldAanbod extends Component {
                     Het geheel oogt zeer groen en stimuleert ongedwongen gebruik en informeel contact.
                   </div>
                   <div style={{ display: "flex" }}>
-                    <SectionImage imageSource="/assets/img/aanbod/timing/schets-binnenhof.png"
-                                  imageAlt="schets binnenhof" />
-                    <SectionImage imageSource="/assets/img/aanbod/timing/schets-binnenhof2.png"
-                                  imageAlt="schets binnenhof" />
+                    <SectionImage
+                      imageSource="/assets/img/aanbod/timing/schets-binnenhof.png"
+                      imageAlt="schets binnenhof"
+                    />
+                    <SectionImage
+                      imageSource="/assets/img/aanbod/timing/schets-binnenhof2.png"
+                      imageAlt="schets binnenhof"
+                    />
                   </div>
                   <h3>Voorontwerp woningen</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
@@ -166,24 +174,29 @@ class StocktveldAanbod extends Component {
                     is dus de boodschap.
                   </div>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                  <h3>Wat brengt de toekomst?</h3>
-                    <ul style={{
-                      listStyleType: 'disc',
-                      listStylePosition: 'inside',
-                      textIndent: '-2em',
-                      paddingLeft: '2em'
-                    }}>
-                      <li>Tegen halverwege 2017 ronden we het ontwerpproces af en vragen we de bouwvergunning aan.</li>
-                      <li>Eind 2017
-                        denken we de vergunning op zak te hebben en te beginnen bouwen.
+                    <h3>Wat brengt de toekomst?</h3>
+                    <ul
+                      style={{
+                        listStyleType: "disc",
+                        listStylePosition: "inside",
+                        textIndent: "-2em",
+                        paddingLeft: "2em"
+                      }}
+                    >
+                      <li>
+                        Begin juli 2017 ronden we het ontwerpproces af en vragen we de bouwvergunning aan.
                       </li>
-                      <li> Begin 2019, willen we
+                      <li>
+                        Februari 2018 denken we de vergunning op zak te hebben en te beginnen bouwen.
+                      </li>
+                      <li>
+                        {" "}Begin 2020 ten laatste, willen we
                         verhuizen naar het ‘Stocktveld’.
                       </li>
                     </ul>
                   </div>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                  <h3>Iets voor u? </h3>
+                    <h3>Iets voor u? </h3>
                     Hoe vroeger u beslist, hoe meer keuzevrijheid en inspraak.
                   </div>
                   <Button
@@ -191,69 +204,102 @@ class StocktveldAanbod extends Component {
                     href="/contact"
                     type={Button.TYPE.GHOST}
                   />
-                  </div>
-                <div></div>
+                </div>
+                <div />
               </SectionText>
               <div>
                 <div className={styles.card}>
-                  <SectionImage imageSource="/assets/img/aanbod/timing/maquette2.jpg" imageAlt="maquette" />
+                  <SectionImage
+                    imageSource="/assets/img/aanbod/timing/maquette2.jpg"
+                    imageAlt="maquette"
+                  />
                 </div>
                 <div className={styles.card}>
-                  <SectionImage imageSource="/assets/img/aanbod/timing/foto_binnenzicht_small.jpg"
-                                imageAlt="foto binnen" />
+                  <SectionImage
+                    imageSource="/assets/img/aanbod/timing/foto_binnenzicht_small.jpg"
+                    imageAlt="foto binnen"
+                  />
                 </div>
                 <div className={styles.card}>
-                  <SectionVideo
-                    src="https://www.youtube.com/embed/l6hfWPcE400?autoplay=1&loop=1&playlist=l6hfWPcE400"
-                  /></div>
+                  <SectionVideo src="https://www.youtube.com/embed/l6hfWPcE400?autoplay=1&loop=1&playlist=l6hfWPcE400" />
+                </div>
               </div>
             </TwoColumnSection>
           </Element>
           <hr />
           <Element name="partners" id="partners">
-            <TwoColumnSection
-              title="Onze partners">
-              <SectionImage imageSource="/assets/img/aanbod/partners1.png" imageAlt="partners" />
+            <TwoColumnSection title="Onze partners">
+              <SectionImage
+                imageSource="/assets/img/aanbod/partners1.png"
+                imageAlt="partners"
+              />
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
-                  <div>We kunnen dit uiteraard niet alleen. Om een kwalitatief en duurzaam project te realiseren op een
+                  <div>
+                    We kunnen dit uiteraard niet alleen. Om een kwalitatief en duurzaam project te realiseren op een
                     betaalbare manier heeft Stocktveld
                     enkele goeie partners onder de arm genomen.
                   </div>
                   <div>
-                    We kozen voor het team van architectenbureau <ExternalLink href="http://www.architec.be"
-                                                                               text="aRCHITEC" /> uit Wevelgem,
+                    We kozen voor het team van architectenbureau
+                    {" "}
+                    <ExternalLink
+                      href="http://www.architec.be"
+                      text="aRCHITEC"
+                    />
+                    {" "}
+                    uit Wevelgem,
                     aangevuld
                     met landschapsbureau
-                    <ExternalLink href="http://studiobasta.be" text="Studio Basta" /> en bouwfysisch ingenieursbureau
-                    <ExternalLink href="http://www.daidalospeutz.be/" text="Daidalos Peutz" />.
-                    De bouwfirma <ExternalLink href="http://www.dumobil.be" text="Dumobil" />, gekend van villabouw en
+                    <ExternalLink
+                      href="http://studiobasta.be"
+                      text="Studio Basta"
+                    />
+                    {" "}
+                    en bouwfysisch ingenieursbureau
+                    <ExternalLink
+                      href="http://www.daidalospeutz.be/"
+                      text="Daidalos Peutz"
+                    />
+                    .
+                    De bouwfirma
+                    {" "}
+                    <ExternalLink href="http://www.dumobil.be" text="Dumobil" />
+                    , gekend van villabouw en
                     woonprojecten, zorgt voor de bouw van onze
                     wooneenheden.
-                    <ExternalLink href="http://cohousingprojects.be" text="Cohousing Projects" /> werd aangenomen voor
+                    <ExternalLink
+                      href="http://cohousingprojects.be"
+                      text="Cohousing Projects"
+                    />
+                    {" "}
+                    werd aangenomen voor
                     de
                     nodige ondersteuning, coördinatie en expertise.
                     Zij bieden Stocktveld een totaalbegeleiding doorheen het ganse proces: gaande van groepsbegeleiding,
                     over commerciële onderhandelingen, tot financiële ondersteuning.
                   </div>
-                  <div>Deze partners helpen ons bij het ontwerpen en implementeren van het bouw - en groepsproces.
+                  <div>
+                    Deze partners helpen ons bij het ontwerpen en implementeren van het bouw - en groepsproces.
                     De toekomstige bewoners van Stocktveld nemen wel steeds de uiteindelijke beslissingen in een
                     consensusmodel.
                   </div>
                 </div>
-                <div></div>
+                <div />
               </SectionText>
             </TwoColumnSection>
           </Element>
           <hr />
           <Element name="commercieel" id="commercieel">
-            <TwoColumnSection
-              title="Uw eigen zaak of kantoorruimte in Stocktveld?">
+            <TwoColumnSection title="Uw eigen zaak of kantoorruimte in Stocktveld?">
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
-                  <h3>Apotheek? Bakkerij? Horeca? Yogaruimte? Dat kan!
+                  <h3>
+                    Apotheek? Bakkerij? Horeca? Yogaruimte? Dat kan!
                   </h3>
-                  <div> Het volume en de inrichting van uw werkruimte is op dit moment nog volledig in te vullen.
+                  <div>
+                    {" "}
+                    Het volume en de inrichting van uw werkruimte is op dit moment nog volledig in te vullen.
                     Oppervlaktes gaan van 20 vierkante meter tot 734 vierkante meter.
                   </div>
                   <br />
@@ -267,17 +313,23 @@ class StocktveldAanbod extends Component {
                   <br />
                   <div>
                     <h3>Troeven:</h3>
-                    <ul style={{
-                      listStyleType: 'disc',
-                      listStylePosition: 'inside',
-                      textIndent: '-2em',
-                      paddingLeft: '2em'
-                    }}>
+                    <ul
+                      style={{
+                        listStyleType: "disc",
+                        listStylePosition: "inside",
+                        textIndent: "-2em",
+                        paddingLeft: "2em"
+                      }}
+                    >
                       <li>Wandelafstand tot het centrum van Tielt</li>
                       <li>Aansluiting op alle openbaar vervoer</li>
-                      <li> Gelegen in een woonproject met meer dan 100 inwoners
+                      <li>
+                        {" "}
+                        Gelegen in een woonproject met meer dan 100 inwoners
                       </li>
-                      <li> Ontwikkeling van nieuwbouwprojecten op aanpalende percelen
+                      <li>
+                        {" "}
+                        Ontwikkeling van nieuwbouwprojecten op aanpalende percelen
                       </li>
                     </ul>
                   </div>
@@ -294,11 +346,13 @@ class StocktveldAanbod extends Component {
                     type={Button.TYPE.GHOST}
                   />
                 </div>
-                <div></div>
+                <div />
 
               </SectionText>
-              <SectionImage imageSource="/assets/img/aanbod/commercieel/business_ideas.jpg"
-                            imageAlt="commerciële ruimte" />
+              <SectionImage
+                imageSource="/assets/img/aanbod/commercieel/business_ideas.jpg"
+                imageAlt="commerciële ruimte"
+              />
             </TwoColumnSection>
           </Element>
           <hr />
@@ -307,10 +361,9 @@ class StocktveldAanbod extends Component {
           </Element>
         </div>
       </div>
-    )
+    );
   }
 }
-
 
 StocktveldAanbod.propTypes = {
   children: PropTypes.node,
@@ -319,4 +372,4 @@ StocktveldAanbod.propTypes = {
   body: PropTypes.string
 };
 
-export default StocktveldAanbod
+export default StocktveldAanbod;
