@@ -1,6 +1,10 @@
 var React = require("react");
 import ImageMapper from "./ImageMapper";
-import areas from "./areas";
+import {
+  detailHousesAreas,
+  detailPlattegrondAreas,
+  detailAppartmentsAreas
+} from "./areas";
 import unitInfo from "./unitInfo";
 import SectionText from "../../components/Content/SectionText";
 import OneColumnSection from "../../components/Content/OneColumnSection";
@@ -8,18 +12,31 @@ import Modal from "react-modal";
 import ToggleButton from "../../components/ToggleButton";
 
 const WIDTH = 1000;
-var MAP = {
-  name: "my-map",
-  areas
+const DETAIL_HOUSES_MAP = {
+  name: "detailHousesAreas",
+  areas: detailHousesAreas
+};
+const DETAIL_PLATTEGROUND_MAP = {
+  name: "detailPlattegrondAreas",
+  areas: detailPlattegrondAreas
+};
+const DETAIL_APPARTMENTS_MAP = {
+  name: "detailAppartmentsAreas",
+  areas: detailAppartmentsAreas
 };
 
-var URL = "/assets/img/aanbod/render-detail-houses.png";
+const detailHousesUrl = "/assets/img/aanbod/render-detail-houses.png";
+const detailPlattegrondUrl =
+  "/assets/img/aanbod/plattegrond_small_gedraaid.png";
+const detailAppartmentsUrl = "/assets/img/aanbod/render-detail-appartments.jpg";
 
 class InteractiveImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      map: MAP,
+      detailHouseMap: DETAIL_HOUSES_MAP,
+      detailPlattegrondMap: DETAIL_PLATTEGROUND_MAP,
+      detailAppartmentsMap: DETAIL_APPARTMENTS_MAP,
       colorIndex: 0,
       showAllAreas: true,
       modalIsOpen: false,
@@ -28,12 +45,16 @@ class InteractiveImage extends React.Component {
   }
 
   componentWillReceiveProps() {
-    this.setState({ map: { ...MAP } });
+    this.setState({
+      detailHouseMap: { ...DETAIL_HOUSES_MAP },
+      detailPlattegrondMap: { ...DETAIL_PLATTEGROUND_MAP },
+      detailAppartmentsMap: { ...DETAIL_APPARTMENTS_MAP }
+    });
   }
 
   componentDidMount() {
     // setInterval(() => {
-    //   const newMap = { ...this.state.map };
+    //   const newMap = { ...this.state.detailHouseMap };
     //   if (this.colorIndex === this.colors.length - 1) {
     //     this.colorIndex = 0;
     //   } else {
@@ -113,20 +134,65 @@ class InteractiveImage extends React.Component {
           <OneColumnSection noPadding={true}>
             <SectionText>
               <div>
-                Er zijn 37 woningen en appartementen beschikbaar in het project. Waarvan nu ongeveer de helft is verkocht.
+                Er zijn 37 woningen en appartementen beschikbaar in het project. Bekijk hieronder de beschikbare units en hun plannen in detail. De nieuwbouw woningen en de appartementen worden elk in hun eigen rubriek belicht.
               </div><br /><div>
+                <h4>Nieuwbouw woningen en renovatie duplexen</h4>
+                Number 35 tot 37 zijn onze renovatie duplexen. De rest zijn nieuwbouw woningen.
                 Wil je graag meer informatie per huis?
-                {" "}
-                <br />
-                {" "}
-                Ga dan met je muis over het huis waarin je geïnteresseerd bent en klik op het bijhorende huisnummer om meer info over het huis te zien.
+                Ga dan met je muis over het huis waarin je geïnteresseerd bent en klik op het bijhorende huisnummer voor gedetailleerde info.
               </div>
               <div />
             </SectionText>
           </OneColumnSection>
           <ImageMapper
-            src={URL}
-            map={this.state.map}
+            src={detailHousesUrl}
+            map={this.state.detailHouseMap}
+            width={WIDTH}
+            showRaster={false}
+            onClick={area => {
+              this.setState({
+                selectedUnit: area.id,
+                modalIsOpen: !this.state.modalIsOpen
+              });
+            }}
+            showAllAreas={this.state.showAllAreas}
+            onShowAllAreasChange={() =>
+              this.setState({ showAllAreas: !this.state.showAllAreas })}
+          />
+          <OneColumnSection noPadding={true}>
+            <SectionText>
+              <h4>Appartementen</h4>
+              <div>
+                Hier vind je hetzelfde overzichtje voor de appartementen als van de woningen. Klik op de huisnummers voor meer info.
+              </div>
+            </SectionText>
+          </OneColumnSection>
+          <ImageMapper
+            src={detailAppartmentsUrl}
+            map={this.state.detailAppartmentsMap}
+            width={WIDTH}
+            showRaster={false}
+            onClick={area => {
+              this.setState({
+                selectedUnit: area.id,
+                modalIsOpen: !this.state.modalIsOpen
+              });
+            }}
+            showAllAreas={this.state.showAllAreas}
+            onShowAllAreasChange={() =>
+              this.setState({ showAllAreas: !this.state.showAllAreas })}
+          />
+          <OneColumnSection>
+            <SectionText>
+              <h4>Plattegrond</h4>
+              <div>
+                Onderstaand zie je nog eens de plattegrond, klik op de huisnummers voor meer info.
+              </div>
+            </SectionText>
+          </OneColumnSection>
+          <ImageMapper
+            src={detailPlattegrondUrl}
+            map={this.state.detailPlattegrondMap}
             width={WIDTH}
             showRaster={false}
             onClick={area => {
@@ -140,14 +206,7 @@ class InteractiveImage extends React.Component {
               this.setState({ showAllAreas: !this.state.showAllAreas })}
           />
         </div>
-        <div style={{ marginTop: "-70px" }}>
-          <OneColumnSection noPadding={true}>
-            <SectionText customStyle={{ textAlign: "left" }}>
-              <div /><div />
-            </SectionText>
 
-          </OneColumnSection>
-        </div>
       </div>
     );
   }
