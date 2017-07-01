@@ -1,3 +1,5 @@
+/* eslint no-unused-vars: 0 */
+
 //based on https://github.com/coldiary/react-image-mapper
 import React, { Component, PropTypes } from "react";
 import ToggleButton from "../../components/ToggleButton";
