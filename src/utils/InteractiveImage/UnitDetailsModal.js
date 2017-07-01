@@ -20,19 +20,19 @@ export default class UnitDetailsModal extends React.Component {
   render() {
     let unit;
     let rightColumn;
+    let imageSource = "/assets/img/aanbod/verkocht.png";
     if (this.props.selectedUnit) {
       unit = unitInfo[this.props.selectedUnit];
     }
 
     if (unit) {
       if (unit.status === SOLD) {
-        const imageSource = "/assets/img/aanbod/verkocht.png";
         rightColumn = (
           <ToggleButton
             onClick={() => this.setState({ isOpen: imageSource })}
             style={{ cursor: "zoom-in", backgroundColor: "transparent" }}
           >
-            <SectionImage imageSource={imageSource} imageAlt="timing" />
+            <SectionImage imageSource={imageSource} imageAlt="verkocht" />
           </ToggleButton>
         );
       } else {
@@ -43,7 +43,7 @@ export default class UnitDetailsModal extends React.Component {
         //     onClick={() => this.setState({ isOpen: imageSource })}
         //     style={{ cursor: "zoom-in", backgroundColor: "transparent" }}
         //   >
-        //     <SectionImage imageSource={imageSource} imageAlt="timing" />
+        //     <SectionImage imageSource={imageSource} imageAlt="plannen" />
         //   </ToggleButton>
         // );
       }
