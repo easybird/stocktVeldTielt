@@ -1,5 +1,5 @@
 import React from "react";
-import unitInfo from "./unitInfo";
+import unitInfo, { unitTypeDescriptions } from "./unitInfo";
 import { SOLD } from "./STATUS";
 import TwoColumnSection from "../../components/Content/TwoColumnSection";
 import Modal from "react-modal";
@@ -34,15 +34,16 @@ export default class UnitDetailsModal extends React.Component {
           </ToggleButton>
         );
       } else {
-        const imageSource = `/assets/img/aanbod/plannen/${unit.lot}.jpg`;
-        rightColumn = (
-          <ToggleButton
-            onClick={() => this.setState({ isOpen: imageSource })}
-            style={{ cursor: "zoom-in", backgroundColor: "transparent" }}
-          >
-            <SectionImage imageSource={imageSource} imageAlt="timing" />
-          </ToggleButton>
-        );
+        rightColumn = <h4>Hier kan je binnenkort de plannen bekijken</h4>;
+        // const imageSource = `/assets/img/aanbod/plannen/${unit.lot}.jpg`;
+        // rightColumn = (
+        //   <ToggleButton
+        //     onClick={() => this.setState({ isOpen: imageSource })}
+        //     style={{ cursor: "zoom-in", backgroundColor: "transparent" }}
+        //   >
+        //     <SectionImage imageSource={imageSource} imageAlt="timing" />
+        //   </ToggleButton>
+        // );
       }
     }
 
@@ -62,7 +63,7 @@ export default class UnitDetailsModal extends React.Component {
               {" "}
               {unit.lot}
             </h2>
-            <TwoColumnSection noPadding={true}>
+            <TwoColumnSection>
               <SectionText>
                 <p>
                   Type:
@@ -90,15 +91,16 @@ export default class UnitDetailsModal extends React.Component {
                   <p>
                     Prijs:
                     {" "}
-                    {`€ ${unit.price}`}
+                    {unit.price}
                   </p>}
+                <br />
                 <p>
-                  Beschrijving:
-                  {unit.unitType}
+                  {unit.unitType &&
+                    unitTypeDescriptions[unit.unitType] &&
+                    unitTypeDescriptions[unit.unitType].description}
                 </p>
               </SectionText>
               {rightColumn}
-
             </TwoColumnSection>
           </div>}
         {this.state.isOpen &&
