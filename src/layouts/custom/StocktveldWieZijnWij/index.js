@@ -9,6 +9,7 @@ import SectionText from "../../../components/Content/SectionText";
 import SectionStory from "../../../components/Content/SectionStory";
 import { IMAGE_TYPES } from "../../../components/Content/IMAGE_TYPES";
 import { quoteSections } from "./quoteSections";
+import Bewoners from "../../../components/Bewoners";
 
 class StocktveldPage extends Component {
   constructor(props) {
@@ -80,6 +81,7 @@ Deze vorm van samenwonen biedt de ruimte om dingen samen te organiseren, zonder 
           <hr />
           {this.QuoteSections}
         </div>
+        <Bewoners />
       </div>
     );
   }
