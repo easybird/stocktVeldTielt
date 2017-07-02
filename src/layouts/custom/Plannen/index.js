@@ -1,23 +1,14 @@
 import React from "react";
 import "./index.css";
-import TableV2 from "../../../components/TableV2";
-import SectionImage from "../../../components/Content/SectionImage";
 import SectionVideo from "../../../components/Content/SectionVideo";
 import TwoColumnSection from "../../../components/Content/TwoColumnSection";
 import SectionText from "../../../components/Content/SectionText";
 import InteractiveImage from "../../../utils/InteractiveImage";
 
-const Plannen = () => (
+const Plannen = ({ isTeaser }) => (
   <div>
     <h2>Bekijk onze plannen</h2>
-    <InteractiveImage />
-    <TwoColumnSection>
-      <TableV2 />
-      <SectionImage
-        imageSource="/assets/img/aanbod/plattegrond_small_gedraaid.png"
-        imageAlt="plattegrond"
-      />
-    </TwoColumnSection>
+    <InteractiveImage isTeaser={isTeaser} />
     <TwoColumnSection>
       <SectionVideo src="https://www.youtube.com/embed/pymC3eSPkI0?autoplay=1&loop=1&playlist=pymC3eSPkI0" />
       <SectionText>
@@ -34,8 +25,7 @@ const Plannen = () => (
 );
 
 Plannen.propTypes = {
-  href: React.PropTypes.string,
-  linkText: React.PropTypes.string
+  isTeaser: React.PropTypes.boolean
 };
 
 export default Plannen;

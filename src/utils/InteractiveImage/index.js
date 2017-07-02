@@ -1,3 +1,5 @@
+/* eslint react/prop-types: 0 */
+
 var React = require("react");
 import ImageMapper from "./ImageMapper";
 import {
@@ -8,6 +10,7 @@ import {
 import SectionText from "../../components/Content/SectionText";
 import OneColumnSection from "../../components/Content/OneColumnSection";
 import UnitDetailsModal from "./UnitDetailsModal";
+import AvailableUnits from "./AvailableUnits";
 
 const WIDTH = 1000;
 const DETAIL_HOUSES_MAP = {
@@ -85,12 +88,10 @@ class InteractiveImage extends React.Component {
           <OneColumnSection noPadding={true}>
             <SectionText>
               <div>
-                Er zijn 37 woningen en appartementen beschikbaar in het project. Bekijk hieronder de beschikbare units en hun plannen in detail. De nieuwbouw woningen en de appartementen worden elk in hun eigen rubriek belicht. De groene zijn nog vrij, de rode zijn verkocht, en voor de orangje is er een voorlopige optie hangende.
+                Er zijn 37 woningen en appartementen beschikbaar in het project. Bekijk hieronder de beschikbare units en hun plannen in detail. De nieuwbouw woningen en de appartementen worden elk in hun eigen rubriek belicht. De groene zijn nog vrij, de rode zijn verkocht, en voor de oranje is er een optie hangende.
               </div><br /><div>
-                <h4>Nieuwbouw woningen en renovatie duplexen</h4>
-                Number 35 tot 37 zijn onze renovatie duplexen. De rest zijn nieuwbouw woningen.
-                Wil je graag meer informatie per unit?
-                Ga dan met je muis over de unit waarin je geïnteresseerd bent en klik op het bijhorende huisnummer voor gedetailleerde info.
+                <h4>Nieuwbouwwoningen en gerenoveerde duplexen</h4>
+                Woning 1-20 zijn nieuwbouw, duplexen 35-37 zijn renovatieprojecten. Wil je graag meer informatie per unit? Ga dan met je muis over de unit waarin je geïnteresseerd bent en klik op het bijhorende huisnummer voor gedetailleerde info.
               </div>
               <div />
             </SectionText>
@@ -114,7 +115,7 @@ class InteractiveImage extends React.Component {
             <SectionText>
               <h4>Appartementen</h4>
               <div>
-                Hier vind je hetzelfde overzichtje voor de appartementen als van de woningen. Klik op de huisnummers voor meer info.
+                Bij deze een overzicht van de appartementen. Klik op de unitnummers voor meer info.
               </div>
             </SectionText>
           </OneColumnSection>
@@ -133,31 +134,42 @@ class InteractiveImage extends React.Component {
             onShowAllAreasChange={() =>
               this.setState({ showAllAreas: !this.state.showAllAreas })}
           />
-          <OneColumnSection>
-            <SectionText>
-              <h4>Plattegrond</h4>
-              <div>
-                Onderstaand zie je nog eens de plattegrond, klik op de huisnummers voor meer info.
-              </div>
-            </SectionText>
-          </OneColumnSection>
-          <ImageMapper
-            src={detailPlattegrondUrl}
-            map={this.state.detailPlattegrondMap}
-            width={WIDTH}
-            showRaster={false}
-            onClick={area => {
-              this.setState({
-                selectedUnit: area.id,
-                modalIsOpen: !this.state.modalIsOpen
-              });
-            }}
-            showAllAreas={this.state.showAllAreas}
-            onShowAllAreasChange={() =>
-              this.setState({ showAllAreas: !this.state.showAllAreas })}
-          />
+          {!this.props.isTeaser &&
+            <div>
+              <OneColumnSection>
+                <SectionText>
+                  <h4>Plattegrond</h4>
+                  <div>
+                    Onderstaand zie je nog eens de plattegrond, klik op de huisnummers voor meer info.
+                  </div>
+                </SectionText>
+              </OneColumnSection>
+              <ImageMapper
+                src={detailPlattegrondUrl}
+                map={this.state.detailPlattegrondMap}
+                width={WIDTH}
+                showRaster={false}
+                onClick={area => {
+                  this.setState({
+                    selectedUnit: area.id,
+                    modalIsOpen: !this.state.modalIsOpen
+                  });
+                }}
+                showAllAreas={this.state.showAllAreas}
+                onShowAllAreasChange={() =>
+                  this.setState({ showAllAreas: !this.state.showAllAreas })}
+              />
+            </div>}
+          {!this.props.isTeaser &&
+            <AvailableUnits
+              onClick={id => {
+                this.setState({
+                  selectedUnit: id,
+                  modalIsOpen: !this.state.modalIsOpen
+                });
+              }}
+            />}
         </div>
-
       </div>
     );
   }

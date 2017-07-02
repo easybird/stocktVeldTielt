@@ -13,53 +13,17 @@ import Plannen from "../../../layouts/custom/Plannen";
 import Paviljoen from "../../../layouts/custom/Paviljoen";
 import Nieuws from "../../../layouts/custom/Nieuws";
 import Sold from "../../icons/Sold";
+import {
+  quoteSections
+} from "../../../layouts/custom/StocktveldWieZijnWij/quoteSections";
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
 class WelcomeSections extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.quoteSections = [
-      {
-        title: "”Door in het project te stappen, krijg ik de mogelijkheid om soepel en jong van geest te blijven”",
-        href: "/wie-zijn-we#trees",
-        text: "Ik woon in het centrum van Tielt, ik woon hier graag maar de formule van cohousen biedt me meer. Het is voor mij belangrijk om in verbinding te staan met mensen, om betrokkenheid, openheid en inspiratie te ervaren. Zeker nu mijn kinderen de deur uit zijn. Ik geniet van het meeleven en samenleven met anderen, jong en oud, met respect voor ieders privéleven. Dat ik de mensen om me heen ken, biedt me een gevoel van geborgenheid.",
-        linkText: "Lees het verhaal",
-        imageSource: "/assets/img/verhalen/gezinnen/t-portret.jpg",
-        imageAlt: "Trees"
-      },
-      {
-        title: "“Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen”",
-        href: "/wie-zijn-we#j-en-b",
-        text: "Het is een win-win. Een grote tuin, de ongedwongenheid van alles wat je daar kan doen. Als je sociaal wil zijn, dan kan dat, wil je dat niet is dat ook goed. Wil je een groot buurtfeest organiseren? Dat kan, er is plaats genoeg. Wil je werken in de moestuin of heb je zin om eens te koken voor meer personen, dat kan. Ik ben zeer benieuwd naar de dynamiek die deze plek kan voortbrengen.",
-        linkText: "Lees het verhaal",
-        imageSource: "/assets/img/verhalen/gezinnen/j-en-b-portret.jpg",
-        imageAlt: "Jonathan en Betty"
-      },
-      {
-        title: "“Wonen in het groen met de stad aan je voordeur“",
-        href: "/wie-zijn-we#w-en-e",
-        text: "We waren op zoek naar een nieuwe thuis in Tielt. Liefst met wat groen, vlak bij het centrum zodat onze kinderen makkelijk naar school kunnen en we ze niet om de haverklap met de auto ergens heen moeten rijden voor hun hobby’s. Verder hadden we ook nog graag een kwaliteitsvolle, gezonde en energiezuinige woning. Het viel al snel op dat onze verwachtingen ook een financieel kostenplaatje met zich meebracht. Het is dus interessanter kosten te kunnen delen.",
-        linkText: "Lees het verhaal",
-        imageSource: "/assets/img/verhalen/gezinnen/w-en-e-portret.jpg",
-        imageAlt: "Wannes en Ellie"
-      },
-      {
-        title: "Frederik, Elke, Maya en Liam kijken er naar uit!",
-        href: "/wie-zijn-we#f-en-e",
-        text: "Onze verwachting van dit project is dat wonen, rust, gezin, sociale contacten, werk en vrije tijd één geheel vormen. Niet moeten kiezen tussen een rustig gelegen huis buiten de stad met een grote tuin of een huis met het comfort van het centrum van een stad, maar met een kleine tuin. Een plaats waar onze kinderen niet gehinderd zijn door hagen en afsluitingen om met de kinderen van de buren te spelen. Geen zorgen moeten maken over auto’s die voorbijrazen. Geen grote living moeten bouwen die dan nog te klein blijkt te zijn als we een feest geven. Buren hebben die meer zijn dan vriendelijk, mensen die je écht kent, mee afspreekt of iets mee organiseert.",
-        linkText: "Lees het verhaal",
-        imageSource: "/assets/img/verhalen/gezinnen/f-en-e-portret.jpg",
-        imageAlt: "Frederik en Elke"
-      }
-    ];
-  }
-
   render() {
     const QuoteSections = [];
     const { scrollElementName } = this.props;
 
-    this.quoteSections.forEach((quoteSection, index) => {
+    quoteSections.forEach((quoteSection, index) => {
       QuoteSections.push(
         <TwoColumnSection key={index} href={quoteSection.href}>
           <SectionImage
@@ -69,7 +33,7 @@ class WelcomeSections extends React.Component {
           />
           <SectionText
             title={quoteSection.title}
-            text={quoteSection.text}
+            text={quoteSection.teaser}
             href={quoteSection.href}
             linkText={quoteSection.linkText}
           />
@@ -129,8 +93,8 @@ class WelcomeSections extends React.Component {
         </OneColumnSection>
         <hr />
         <OneColumnSection href="/aanbod" noCentered noOverlay>
-          <Plannen />
-          <SectionText href="/aanbod" linkText="Bekijk de details" />
+          <Plannen isTeaser />
+          <SectionText href="/aanbod" linkText="Bekijk meer details" />
         </OneColumnSection>
         <hr />
         <OneColumnSection href="/aanbod#paviljoen" noCentered>
