@@ -1,12 +1,14 @@
 const bewonersInfo = [
   {
     name: "Wannes & Ellie",
+    kids: "Ferre & Finn",
     interview: "Wij zochten een kwalitatieve en energiezuinige woning in het centrum van Tielt met een grote tuin voor onze kinderen. Dankzij cohousing krijgen we meerwoon- en leefkwaliteit voor het zelfde geld. Dit project is een goedeinvestering waar we binnenkort al volop van kunnen genieten.",
     imageUrl: "/assets/img/verhalen/gezinnen/w-en-e-portret.jpg"
   },
 
   {
     name: "Tom & Ellen",
+    kids: "Wolf, Storm & Lion", 
     interview: "Voor ons is vooral het vele en diverse groen een pluspunt. Speelbos, moestuin, binnentuin,... altijd wel een plekje om te vertoeven. En tegelijk is er veel aandacht voor ieders privacy. Ook de gezellige, ongedwongen sfeer die er nu al heerst in de groep, doet ons enorm deugd. We kijken telkens weer uit naar een volgend feestje. Als deze sfeer een voorbode is voor 'ons' Stocktveld, dan wordt het de max. Beter 36 goede buren dan 1 verre vriend!"
   },
   {
@@ -15,6 +17,7 @@ const bewonersInfo = [
   },
   {
     name: "Bart & Annemie",
+    kids: "Lore", 
     interview: "We hebben drie dochters, waarvan er twee reeds een eigen stek hebben. De jongste is kotstudente. Onze huidige woning is ons te stil en te groot aan het worden. We betrekken straks een kleinere woning en zien nu reeds uit naar defijne contacten binnen de cohousing gemeenschap."
   },
   {
@@ -24,10 +27,12 @@ const bewonersInfo = [
   },
   {
     name: "Marjan & Niyi",
+    kids: "Tola, Dayo & Yinka", 
     interview: "We vormen een kleurrijk gezin met drie opgroeiende zonen van 17, 14 en 10 jaar. Ik, Marjan, was aangenaam verrast toen ik in de lente van 2015 over het prille project in Tielt hoorde. We stapten als gezin kort daarop mee in het project. We verhuisden tijdens de zomer van 2016 vanuit Engeland terug naar België om actief deel te kunnen nemen aan het project. We kijken uit naar eenrijk gemeenschapsleven en een knus eigen nestje in het project."
   },
   {
     name: "Jonathan & Betty ",
+    kids: "en een kleintje op komst", 
     interview: "Momenteel wonen wij in een drukke mooie stad, Gent. We wensen in de toekomst graag wat meer de rust op te zoeken: een kalme woonomgeving middenin een groene oase, dat is onze droom. Maar we willen ook dichtbij een stadscentrum wonen, met scholen, activiteiten en winkels dichtbij. Waar vind je dit in Vlaanderen? Na enige tijd wikken en wegen, wisten we dat dit project heeft waar we naar op zoek zijn.",
     imageUrl: "/assets/img/verhalen/gezinnen/j-en-b-portret.jpg"
   },
@@ -37,6 +42,7 @@ const bewonersInfo = [
   },
   {
     name: "Gijs & Céline",
+    kids: "Auke & Sam", 
     interview: "Waarom cohousing? Om tal van redenen! Omdat we graag weten wieonze buren zijn, zodat we iets voor elkaar kunnen betekenen. 2 kunnen immers meer dan 1. Omdat je midden in het groen leeft en tegelijk in het centrum van Tielt zit. Iets wat voor ons niet mogelijk is met ons gezinnetje alleen. Omdat het een avontuur is, een stapje buiten de gekende paden. Daardoor niet altijd simpel en wat onzeker, maar zijn dat uiteindelijk niet vaak de mooiste ervaringen? Omdat de burgerlijke wurggreep van veel wijken ons minder inspireert. Omdat er momenten zijn dat ik, Gijs, wil schaken, voetballen, darten en een biertje drinken en ik me voorstel dat dit in de cohousing makkelijk te realiseren is. Omdat onze maatschappij ons wel eens iets te individualistisch lijkt. Collectivisme is mij ook een stap te ver, maar een mooie middenweg spreekt wel aan."
   },
   {
@@ -45,6 +51,7 @@ const bewonersInfo = [
   },
   {
     name: "Frederik & Elke",
+    kids: "Maya en Liam", 
     interview: "Met dit project vallen de puzzelstukjes van wonen, gezin, leven, werk en vrije tijd perfect in elkaar. Aan de voordeur het centrum van de stad, aan onze achterdeur rustige, groene omgeving. De gigantische tuin wordt een echtspeelparadijs voor onze kinderen! Dankzij de gemeenschappelijke feestzaal kunnen we onze grote familie in één keer uitnodigen voor een feestje. We hebben ondertussen een fantastisch netwerk van toekomstige buren en de beschikbare praktijkruimte is ideaal voor een zelfstandig psycholoog als mijzelf (Elke).",
     imageUrl: "/assets/img/verhalen/gezinnen/f-en-e-portret.jpg"
   },
