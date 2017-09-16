@@ -13,6 +13,7 @@ import Quote from "../../../components/Quote";
 import ExternalLink from "../../../components/ExternalLink";
 import Plannen from "../Plannen";
 import Paviljoen from "../Paviljoen";
+import GoogleConversionHtml from "../../../utils/GoogleConversionScript";
 import { Element } from "react-scroll";
 
 class StocktveldAanbod extends Component {
@@ -108,14 +109,15 @@ class StocktveldAanbod extends Component {
                   <h3>Wat hebben we al achter de rug?</h3>
                   <h3>Wedstrijdontwerp</h3>
                   <div>
-                    {" "}
-                    Via een uitgeschreven wedstrijdontwerp kwamen we in 2016 tot de keuze van onze architect.
-                    In het winnende wedstrijdontwerp worden de woningen , appartementen en het klooster met elkaar
-                    verbonden door een functionele galerij.
-                    De collectieve buitenruimte bestaat uit gezellig plein tussen de woningen, appartementen en
-                    klooster, en een natuurlijke tuin rondom de woningen.
-                    Parkeren gebeurt vooraan op de site zodat het project grotendeels autovrij, en dus bijzonder
-                    kindvriendelijk, is.
+                    {" "}Via een uitgeschreven wedstrijdontwerp kwamen we in
+                    2016 tot de keuze van onze architect. In het winnende
+                    wedstrijdontwerp worden de woningen , appartementen en het
+                    klooster met elkaar verbonden door een functionele galerij.
+                    De collectieve buitenruimte bestaat uit gezellig plein
+                    tussen de woningen, appartementen en klooster, en een
+                    natuurlijke tuin rondom de woningen. Parkeren gebeurt
+                    vooraan op de site zodat het project grotendeels autovrij,
+                    en dus bijzonder kindvriendelijk, is.
                   </div>
                 </div>
                 <div />
@@ -127,15 +129,19 @@ class StocktveldAanbod extends Component {
                   <h3>Waarmee zijn we bezig?</h3>
                   <h3>Indienen bouwaanvraag</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                    Onze architect en de huidige bewoners zijn volop bezig de laatste hand aan het leggen aan de bouwaanvraag. De bedoeling is om deze nog voor het bouwverlof van 2017 in te dienen. Spannend!
+                    Onze architect en de huidige bewoners zijn volop bezig de
+                    laatste hand aan het leggen aan de bouwaanvraag. De
+                    bedoeling is om deze nog voor het bouwverlof van 2017 in te
+                    dienen. Spannend!
                   </div>
                   <h3>Ontwerp tuin</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                    Na de zomer van 2016 presenteerde Studio Basta het voorontwerp voor het plein en de tuin op basis
-                    van de feedback van de bewonersgroep.
-                    De hoofdlijnen uit het wedstrijdontwerp werden behouden, maar het binnenplein kreeg een andere
-                    uitstraling.
-                    Het geheel oogt zeer groen en stimuleert ongedwongen gebruik en informeel contact.
+                    Na de zomer van 2016 presenteerde Studio Basta het
+                    voorontwerp voor het plein en de tuin op basis van de
+                    feedback van de bewonersgroep. De hoofdlijnen uit het
+                    wedstrijdontwerp werden behouden, maar het binnenplein kreeg
+                    een andere uitstraling. Het geheel oogt zeer groen en
+                    stimuleert ongedwongen gebruik en informeel contact.
                   </div>
                   <div style={{ display: "flex" }}>
                     <SectionImage
@@ -149,29 +155,35 @@ class StocktveldAanbod extends Component {
                   </div>
                   <h3>Voorontwerp woningen</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                    De voorontwerpen van de nieuwbouwwoningen werden door de architect al opgeleverd.
-                    De toekomstige bewoners kozen allemaal een unit en bezitten een eigen plan en een eerste bestek van
-                    hun unit. Elke woning beschikt over een privétuin.
-                    Er werden verschillende typologieën ontworpen, waaruit de toekomstige instappers kunnen kiezen.
-                    Hoe vroeger men instapt, hoe meer men zijn huis nog kan aanpassen.
+                    De voorontwerpen van de nieuwbouwwoningen werden door de
+                    architect al opgeleverd. De toekomstige bewoners kozen
+                    allemaal een unit en bezitten een eigen plan en een eerste
+                    bestek van hun unit. Elke woning beschikt over een
+                    privétuin. Er werden verschillende typologieën ontworpen,
+                    waaruit de toekomstige instappers kunnen kiezen. Hoe vroeger
+                    men instapt, hoe meer men zijn huis nog kan aanpassen.
                   </div>
                   <h3>Voorontwerp klooster</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                    Het bouwteam (het bewonersteam verantwoordelijk voor de bouw) ging ook samen met de architect aan de
-                    slag om een voorontwerp van het verbouwde klooster op te stellen.
-                    De keuken krijgt een mooie aansluiting met de eetruimte.
-                    Daarnaast krijgt de bureauruimte een mooie doorkijk op de eetruimte, en komt er een wasbar met veel
-                    licht en ruimtegevoel richting de tuin.
+                    Het bouwteam (het bewonersteam verantwoordelijk voor de
+                    bouw) ging ook samen met de architect aan de slag om een
+                    voorontwerp van het verbouwde klooster op te stellen. De
+                    keuken krijgt een mooie aansluiting met de eetruimte.
+                    Daarnaast krijgt de bureauruimte een mooie doorkijk op de
+                    eetruimte, en komt er een wasbar met veel licht en
+                    ruimtegevoel richting de tuin.
                   </div>
                   <h3>Voorontwerp appartementen</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                    De architect is op dit moment het voorontwerp van de appartementen aan het finaliseren. Daarbij
-                    wordt samen met de toekomstige appartementsbewoners en het bouwteam gekeken voor de ideaal mogelijke
-                    inrichting van de beschikbare appartementsruimte.
-                    De bedoeling is om een heel divers pakket van kleine tot grote appartementen aan te bieden, élk met
-                    zijn eigen privé terras.
-                    Hoe vroeger men instapt, hoe meer impact men heeft op de plannen en het bouwproces. Nu al instappen
-                    is dus de boodschap.
+                    De architect is op dit moment het voorontwerp van de
+                    appartementen aan het finaliseren. Daarbij wordt samen met
+                    de toekomstige appartementsbewoners en het bouwteam gekeken
+                    voor de ideaal mogelijke inrichting van de beschikbare
+                    appartementsruimte. De bedoeling is om een heel divers
+                    pakket van kleine tot grote appartementen aan te bieden, élk
+                    met zijn eigen privé terras. Hoe vroeger men instapt, hoe
+                    meer impact men heeft op de plannen en het bouwproces. Nu al
+                    instappen is dus de boodschap.
                   </div>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
                     <h3>Wat brengt de toekomst?</h3>
@@ -184,14 +196,16 @@ class StocktveldAanbod extends Component {
                       }}
                     >
                       <li>
-                        Begin juli 2017 ronden we het ontwerpproces af en vragen we de bouwvergunning aan.
+                        Begin juli 2017 ronden we het ontwerpproces af en vragen
+                        we de bouwvergunning aan.
                       </li>
                       <li>
-                        Februari 2018 denken we de vergunning op zak te hebben en te beginnen bouwen.
+                        Februari 2018 denken we de vergunning op zak te hebben
+                        en te beginnen bouwen.
                       </li>
                       <li>
-                        {" "}Begin 2020 ten laatste, willen we
-                        verhuizen naar het ‘Stocktveld’.
+                        {" "}Begin 2020 ten laatste, willen we verhuizen naar
+                        het ‘Stocktveld’.
                       </li>
                     </ul>
                   </div>
@@ -236,53 +250,45 @@ class StocktveldAanbod extends Component {
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
                   <div>
-                    We kunnen dit uiteraard niet alleen. Om een kwalitatief en duurzaam project te realiseren op een
-                    betaalbare manier heeft Stocktveld
-                    enkele goeie partners onder de arm genomen.
+                    We kunnen dit uiteraard niet alleen. Om een kwalitatief en
+                    duurzaam project te realiseren op een betaalbare manier
+                    heeft Stocktveld enkele goeie partners onder de arm genomen.
                   </div>
                   <div>
-                    We kozen voor het team van architectenbureau
-                    {" "}
+                    We kozen voor het team van architectenbureau{" "}
                     <ExternalLink
                       href="http://www.architec.be"
                       text="aRCHITEC"
-                    />
-                    {" "}
-                    uit Wevelgem,
-                    aangevuld
-                    met landschapsbureau
+                    />{" "}
+                    uit Wevelgem, aangevuld met landschapsbureau
                     <ExternalLink
                       href="http://studiobasta.be"
                       text="Studio Basta"
-                    />
-                    {" "}
+                    />{" "}
                     en bouwfysisch ingenieursbureau
                     <ExternalLink
                       href="http://www.daidalospeutz.be/"
                       text="Daidalos Peutz"
                     />
-                    .
-                    De bouwfirma
-                    {" "}
+                    . De bouwfirma{" "}
                     <ExternalLink href="http://www.dumobil.be" text="Dumobil" />
-                    , gekend van villabouw en
-                    woonprojecten, zorgt voor de bouw van onze
-                    wooneenheden.
+                    , gekend van villabouw en woonprojecten, zorgt voor de bouw
+                    van onze wooneenheden.
                     <ExternalLink
                       href="http://cohousingprojects.be"
                       text="Cohousing Projects"
-                    />
-                    {" "}
-                    werd aangenomen voor
-                    de
-                    nodige ondersteuning, coördinatie en expertise.
-                    Zij bieden Stocktveld een totaalbegeleiding doorheen het ganse proces: gaande van groepsbegeleiding,
-                    over commerciële onderhandelingen, tot financiële ondersteuning.
+                    />{" "}
+                    werd aangenomen voor de nodige ondersteuning, coördinatie en
+                    expertise. Zij bieden Stocktveld een totaalbegeleiding
+                    doorheen het ganse proces: gaande van groepsbegeleiding,
+                    over commerciële onderhandelingen, tot financiële
+                    ondersteuning.
                   </div>
                   <div>
-                    Deze partners helpen ons bij het ontwerpen en implementeren van het bouw - en groepsproces.
-                    De toekomstige bewoners van Stocktveld nemen wel steeds de uiteindelijke beslissingen in een
-                    consensusmodel.
+                    Deze partners helpen ons bij het ontwerpen en implementeren
+                    van het bouw - en groepsproces. De toekomstige bewoners van
+                    Stocktveld nemen wel steeds de uiteindelijke beslissingen in
+                    een consensusmodel.
                   </div>
                 </div>
                 <div />
@@ -294,20 +300,18 @@ class StocktveldAanbod extends Component {
             <TwoColumnSection title="Uw eigen zaak of kantoorruimte in Stocktveld?">
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
-                  <h3>
-                    Apotheek? Bakkerij? Horeca? Yogaruimte? Dat kan!
-                  </h3>
+                  <h3>Apotheek? Bakkerij? Horeca? Yogaruimte? Dat kan!</h3>
                   <div>
-                    {" "}
-                    Het volume en de inrichting van uw werkruimte is op dit moment nog volledig in te vullen.
-                    Oppervlaktes gaan van 20 vierkante meter tot 734 vierkante meter.
+                    {" "}Het volume en de inrichting van uw werkruimte is op dit
+                    moment nog volledig in te vullen. Oppervlaktes gaan van 20
+                    vierkante meter tot 734 vierkante meter.
                   </div>
                   <br />
                   <div>
                     <h3>Werken dichtbij huis: Dat kan!</h3>
-                    U heeft de mogelijkheid om uw praktijkruimte te laten aansluiten op
-                    uw
-                    eigen woning. Bovendien is de aankoop van een handelsruimte met woning een goede investering voor de
+                    U heeft de mogelijkheid om uw praktijkruimte te laten
+                    aansluiten op uw eigen woning. Bovendien is de aankoop van
+                    een handelsruimte met woning een goede investering voor de
                     toekomst.
                   </div>
                   <br />
@@ -324,20 +328,21 @@ class StocktveldAanbod extends Component {
                       <li>Wandelafstand tot het centrum van Tielt</li>
                       <li>Aansluiting op alle openbaar vervoer</li>
                       <li>
-                        {" "}
-                        Gelegen in een woonproject met meer dan 100 inwoners
+                        {" "}Gelegen in een woonproject met meer dan 100
+                        inwoners
                       </li>
                       <li>
-                        {" "}
-                        Ontwikkeling van nieuwbouwprojecten op aanpalende percelen
+                        {" "}Ontwikkeling van nieuwbouwprojecten op aanpalende
+                        percelen
                       </li>
                     </ul>
                   </div>
                   <br />
                   <div>
                     <h3>Iets voor u? </h3>
-                    Hoe vroeger u beslist, hoe meer keuzevrijheid er is over de positie, woning en indeling
-                    van uw werkruimte/woning. Dit kan gaan van een kleine kantoorruimte tot een volledige
+                    Hoe vroeger u beslist, hoe meer keuzevrijheid er is over de
+                    positie, woning en indeling van uw werkruimte/woning. Dit
+                    kan gaan van een kleine kantoorruimte tot een volledige
                     kloostervleugel.
                   </div>
                   <Button
@@ -347,7 +352,6 @@ class StocktveldAanbod extends Component {
                   />
                 </div>
                 <div />
-
               </SectionText>
               <SectionImage
                 imageSource="/assets/img/aanbod/commercieel/business_ideas.jpg"
@@ -360,6 +364,7 @@ class StocktveldAanbod extends Component {
             <Paviljoen />
           </Element>
         </div>
+        <GoogleConversionHtml />
       </div>
     );
   }

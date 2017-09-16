@@ -5,13 +5,13 @@ import ThemeHeader from "../../../components/headers/ThemeHeader";
 import Metadata from "../../../components/head/Metadata";
 import TwoColumnSection from "../../../components/Content/TwoColumnSection";
 import OneColumnSection from "../../../components/Content/OneColumnSection";
-import NewsletterSubscriptionForm
-  from "../../../components/NewsletterSubscriptionForm";
+import NewsletterSubscriptionForm from "../../../components/NewsletterSubscriptionForm";
 import SectionImage from "../../../components/Content/SectionImage";
 import SectionText from "../../../components/Content/SectionText";
 import MailTo from "../../../components/MailTo";
 import Infosessies from "../Infosessies";
 import Button from "../../../components/Button";
+import GoogleConversionHtml from "../../../utils/GoogleConversionScript";
 import { Element } from "react-scroll";
 
 class StocktveldContact extends Component {
@@ -46,8 +46,10 @@ class StocktveldContact extends Component {
             <div>
               <SectionText title="Contacteer ons">
                 <div>
-                  We zijn bereikbaar via heel wat kanalen: email, telefoon, persoonlijk contact via onze infosessies,
-                  facebook of onze nieuwbrief. Kies het kanaal wat jou het beste ligt om kennis met ons te maken.
+                  We zijn bereikbaar via heel wat kanalen: email, telefoon,
+                  persoonlijk contact via onze infosessies, facebook of onze
+                  nieuwbrief. Kies het kanaal wat jou het beste ligt om kennis
+                  met ons te maken.
                 </div>
                 <br />
                 <div>
@@ -103,8 +105,8 @@ class StocktveldContact extends Component {
             <Element name="facebook" id="facebook">
               <SectionText title="Facebook">
                 <div>
-                  Via onze facebookpagina kun je op de hoogte blijven van het reilen en zeilen binnen het project.
-                  Neem gerust een kijkje!
+                  Via onze facebookpagina kun je op de hoogte blijven van het
+                  reilen en zeilen binnen het project. Neem gerust een kijkje!
                 </div>
                 <Button
                   linkText="Bekijk hier onze posts, ook als je geen lid bent Facebook"
@@ -127,9 +129,9 @@ class StocktveldContact extends Component {
             <OneColumnSection>
               <SectionText title="Email">
                 <div>
-                  Heb je vragen? Wens je graag een individueel gesprek met 1 van ons? Of zou je graag het klooster en de
-                  tuin bezoeken?
-                  Dat is mogelijk!
+                  Heb je vragen? Wens je graag een individueel gesprek met 1 van
+                  ons? Of zou je graag het klooster en de tuin bezoeken? Dat is
+                  mogelijk!
                 </div>
                 <div>
                   Stuur ons gerust een mail via
@@ -144,6 +146,7 @@ class StocktveldContact extends Component {
             </OneColumnSection>
           </Element>
         </div>
+        <GoogleConversionHtml />
       </div>
     );
   }
