@@ -11,11 +11,9 @@ import Carousel from "../../../layouts/Carousel";
 import Infosessies from "../../../layouts/custom/Infosessies";
 import Plannen from "../../../layouts/custom/Plannen";
 import Paviljoen from "../../../layouts/custom/Paviljoen";
-import Nieuws from "../../../layouts/custom/Nieuws";
+// import Nieuws from "../../../layouts/custom/Nieuws";
 import Sold from "../../icons/Sold";
-import {
-  quoteSections
-} from "../../../layouts/custom/StocktveldWieZijnWij/quoteSections";
+import { quoteSections } from "../../../layouts/custom/StocktveldWieZijnWij/quoteSections";
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
 class WelcomeSections extends React.Component {
@@ -43,7 +41,7 @@ class WelcomeSections extends React.Component {
 
     return (
       <Element name={scrollElementName} className={styles.welcomeSections}>
-        <Nieuws />
+        {/* <Nieuws /> */}
         <hr />
         <OneColumnSection href="/aanbod">
           <SectionText

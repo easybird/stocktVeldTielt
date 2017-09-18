@@ -109,8 +109,9 @@ class StocktveldAanbod extends Component {
                   <h3>Wat hebben we al achter de rug?</h3>
                   <h3>Wedstrijdontwerp</h3>
                   <div>
-                    {" "}Via een uitgeschreven wedstrijdontwerp kwamen we in
-                    2016 tot de keuze van onze architect. In het winnende
+                    {" "}
+                    Via een uitgeschreven wedstrijdontwerp kwamen we in 2016 tot
+                    de keuze van onze architect. In het winnende
                     wedstrijdontwerp worden de woningen , appartementen en het
                     klooster met elkaar verbonden door een functionele galerij.
                     De collectieve buitenruimte bestaat uit gezellig plein
@@ -118,6 +119,13 @@ class StocktveldAanbod extends Component {
                     natuurlijke tuin rondom de woningen. Parkeren gebeurt
                     vooraan op de site zodat het project grotendeels autovrij,
                     en dus bijzonder kindvriendelijk, is.
+                  </div>
+                  <br />
+                  <h3>Bouwaanvraag is ingediend</h3>
+                  <div className={`${styles.card} ${styles.newParagraph}`}>
+                    De bewoners en de architect hebben de laatste hand gelegd
+                    aan de plannen voor de bouwaanvraag. Voor het bouwverlof van
+                    2017 werd deze ingediend. Spannend!
                   </div>
                 </div>
                 <div />
@@ -127,12 +135,10 @@ class StocktveldAanbod extends Component {
               <SectionText>
                 <div style={{ textAlign: "justify" }}>
                   <h3>Waarmee zijn we bezig?</h3>
-                  <h3>Indienen bouwaanvraag</h3>
+                  <h3>Wachten op goedkeuring bouwaanvraag</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
-                    Onze architect en de huidige bewoners zijn volop bezig de
-                    laatste hand aan het leggen aan de bouwaanvraag. De
-                    bedoeling is om deze nog voor het bouwverlof van 2017 in te
-                    dienen. Spannend!
+                    Wij zijn in blijde verwachting van de goedkeuring van onze
+                    bouwaanvraag. Spannend!
                   </div>
                   <h3>Ontwerp tuin</h3>
                   <div className={`${styles.card} ${styles.newParagraph}`}>
@@ -196,16 +202,13 @@ class StocktveldAanbod extends Component {
                       }}
                     >
                       <li>
-                        Begin juli 2017 ronden we het ontwerpproces af en vragen
-                        we de bouwvergunning aan.
+                        Februari 2018 wordt de akte verleden en wordt het
+                        startsein voor de werken gegeven.
                       </li>
                       <li>
-                        Februari 2018 denken we de vergunning op zak te hebben
-                        en te beginnen bouwen.
-                      </li>
-                      <li>
-                        {" "}Begin 2020 ten laatste, willen we verhuizen naar
-                        het ‘Stocktveld’.
+                        {" "}
+                        Begin 2020 ten laatste, willen we verhuizen naar het
+                        ‘Stocktveld’.
                       </li>
                     </ul>
                   </div>
@@ -302,7 +305,8 @@ class StocktveldAanbod extends Component {
                 <div style={{ textAlign: "justify" }}>
                   <h3>Apotheek? Bakkerij? Horeca? Yogaruimte? Dat kan!</h3>
                   <div>
-                    {" "}Het volume en de inrichting van uw werkruimte is op dit
+                    {" "}
+                    Het volume en de inrichting van uw werkruimte is op dit
                     moment nog volledig in te vullen. Oppervlaktes gaan van 20
                     vierkante meter tot 734 vierkante meter.
                   </div>
@@ -328,11 +332,12 @@ class StocktveldAanbod extends Component {
                       <li>Wandelafstand tot het centrum van Tielt</li>
                       <li>Aansluiting op alle openbaar vervoer</li>
                       <li>
-                        {" "}Gelegen in een woonproject met meer dan 100
-                        inwoners
+                        {" "}
+                        Gelegen in een woonproject met meer dan 100 inwoners
                       </li>
                       <li>
-                        {" "}Ontwikkeling van nieuwbouwprojecten op aanpalende
+                        {" "}
+                        Ontwikkeling van nieuwbouwprojecten op aanpalende
                         percelen
                       </li>
                     </ul>
