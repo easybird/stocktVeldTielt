@@ -131,6 +131,10 @@ export const quoteSections = [
     paragraphs: [
       {
         text:
+          "Na twee jaar samen samenhuizen in het hartje van Gent met 8 huisgenoten waar we reeds keuken, huiskamer, tuin, badkamer en lief en leed mee deelden, zijn we ons reeds zeer goed bewust van alle voordelen die cohousing biedt. Om samen verder een toekomst uit te bouwen, blijkt cohousing, in de vorm die Stocktveld aanbiedt, ideaal voor ons."
+      },
+      {
+        text:
           "Dit project heeft dan ook dan vele troeven: Voldoende privacy; Een goede verstandhouding en leuke sfeer met de medebewoners; Een goeie ligging wat openbaar vervoer, winkels, school, cultuur en sportgelegenheden betreft; Veel groen in en rond het klooster; De authenticiteit en sfeer die het kloostergebouw uitstraalt; De vele gemeenschappelijke ruimtes die beschikbaar zullen zijn; De mogelijkheid tot inspraak in het eigen huis en de gemeenschappelijke delen."
       },
       {
