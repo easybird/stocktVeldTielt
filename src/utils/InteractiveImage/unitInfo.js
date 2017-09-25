@@ -2,31 +2,40 @@ import { AVAILABLE, SOLD, RESERVED } from "./STATUS";
 
 export const unitTypeDescriptions = {
   oostVleugel: {
-    description: "Deze nieuwbouwwoning bevindt zich in de oostvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de moestuin. Bovendien ligt deze woning dichtbij de parking."
+    description:
+      "Deze nieuwbouwwoning bevindt zich in de oostvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de moestuin. Bovendien ligt deze woning dichtbij de parking."
   },
   zuidVleugel: {
-    description: "Deze nieuwbouwwoning bevindt zich in de zuidvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de grote gemeenschappelijke tuin."
+    description:
+      "Deze nieuwbouwwoning bevindt zich in de zuidvleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin, die uitkijkt op de grote gemeenschappelijke tuin."
   },
   buitenBeentjes: {
-    description: "Deze nieuwbouwwoning bevindt zich in de westelijke vleugel van de site. De voorkant van de woning kijkt uit op de grote gemeenschappelijke tuin. Aan de achterkant van de woning is er een privétuin. Op het einde van de privétuin is er de kloostermuur. Indien gewenst kan er een grote opening in deze muur gemaakt worden, zodat er uitkijk is op de achterliggende groene zone."
+    description:
+      "Deze nieuwbouwwoning bevindt zich in de westelijke vleugel van de site. De voorkant van de woning kijkt uit op de grote gemeenschappelijke tuin. Aan de achterkant van de woning is er een privétuin. Op het einde van de privétuin is er de kloostermuur. Indien gewenst kan er een grote opening in deze muur gemaakt worden, zodat er uitkijk is op de achterliggende groene zone."
   },
   westVleugel: {
-    description: "Deze nieuwbouwwoning bevindt zich in de westelijke vleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin. Op het einde van de privétuin is er de kloostermuur. Indien gewenst kan er een grote opening in deze muur gemaakt worden, zodat er uitkijk is op de achterliggende groene zone."
+    description:
+      "Deze nieuwbouwwoning bevindt zich in de westelijke vleugel van de site. De voorkant van de woning kijkt uit op het binnenplein. Aan de achterkant van de woning is er een privétuin. Op het einde van de privétuin is er de kloostermuur. Indien gewenst kan er een grote opening in deze muur gemaakt worden, zodat er uitkijk is op de achterliggende groene zone."
   },
   appartementGelijkvloers: {
-    description: "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op het gelijkvloers. Er is een eigen privétuin. De voorzijde van het appartement kijkt uit op het binnenplein."
+    description:
+      "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op het gelijkvloers. Er is een eigen privétuin. De voorzijde van het appartement kijkt uit op het binnenplein."
   },
   appartementEersteVerdiep: {
-    description: "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op de eerste verdieping. Het terras kijkt uit op de achterliggende groene zone aan de westkant. Door de constructie aan de voorzijde, wordt de connectie met het binnenplein zo groot mogelijk gehouden."
+    description:
+      "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op de eerste verdieping. Het terras kijkt uit op de achterliggende groene zone aan de westkant. Door de constructie aan de voorzijde, wordt de connectie met het binnenplein zo groot mogelijk gehouden."
   },
   appartementTweedeVerdiep: {
-    description: "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op de tweede verdieping. Het terras kijkt uit op de achterliggende groene zone aan de westkant. Door de constructie aan de voorzijde, wordt de connectie met het binnenplein zo groot mogelijk gehouden."
+    description:
+      "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op de tweede verdieping. Het terras kijkt uit op de achterliggende groene zone aan de westkant. Door de constructie aan de voorzijde, wordt de connectie met het binnenplein zo groot mogelijk gehouden."
   },
   appartementDerdeVerdiep: {
-    description: "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op de derde verdieping. Het terras kijkt uit op de achterliggende groene zone aan de westkant. Door de constructie aan de voorzijde, wordt de connectie met het binnenplein zo groot mogelijk gehouden. Doordat het appartement zich op de derde verdieping bevindt, is er zicht op de ganse site."
+    description:
+      "Dit nieuwbouwappartement bevindt zich in de westelijke vleugel van de site, op de derde verdieping. Het terras kijkt uit op de achterliggende groene zone aan de westkant. Door de constructie aan de voorzijde, wordt de connectie met het binnenplein zo groot mogelijk gehouden. Doordat het appartement zich op de derde verdieping bevindt, is er zicht op de ganse site."
   },
   duplex: {
-    description: "Dit gerenoveerde duplexappartement bevindt zich in de oostelijke vleugel van de site, op de 3de verdieping. Het terras kijkt uit op het binnenplein, en - door de hoogte - de ganse site."
+    description:
+      "Dit gerenoveerde duplexappartement bevindt zich in de oostelijke vleugel van de site, op de 3de verdieping. Het terras kijkt uit op het binnenplein, en - door de hoogte - de ganse site."
   }
 };
 
@@ -38,7 +47,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: AVAILABLE,
     squareMeters: 128.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok A, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo0.jpg"
+      },
+      {
+        name: "Blok A, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 40.1,
     unitType: "oostVleugel"
   },
@@ -49,7 +67,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: AVAILABLE,
     squareMeters: 111.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok A, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo0.jpg"
+      },
+      {
+        name: "Blok A, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 34.8,
     unitType: "oostVleugel"
   },
@@ -60,7 +87,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: AVAILABLE,
     squareMeters: 124.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok A, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo0.jpg"
+      },
+      {
+        name: "Blok A, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 38.8,
     unitType: "oostVleugel"
   },
@@ -71,7 +107,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: AVAILABLE,
     squareMeters: 123,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok A, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo0.jpg"
+      },
+      {
+        name: "Blok A, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 55.2,
     unitType: "oostVleugel"
   },
@@ -82,7 +127,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: AVAILABLE,
     squareMeters: 126.6,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok A, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo0.jpg"
+      },
+      {
+        name: "Blok A, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokA_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 57.1,
     unitType: "oostVleugel"
   },
@@ -93,7 +147,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: RESERVED,
     squareMeters: 126.6,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok B, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo0.jpg"
+      },
+      {
+        name: "Blok B, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 56.9,
     unitType: "zuidVleugel"
   },
@@ -104,7 +167,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: SOLD,
     squareMeters: 140,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok B, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo0.jpg"
+      },
+      {
+        name: "Blok B, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 47.1,
     unitType: "zuidVleugel"
   },
@@ -115,7 +187,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: SOLD,
     squareMeters: 129.2,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok B, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo0.jpg"
+      },
+      {
+        name: "Blok B, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 39.6,
     unitType: "zuidVleugel"
   },
@@ -126,7 +207,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: SOLD,
     squareMeters: 134.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok B, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo0.jpg"
+      },
+      {
+        name: "Blok B, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 46.8,
     unitType: "zuidVleugel"
   },
@@ -137,7 +227,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: SOLD,
     squareMeters: 134.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok B, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo0.jpg"
+      },
+      {
+        name: "Blok B, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 42,
     unitType: "zuidVleugel"
   },
@@ -148,7 +247,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: AVAILABLE,
     squareMeters: 115.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok B, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo0.jpg"
+      },
+      {
+        name: "Blok B, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokB_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 36.1,
     unitType: "zuidVleugel"
   },
@@ -159,7 +267,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: SOLD,
     squareMeters: 141.6,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok C, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokC_nivo0.jpg"
+      },
+      {
+        name: "Blok C, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokC_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 49.8,
     unitType: "buitenBeentjes"
   },
@@ -170,7 +287,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: SOLD,
     squareMeters: 122.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok C, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokC_nivo0.jpg"
+      },
+      {
+        name: "Blok C, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokC_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 46,
     unitType: "buitenBeentjes"
   },
@@ -181,7 +307,16 @@ const unitInfo = {
     type: "Woning - halfopen",
     status: SOLD,
     squareMeters: 126,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok C, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokC_nivo0.jpg"
+      },
+      {
+        name: "Blok C, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokC_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 40,
     unitType: "buitenBeentjes"
   },
@@ -190,9 +325,18 @@ const unitInfo = {
     price: "+/- € 309,701 (excl. BTW)",
     lot: 15,
     type: "Woning - gesloten",
-    status: SOLD,
+    status: AVAILABLE,
     squareMeters: 119,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok D, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo0.jpg"
+      },
+      {
+        name: "Blok D, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 73.1,
     unitType: "westVleugel"
   },
@@ -203,7 +347,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: AVAILABLE,
     squareMeters: 114.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok D, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo0.jpg"
+      },
+      {
+        name: "Blok D, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 65.9,
     unitType: "westVleugel"
   },
@@ -214,7 +367,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: AVAILABLE,
     squareMeters: 114.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok D, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo0.jpg"
+      },
+      {
+        name: "Blok D, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 61.2,
     unitType: "westVleugel"
   },
@@ -223,9 +385,18 @@ const unitInfo = {
     price: "+/- € 304,469 (excl. BTW)",
     lot: 18,
     type: "Woning - gesloten",
-    status: AVAILABLE,
+    status: SOLD,
     squareMeters: 114.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok D, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo0.jpg"
+      },
+      {
+        name: "Blok D, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 56.4,
     unitType: "westVleugel"
   },
@@ -236,7 +407,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: SOLD,
     squareMeters: 127.6,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok D, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo0.jpg"
+      },
+      {
+        name: "Blok D, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 60.3,
     unitType: "westVleugel"
   },
@@ -247,7 +427,16 @@ const unitInfo = {
     type: "Woning - gesloten",
     status: AVAILABLE,
     squareMeters: 135.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok D, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo0.jpg"
+      },
+      {
+        name: "Blok D, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokD_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 53.6,
     unitType: "westVleugel"
   },
@@ -258,7 +447,12 @@ const unitInfo = {
     type: "Appartement +0",
     status: SOLD,
     squareMeters: 88.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo0.jpg"
+      }
+    ],
     gardenSquareMeters: 95.9,
     unitType: "appartementGelijkvloers"
   },
@@ -269,7 +463,12 @@ const unitInfo = {
     type: "Appartement +0",
     status: AVAILABLE,
     squareMeters: 65.3,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo0.jpg"
+      }
+    ],
     gardenSquareMeters: 52.9,
     unitType: "appartementGelijkvloers"
   },
@@ -280,7 +479,12 @@ const unitInfo = {
     type: "Appartement +0",
     status: AVAILABLE,
     squareMeters: 66.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo0.jpg"
+      }
+    ],
     gardenSquareMeters: 44.5,
     unitType: "appartementGelijkvloers"
   },
@@ -291,7 +495,12 @@ const unitInfo = {
     type: "Appartement +0",
     status: AVAILABLE,
     squareMeters: 76.2,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 0",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo0.jpg"
+      }
+    ],
     gardenSquareMeters: 47.5,
     unitType: "appartementGelijkvloers"
   },
@@ -302,7 +511,12 @@ const unitInfo = {
     type: "Appartement +1",
     status: SOLD,
     squareMeters: 83.5,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 8.8,
     unitType: "appartementEersteVerdiep"
   },
@@ -313,7 +527,12 @@ const unitInfo = {
     type: "Appartement +1",
     status: SOLD,
     squareMeters: 78.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 11,
     unitType: "appartementEersteVerdiep"
   },
@@ -324,7 +543,12 @@ const unitInfo = {
     type: "Appartement +1",
     status: AVAILABLE,
     squareMeters: 66.4,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 6.5,
     unitType: "appartementEersteVerdiep"
   },
@@ -335,7 +559,12 @@ const unitInfo = {
     type: "Appartement +1",
     status: AVAILABLE,
     squareMeters: 102.3,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 1",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo1.jpg"
+      }
+    ],
     gardenSquareMeters: 8.2,
     unitType: "appartementEersteVerdiep"
   },
@@ -346,7 +575,12 @@ const unitInfo = {
     type: "Appartement +2",
     status: AVAILABLE,
     squareMeters: 89.7,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 2",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo2.jpg"
+      }
+    ],
     gardenSquareMeters: 18.6,
     unitType: "appartementTweedeVerdiep"
   },
@@ -357,7 +591,12 @@ const unitInfo = {
     type: "Appartement +2",
     status: AVAILABLE,
     squareMeters: 65.8,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 2",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo2.jpg"
+      }
+    ],
     gardenSquareMeters: 6.5,
     unitType: "appartementTweedeVerdiep"
   },
@@ -368,7 +607,12 @@ const unitInfo = {
     type: "Appartement +2",
     status: SOLD,
     squareMeters: 77.7,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 2",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo2.jpg"
+      }
+    ],
     gardenSquareMeters: 6.5,
     unitType: "appartementTweedeVerdiep"
   },
@@ -379,7 +623,12 @@ const unitInfo = {
     type: "Appartement +2",
     status: AVAILABLE,
     squareMeters: 91,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 2",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo2.jpg"
+      }
+    ],
     gardenSquareMeters: 8.3,
     unitType: "appartementTweedeVerdiep"
   },
@@ -390,7 +639,12 @@ const unitInfo = {
     type: "Appartement +3",
     status: AVAILABLE,
     squareMeters: 98.9,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 3",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo3.jpg"
+      }
+    ],
     gardenSquareMeters: 32,
     unitType: "appartementDerdeVerdiep"
   },
@@ -401,7 +655,12 @@ const unitInfo = {
     type: "Appartement +3",
     status: AVAILABLE,
     squareMeters: 91.9,
-    image: "path/to/image",
+    images: [
+      {
+        name: "Blok E, niveau 3",
+        path: "/assets/img/aanbod/plannen/architect/blokE_nivo3.jpg"
+      }
+    ],
     gardenSquareMeters: 6.1,
     unitType: "appartementDerdeVerdiep"
   },

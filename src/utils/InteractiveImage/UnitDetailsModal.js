@@ -3,7 +3,7 @@
 import React from "react";
 import unitInfo, { unitTypeDescriptions } from "./unitInfo";
 import { SOLD } from "./STATUS";
-import TwoColumnSection from "../../components/Content/TwoColumnSection";
+import OneColumnSection from "../../components/Content/OneColumnSection";
 import Modal from "react-modal";
 import ToggleButton from "../../components/ToggleButton";
 import SectionText from "../../components/Content/SectionText";
@@ -36,16 +36,23 @@ export default class UnitDetailsModal extends React.Component {
           </ToggleButton>
         );
       } else {
-        rightColumn = <h4>Hier kan je binnenkort de plannen bekijken</h4>;
-        // const imageSource = `/assets/img/aanbod/plannen/${unit.lot}.jpg`;
-        // rightColumn = (
-        //   <ToggleButton
-        //     onClick={() => this.setState({ isOpen: imageSource })}
-        //     style={{ cursor: "zoom-in", backgroundColor: "transparent" }}
-        //   >
-        //     <SectionImage imageSource={imageSource} imageAlt="plannen" />
-        //   </ToggleButton>
-        // );
+        if (unit.images) {
+          rightColumn = unit.images.map(image => {
+            return (
+              <div>
+                <h4>{image.name}</h4>
+                <ToggleButton
+                  onClick={() => this.setState({ isOpen: image.path })}
+                  style={{ cursor: "zoom-in", backgroundColor: "transparent" }}
+                >
+                  <SectionImage imageSource={image.path} imageAlt="plannen" />
+                </ToggleButton>
+              </div>
+            );
+          });
+        } else {
+          rightColumn = <h4>Hier kan je binnenkort de plannen bekijken</h4>;
+        }
       }
     }
 
@@ -58,43 +65,22 @@ export default class UnitDetailsModal extends React.Component {
         style={{ backgroundColor: "white", zIndex: 100 }}
         contentLabel="Modal"
       >
-        {this.props.selectedUnit &&
+        {this.props.selectedUnit && (
           <div style={{ position: "relative", height: "100%" }}>
-            <h2>
-              Details unit
-              {" "}
-              {unit.lot}
-            </h2>
-            <TwoColumnSection>
+            <h2>Details unit {unit.lot}</h2>
+            <OneColumnSection>
               <SectionText>
+                <p>Type: {unit.type}</p>
                 <p>
-                  Type:
-                  {" "}
-                  {unit.type}
-                </p>
-                <p>
-                  Bewoonbare oppervlakte woning:
-                  {" "}
-                  {unit.squareMeters}
+                  Bewoonbare oppervlakte woning: {unit.squareMeters}
                   m<sup>2 </sup>
                 </p>
                 <p>
-                  Grootte tuin:
-                  {" "}
-                  {unit.gardenSquareMeters}
+                  Grootte tuin: {unit.gardenSquareMeters}
                   m<sup>2 </sup>
                 </p>
-                <p>
-                  Aantal slaapkamers:
-                  {" "}
-                  {unit.rooms}
-                </p>
-                {unit.status !== SOLD &&
-                  <p>
-                    Prijs:
-                    {" "}
-                    {unit.price}
-                  </p>}
+                <p>Aantal slaapkamers: {unit.rooms}</p>
+                {unit.status !== SOLD && <p>Prijs: {unit.price}</p>}
                 <br />
                 <p>
                   {unit.unitType &&
@@ -102,26 +88,33 @@ export default class UnitDetailsModal extends React.Component {
                     unitTypeDescriptions[unit.unitType].description}
                 </p>
               </SectionText>
+              <br />
+              <br />
+              <br />
               {rightColumn}
-            </TwoColumnSection>
-          </div>}
-        {this.state.isOpen &&
+            </OneColumnSection>
+          </div>
+        )}
+        {this.state.isOpen && (
           <Lightbox
             mainSrc={this.state.isOpen}
             onCloseRequest={() => this.setState({ isOpen: false })}
-          />}
-        {unitInfo[this.props.selectedUnit - 1] &&
+          />
+        )}
+        {unitInfo[this.props.selectedUnit - 1] && (
           <div style={{ position: "fixed", left: 50, bottom: 50 }}>
             <ToggleButton onClick={this.props.onPrevious}>
               <h4>Vorige unit</h4>
             </ToggleButton>
-          </div>}
-        {unitInfo[this.props.selectedUnit + 1] &&
+          </div>
+        )}
+        {unitInfo[this.props.selectedUnit + 1] && (
           <div style={{ position: "fixed", right: 50, bottom: 50 }}>
             <ToggleButton onClick={this.props.onNext}>
               <h4>Volgende unit</h4>
             </ToggleButton>
-          </div>}
+          </div>
+        )}
         <div style={{ position: "fixed", right: 50, top: 50 }}>
           <ToggleButton onClick={this.props.onClose}>
             <h4>Sluit</h4>
