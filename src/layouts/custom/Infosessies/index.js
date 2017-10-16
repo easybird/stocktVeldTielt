@@ -4,7 +4,7 @@ import MailTo from "../../../components/MailTo";
 import ExternalLink from "../../../components/ExternalLink";
 import "./index.css";
 
-const Infosessies = ({ href, linkText }) =>
+const Infosessies = ({ href, linkText }) => (
   <SectionText
     title="Welkom op onze infosessies"
     href={href}
@@ -20,9 +20,6 @@ const Infosessies = ({ href, linkText }) =>
     <div>
       De eerstvolgende data waarop je lang kan komen:
       <ul>
-        <li>
-          <strong>Dinsdag 3 oktober, om 20u</strong>
-        </li>
         <li>
           <strong>Zondag 12 november, om 10u</strong>
         </li>
@@ -57,7 +54,8 @@ const Infosessies = ({ href, linkText }) =>
         />
       </strong>
     </div>
-  </SectionText>;
+  </SectionText>
+);
 
 Infosessies.propTypes = {
   href: React.PropTypes.string,
