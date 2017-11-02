@@ -7,3 +7,5 @@ node_modules
 
 # phenomic build
 dist
+
+config.json

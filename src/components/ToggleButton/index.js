@@ -9,7 +9,7 @@ export default class ToggleButton extends React.Component {
       <a
         className={styles.myButton}
         style={this.props.style}
-        onClick={this.props.onClick}
+        onClick={() => (this.props.onClick ? this.props.onClick() : {})}
       >
         {this.props.children}
       </a>
