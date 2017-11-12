@@ -9,7 +9,7 @@ import styles from "./index.css";
 import { Link } from "react-router";
 import InfosessieForm from "../../../components/InfosessieForm";
 
-const date = "zondag 12 november, om 10u";
+const date = "maandag 11 december, om 19u30";
 
 export default class SubscribeModal extends React.Component {
   render() {
