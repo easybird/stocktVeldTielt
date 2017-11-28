@@ -14,7 +14,10 @@ class Infosessies extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ showPopup: true }), 3000);
+    setTimeout(
+      () => this.setState({ showPopup: true }),
+      3000
+    );
   }
 
   componentWillUnmount() {
@@ -29,7 +32,8 @@ class Infosessies extends React.Component {
       <div>
         <SubscribeModal
           isOpen={showPopup}
-          onClose={() => this.setState({ showPopup: false })}
+          onClose={() =>
+            this.setState({ showPopup: false })}
         />
         <SectionText
           title="Welkom op onze infosessies"
@@ -37,28 +41,32 @@ class Infosessies extends React.Component {
           linkText={linkText}
         >
           <div>
-            Op onze infosessies leer je het project ten volle kennen. Je maakt
-            er kennis met de aspecten rond de bouw, de prijs, de visie van de
-            toekomstige bewoners rond het project. En dat allemaal door een
-            aantal mensen van de huidige groep.
+            Op onze infosessies leer je het project ten
+            volle kennen. Je maakt er kennis met de aspecten
+            rond de bouw, de prijs, de visie van de
+            toekomstige bewoners rond het project. En dat
+            allemaal door een aantal mensen van de huidige
+            groep.
           </div>
           <br />
           <div>
             De eerstvolgende data waarop je lang kan komen:
             <ul>
               <li>
-                <strong>Maandag 11 december, om 19u30</strong>
+                <strong>Zondag 17 december, om 10</strong>
               </li>
             </ul>
             <br />
-            De infosessies vinden steeds plaats op onze site, in het klooster.
+            De infosessies vinden steeds plaats op onze
+            site, in het klooster.
             <ul>
               <li>
                 <strong> Blekerijstraat 22, Tielt </strong>
               </li>
             </ul>
             <br />
-            Wil je graag meer weten? Of wil je ons laten weten dat je komt?
+            Wil je graag meer weten? Of wil je ons laten
+            weten dat je komt?
             <br />
             <br />
             Schrijf je in via het{" "}

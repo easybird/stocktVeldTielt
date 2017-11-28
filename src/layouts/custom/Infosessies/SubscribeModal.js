@@ -9,7 +9,7 @@ import styles from "./index.css";
 import { Link } from "react-router";
 import InfosessieForm from "../../../components/InfosessieForm";
 
-const date = "maandag 11 december, om 19u30";
+const date = "zondag 17 december, om 10u00";
 
 export default class SubscribeModal extends React.Component {
   render() {
@@ -27,10 +27,15 @@ export default class SubscribeModal extends React.Component {
             noSectionImage
           />
           <div className={styles.content}>
-            <OneColumnSection noPadding noOverlay noCentered>
+            <OneColumnSection
+              noPadding
+              noOverlay
+              noCentered
+            >
               <h4>Infosessie bijwonen?</h4>
               <p>
-                Schrijf je vrijblijvend in voor de volgende infosessie op {date}.
+                Schrijf je vrijblijvend in voor de volgende
+                infosessie op {date}.
               </p>
               <div className={styles.buttons}>
                 <InfosessieForm date={date} />
