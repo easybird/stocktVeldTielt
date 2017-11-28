@@ -53,7 +53,7 @@ class Infosessies extends React.Component {
             De eerstvolgende data waarop je lang kan komen:
             <ul>
               <li>
-                <strong>Zondag 17 december, om 10</strong>
+                <strong>Zondag 17 december, om 10u</strong>
               </li>
             </ul>
             <br />
