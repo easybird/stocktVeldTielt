@@ -102,11 +102,6 @@ class NavBar extends React.Component {
               </Link>
             </li>
             <li>
-              <Link className={styles.link} to="/wie-zijn-we">
-                {"Wie zijn we"}
-              </Link>
-            </li>
-            <li>
               <Link className={styles.link} to="/contact">
                 {"Contact"}
               </Link>

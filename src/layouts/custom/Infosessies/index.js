@@ -2,39 +2,18 @@ import React from "react";
 import SectionText from "../../../components/Content/SectionText";
 import MailTo from "../../../components/MailTo";
 import ExternalLink from "../../../components/ExternalLink";
-import SubscribeModal from "./SubscribeModal";
 import "./index.css";
 
 class Infosessies extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showPopup: false
-    };
-  }
-
-  componentDidMount() {
-    setTimeout(
-      () => this.setState({ showPopup: true }),
-      3000
-    );
-  }
-
-  componentWillUnmount() {
-    this.setState({ showPopup: false });
   }
 
   render() {
     const { href, linkText } = this.props;
-    const { showPopup } = this.state;
 
     return (
       <div>
-        <SubscribeModal
-          isOpen={showPopup}
-          onClose={() =>
-            this.setState({ showPopup: false })}
-        />
         <SectionText
           title="Welkom op onze infosessies"
           href={href}
@@ -50,13 +29,8 @@ class Infosessies extends React.Component {
           </div>
           <br />
           <div>
-            De eerstvolgende data waarop je lang kan komen:
-            <ul>
-              <li>
-                <strong>Zondag 17 december, om 10u</strong>
-              </li>
-            </ul>
-            <br />
+            Tot nader order zijn er geen infosessies meer gepland.
+            <br /><br />
             De infosessies vinden steeds plaats op onze
             site, in het klooster.
             <ul>

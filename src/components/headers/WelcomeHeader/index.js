@@ -23,14 +23,9 @@ const WelcomeHeader = ({scrollTo}) => (
           type={Button.TYPE.FULL}
         />
         <Button
-          linkText="Benieuwd naar wie we zijn?"
-          href="/wie-zijn-we"
-          type={Button.TYPE.GHOST}
-        />
-        <Button
           linkText="Kom naar onze infosessies"
           href="/contact#infosessies"
-          type={Button.TYPE.FULL}
+          type={Button.TYPE.GHOST}
         />
       </div>
     </div>

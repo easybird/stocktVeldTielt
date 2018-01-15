@@ -7,12 +7,9 @@ import SectionText from "../SectionText";
 import SectionImage from "../SectionImage";
 import { Element } from "react-scroll";
 import { IMAGE_TYPES } from "../IMAGE_TYPES";
-import Carousel from "../../../layouts/Carousel";
 import Infosessies from "../../../layouts/custom/Infosessies";
 import Plannen from "../../../layouts/custom/Plannen";
 import Paviljoen from "../../../layouts/custom/Paviljoen";
-// import Nieuws from "../../../layouts/custom/Nieuws";
-import Sold from "../../icons/Sold";
 import { quoteSections } from "../../../layouts/custom/StocktveldWieZijnWij/quoteSections";
 
 // TODO for sale icon: http://stockfresh.com/files/r/rastudio/m/83/5887169_stock-vector-for-sale-sign-thin-line-icon.jpg*/
@@ -55,8 +52,7 @@ class WelcomeSections extends React.Component {
           />
         </OneColumnSection>
         <hr />
-        <TwoColumnSection href="/aanbod" hasAbsoluteDiv={true}>
-          <Sold percentageSold={this.props.percentageSold} />
+        <TwoColumnSection href="/aanbod">
           <SectionText
             title="Uniek klooster met 3 renovatie loften, 20 nieuwbouwwoningen en 14 appartementen"
             text="Met een enorm divers aanbod aan woningen, appartementen en renovatie biedt Stocktveld voor elk wat wils. Het project is een collectief particulier bouwproject op de site van het voormalig slotklooster aan het station van Tielt. Er zijn 37 individuele woningen van verschillende groottes met elk een eigen private buitenruimte in de vorm van een tuintje of een terras. Daarnaast is er een grote gemeenschappelijke tuin die eigendom is van alle bewoners en enkele gemeenschappelijke faciliteiten zoals onder andere een (feest)zaal met uitgeruste keuken, gastenkamers, bibliotheek, wassalon en kantoorruimte."
@@ -69,10 +65,6 @@ class WelcomeSections extends React.Component {
             imageAlt="Render klooster"
           />
         </TwoColumnSection>
-        <hr />
-        <Carousel interval={10000} random={true}>
-          {QuoteSections}
-        </Carousel>
         <hr />
         <TwoColumnSection href="/locatie">
           <SectionText
