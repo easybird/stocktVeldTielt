@@ -8,6 +8,7 @@ import SectionImage from "../SectionImage";
 import { Element } from "react-scroll";
 import { IMAGE_TYPES } from "../IMAGE_TYPES";
 import Infosessies from "../../../layouts/custom/Infosessies";
+import Nieuws from "../../../layouts/custom/Nieuws";
 import Plannen from "../../../layouts/custom/Plannen";
 import Paviljoen from "../../../layouts/custom/Paviljoen";
 import { quoteSections } from "../../../layouts/custom/StocktveldWieZijnWij/quoteSections";
@@ -38,7 +39,7 @@ class WelcomeSections extends React.Component {
 
     return (
       <Element name={scrollElementName} className={styles.welcomeSections}>
-        {/* <Nieuws /> */}
+        <Nieuws />
         <hr />
         <OneColumnSection href="/aanbod">
           <SectionText
